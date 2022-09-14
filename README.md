@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 # EnglishTeacher
-=======
-# EnglishTeacher
->>>>>>> 7985daacb113663d25c3944eeb6fb497486706a2
+
+Site para divulgação de aulas on-line de Inglês.
+
+Website to spread English on-line classes.
