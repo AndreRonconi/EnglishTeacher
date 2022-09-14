@@ -76,3 +76,7 @@ h5 {
   color: rgb(255, 255, 255);
   font-size: larger;
 }
+
+.bandeira {
+  border: 1px solid rgba(79, 185, 227, 0.514);
+}
