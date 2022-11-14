@@ -3,7 +3,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: black;
+  background-color: rgba(0, 26, 255, 0.521);
 }
 
 h1 {
