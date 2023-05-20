@@ -185,14 +185,15 @@
 })(jQuery);
 
 const overlay = document.querySelector('.overlay');
-const hoverVideo = document.querySelector('.hover-video');
 
 overlay.addEventListener('mouseover', () => {
+  const hoverVideo = this.querySelector('.hover-video');
   hoverVideo.style.display = 'block';
   setTimeout(() => hoverVideo.play(), 100);
 });
 
 overlay.addEventListener('mouseout', () => {
+  const hoverVideo = this.querySelector('.hover-video');
   hoverVideo.style.display = 'none';
   hoverVideo.pause();
 });
