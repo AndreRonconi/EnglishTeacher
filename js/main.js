@@ -189,7 +189,7 @@ const hoverVideo = document.querySelector('.hover-video');
 
 overlay.addEventListener('mouseover', () => {
   hoverVideo.style.display = 'block';
-  hoverVideo.play();
+  setTimeout(() => hoverVideo.play(), 10);
 });
 
 overlay.addEventListener('mouseout', () => {
