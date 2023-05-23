@@ -946,7 +946,7 @@ ol {
   height: 50px;
   width: 100%;
   padding-left: 20px;
-  border: 1px solid #544e5e;
+  border: 1px solid #ffffff;
   background: transparent;
   font-size: 16px;
   color: #adadad;
@@ -968,7 +968,7 @@ ol {
 }
 .footer__option__item form button {
   font-size: 20px;
-  color: #ffffff;
+  color: #0003c0;
   border: none;
   height: 50px;
   width: 50px;
