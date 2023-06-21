@@ -1160,6 +1160,7 @@ ol {
 
 .services__item {
   margin-bottom: 45px;
+  margin-top: 60px;
 }
 .services__item:hover .services__item__icon:after {
   -webkit-transform: rotate(45deg);
