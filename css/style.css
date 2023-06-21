@@ -1075,7 +1075,6 @@ ol {
 .testimonial {
   padding-bottom: 60px;
 }
-
 .testimonial__slider.owl-carousel .owl-item .col-lg-4 {
   max-width: 100%;
 }
@@ -1103,8 +1102,8 @@ ol {
   margin-bottom: 25px;
   position: relative;
   z-index: 9;
-  background-color: #00065f;
-  opacity: 80%;
+  background-color: #000544;
+  opacity: 85%;
 }
 .testimonial__text P {
   color: #ffffff;
