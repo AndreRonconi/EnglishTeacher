@@ -631,7 +631,7 @@ ol {
   Counter
 -----------------------*/
 .counter {
-  background: #100028;
+  background: linear-gradient(to bottom, #000030, #00065f, #000030);
   height: 840px;
   padding-top: 380px;
   overflow: hidden;
@@ -642,7 +642,7 @@ ol {
 }
 
 .counter__item {
-  background: #1a083d;
+  background: #181a77;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -667,8 +667,8 @@ ol {
   bottom: -2px;
   height: 636px;
   width: 636px;
-  border-left: 1px solid #333333;
-  border-top: 1px solid #333333;
+  border-left: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
   content: '';
   z-index: -1;
 }
@@ -678,8 +678,8 @@ ol {
 .counter__item.second__item:before {
   left: -316px;
   bottom: -65px;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   border-left: none;
   border-top: none;
 }
@@ -689,8 +689,8 @@ ol {
 .counter__item.four__item:before {
   left: -380px;
   bottom: -380px;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   border-left: none;
   border-top: none;
 }
@@ -728,7 +728,7 @@ ol {
 }
 
 .team__item {
-  height: 390px;
+  height: 450px;
   position: relative;
   overflow: hidden;
 }
@@ -1049,9 +1049,11 @@ ol {
 }
 
 .about__pic__item {
-  height: 235px;
-  margin-right: -100px;
+  height: 600px;
+  margin-left: 50px;
+  margin-right: -200px;
   margin-bottom: 20px;
+  margin-top: 40px;
   align-content: center;
 }
 .about__pic__item.about__pic__item--large {
