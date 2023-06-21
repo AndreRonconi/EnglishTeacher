@@ -156,6 +156,13 @@ ol {
   background-position: top center;
 }
 
+.set-bg2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  opacity: 10%;
+}
+
 .spad {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1043,8 +1050,9 @@ ol {
 
 .about__pic__item {
   height: 235px;
-  margin-right: -10px;
+  margin-right: -100px;
   margin-bottom: 20px;
+  align-content: center;
 }
 .about__pic__item.about__pic__item--large {
   height: 490px;
@@ -1054,7 +1062,7 @@ ol {
   padding-left: 30px;
 }
 .about__text .services__item .services__item__icon:after {
-  border-color: #281a3e;
+  border-color: #ffffff;
 }
 
 .about__text__desc {
@@ -1095,6 +1103,8 @@ ol {
   margin-bottom: 25px;
   position: relative;
   z-index: 9;
+  background-color: #00065f;
+  opacity: 80%;
 }
 .testimonial__text P {
   color: #ffffff;
