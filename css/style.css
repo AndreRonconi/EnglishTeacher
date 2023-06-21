@@ -2073,14 +2073,14 @@ ol {
   }
 
   .slicknav_nav {
-    background: #222222;
+    background: #000000;
   }
 
   .slicknav_btn {
     position: absolute;
     right: 10px;
     top: 26px;
-    background: #ffffff;
+    background: #000000;
   }
 
   .header .container {
