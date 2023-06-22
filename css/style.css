@@ -1702,7 +1702,7 @@ ol {
   Contact Widget
 -----------------------*/
 .contact-widget {
-  background: #100028;
+  background: linear-gradient(to bottom, #000014, #000030, #000014);
   padding-bottom: 70px;
 }
 
@@ -1743,9 +1743,7 @@ ol {
   Contact
 -----------------------*/
 .contact {
-  background: #100028;
-  padding-top: 0;
-  overflow: hidden;
+  background: linear-gradient(to bottom, #000014, #000030);
 }
 
 .contact__map {
