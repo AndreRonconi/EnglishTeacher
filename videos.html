@@ -37,18 +37,35 @@
       <div class="loader"></div>
     </div>
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
+    <!-- Header Section Begin -->
+    <header class="header">
       <div class="container">
-        <div class="footer__top">
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="footer__top__logo">
-                <!-- <img src="img/logo.png" alt="" /> -->
-              </div>
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <!-- <a><img src="img/logo.png" alt="" /></a> -->
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="footer__top__social">
+          </div>
+          <div class="col-lg-10">
+            <div class="header__nav__option">
+              <nav class="header__nav__menu mobile-menu">
+                <ul>
+                  <li><a href="#">Welcome!</a></li>
+                  <li><a href="./about.html">Quem sou?</a></li>
+                  <li class="active"><a href="./videos.html">Videos</a></li>
+                  <li><a href="#">Serviços</a></li>
+                  <li>
+                    <a href="#">Alunos</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Sobre</a></li>
+                      <li><a href="#">Seja um aluno</a></li>
+                      <li><a href="#">Login</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="./contact.html">Contato</a></li>
+                </ul>
+              </nav>
+              <div class="header__nav__social">
                 <a
                   href="https://www.facebook.com/ProfAndreRonconi/"
                   target="_blank"
@@ -68,99 +85,10 @@
             </div>
           </div>
         </div>
-        <div class="footer__option">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="footer__option__item">
-                <h5>Quem é Prof André Ronconi?</h5>
-                <p style="text-align: justify">
-                  Professor de Inglês particular com experiência no âmbito de
-                  aulas online desde 2017, com ênfase em pronúncia e fonética da
-                  língua inglesa. Além disso, estuda JavaScript e
-                  desenvolvimento web.
-                </p>
-                <a href="./about.html" class="read__more link"
-                  >+ saiba mais<span class="arrow_right"></span
-                ></a>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-3">
-              <div class="footer__option__item">
-                <h5>Atalhos</h5>
-                <ul>
-                  <li><a href="./login.html" class="link">Área do aluno</a></li>
-                  <li><a href="./contact.html" class="link">Contato</a></li>
-                  <li>
-                    <a href="./about.html#testimonial" class="link"
-                      >Recomendações</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./contact.html#report" class="link"
-                      >Reportar um problema</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-3">
-              <div class="footer__option__item">
-                <h5>Serviços</h5>
-                <ul>
-                  <li>
-                    <a href="./services.html" class="link"
-                      >Acesso a plataforma</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./services.html#aulasparticulares" class="link"
-                      >Aulas ao vivo</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./services.html#cursos" class="link">Cursos</a>
-                  </li>
-                  <li>
-                    <a href="./videos.html" class="link">Conteúdo gratuito</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="footer__option__item">
-                <h5>Fique atento as atualizações</h5>
-                <p style="text-align: justify">
-                  Cadastre aqui o seu e-mail e não perca as novidades e
-                  atualizações!
-                </p>
-                <form action="#">
-                  <input type="text" placeholder="Email" />
-                  <button type="submit"><i class="fa fa-send"></i></button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer__copyright">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              <p class="footer__copyright__text">
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                All rights reserved | This template is made with
-                <i class="fa fa-heart-o" aria-hidden="true"></i> by
-                <a href="https://colorlib.com" target="_blank">Colorlib</a>
-              </p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </div>
-          </div>
-        </div>
+        <div id="mobile-menu-wrap"></div>
       </div>
-    </footer>
-    <!-- Footer Section End -->
+    </header>
+    <!-- Header End -->
 
     <!-- Breadcrumb Begin -->
     <div
@@ -513,7 +441,7 @@
               <div class="footer__option__item">
                 <h5>Atalhos</h5>
                 <ul>
-                  <li><a href="#" class="link">Área do aluno</a></li>
+                  <li><a href="./login.html" class="link">Área do aluno</a></li>
                   <li><a href="./contact.html" class="link">Contato</a></li>
                   <li>
                     <a href="./about.html#testimonial" class="link"
@@ -532,9 +460,19 @@
               <div class="footer__option__item">
                 <h5>Serviços</h5>
                 <ul>
-                  <li><a href="#" class="link">Acesso a plataforma</a></li>
-                  <li><a href="#" class="link">Aulas ao vivo</a></li>
-                  <li><a href="#" class="link">Cursos</a></li>
+                  <li>
+                    <a href="./services.html" class="link"
+                      >Acesso a plataforma</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./services.html#aulasparticulares" class="link"
+                      >Aulas ao vivo</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./services.html#cursos" class="link">Cursos</a>
+                  </li>
                   <li>
                     <a href="./videos.html" class="link">Conteúdo gratuito</a>
                   </li>
