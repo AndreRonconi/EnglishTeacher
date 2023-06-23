@@ -71,12 +71,12 @@ h6 {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
 }
 
 a:hover {
   color: rgb(10, 116, 36); /* cor ao passar o mouse */
+  text-decoration: underline;
 }
 
 p {
@@ -2228,6 +2228,6 @@ ol {
   display: flex;
 }
 
-.underline:hover {
+.link:hover {
   text-decoration: underline;
 }
