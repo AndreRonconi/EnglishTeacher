@@ -183,3 +183,17 @@
       );
   });
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', function () {
+  var link = document.querySelector('a[href^="#"]');
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    var target = this.getAttribute('href');
+    if (target.charAt(0) === '#') {
+      var element = document.querySelector(target);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
