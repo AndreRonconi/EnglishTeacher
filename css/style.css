@@ -1149,7 +1149,7 @@ ol {
   Services
 -----------------------*/
 .services {
-  background: #100028;
+  background: linear-gradient(to bottom, #000030, #00065f, #000030);
   padding-bottom: 60px;
   padding-top: 110px;
 }
@@ -1202,7 +1202,7 @@ ol {
   Services Page
 -----------------------*/
 .services-page {
-  background: #100028;
+  background: linear-gradient(to bottom, #000030, #00065f, #000030);
   padding-bottom: 50px;
 }
 
@@ -2230,4 +2230,8 @@ ol {
 
 .link:hover {
   text-decoration: underline;
+}
+
+.services-margin {
+  margin-bottom: 200px;
 }
