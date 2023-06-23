@@ -75,7 +75,7 @@ a {
 }
 
 a:hover {
-  color: rgb(10, 116, 36); /* cor ao passar o mouse */
+  color: inherit;
   text-decoration: underline;
 }
 
@@ -103,7 +103,6 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
-  color: #fff;
 }
 
 ul,
@@ -185,31 +184,35 @@ ol {
 .primary-btn {
   display: inline-block;
   font-size: 15px;
+  color: #000544;
   font-family: 'Play', sans-serif;
   font-weight: 700;
   padding: 14px 32px 12px;
-  color: #ffffff;
-  text-transform: uppercase;
+  background-color: #ffffff;
   letter-spacing: 2px;
   position: relative;
   z-index: 1;
 }
+.primary-btn:hover {
+  color: #ffffff;
+  background-color: #001485;
+}
 .primary-btn:hover:before {
-  height: 100%;
-  width: 100%;
+  height: 10%;
+  width: 10%;
 }
 .primary-btn:hover:after {
-  height: 100%;
-  width: 100%;
+  height: 10%;
+  width: 10%;
 }
 .primary-btn:before {
   position: absolute;
   left: 0;
   top: 0;
-  height: 30px;
-  width: 30px;
-  border-left: 2px solid #ffffff;
-  border-top: 2px solid #ffffff;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #001485;
+  border-top: 2px solid #001485;
   content: '';
   z-index: -1;
   -webkit-transition: all, 0.7s;
@@ -220,10 +223,10 @@ ol {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 30px;
-  width: 30px;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  height: 100%;
+  width: 100%;
+  border-right: 2px solid #001485;
+  border-bottom: 2px solid #001485;
   content: '';
   z-index: -1;
   -webkit-transition: all, 0.7s;
@@ -807,7 +810,7 @@ ol {
   margin-bottom: 0;
 }
 .blog__item.latest__item:hover {
-  border: 1px solid #222222 !important;
+  border: 1px solid #000000 !important;
   background: url(../img/blog/blog-1.jpg);
   background-size: cover;
 }
@@ -841,7 +844,7 @@ ol {
 }
 .callto.sp__callto {
   padding-top: 0;
-  background: #100028;
+  background: linear-gradient(to bottom, #000030, #00065f, #000030);
 }
 
 .callto__text h2 {
@@ -855,7 +858,6 @@ ol {
   font-size: 15px;
   color: #ffffff;
   opacity: 0.7;
-  text-transform: uppercase;
   margin-bottom: 55px;
 }
 .callto__text a {
@@ -1210,7 +1212,7 @@ ol {
   Logo
 -----------------------*/
 .logo {
-  background: #100028;
+  background: linear-gradient(to bottom, #000030, #00065f, #000030);
   padding: 100px 20px;
 }
 
@@ -1941,13 +1943,13 @@ ol {
   .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #000000;
   }
 
   .slicknav_nav a:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #000000;
   }
 
   .slicknav_nav {
@@ -2063,13 +2065,13 @@ ol {
   .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #000000;
   }
 
   .slicknav_nav a:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #000000;
   }
 
   .slicknav_nav {
