@@ -2227,3 +2227,7 @@ ol {
 .hover-video {
   display: flex;
 }
+
+.underline:hover {
+  text-decoration: underline;
+}
