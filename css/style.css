@@ -2205,7 +2205,11 @@ ol {
   margin-bottom: 15px;
   border-radius: 5%;
 }
-
+.image-container video {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
 .image-container:hover .overlay {
   /* opacity: 1; */
   display: block;
