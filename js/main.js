@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Rola a página até a <div class="container">
-    containerDiv.scrollIntoView();
+    containerDiv.scrollIntoView({ behavior: "smooth" });
   }
 
   // Função para voltar um estágio
@@ -277,8 +277,9 @@ document.addEventListener("DOMContentLoaded", function () {
       prevButton.disabled = true;
     }
 
-    // Rola a página até a <div class="container">
-    containerDiv.scrollIntoView();
+    // Rola a página até a <div class="container"> 
+    containerDiv.scrollIntoView({ behavior: "smooth" });
+    
   }
 
   // Exibe os primeiros vídeos
@@ -301,6 +302,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Desabilita o botão "Voltar" ao carregar a página
   prevButton.disabled = true;
 });
+
+
+
+
+
 
 
 
