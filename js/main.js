@@ -17,9 +17,9 @@
     $(".loader").fadeOut();
     $("#preloder").delay(200).fadeOut("slow");
 
-    /*------------------
-            Portfolio filter
-        --------------------*/
+  /*------------------
+       Portfolio filter
+    --------------------*/
     $(".portfolio__filter li").on("click", function () {
       $(".portfolio__filter li").removeClass("active");
       $(this).addClass("active");
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
       prevButton.disabled = false;
     }
 
-    // Rola a página até a <div class="container">
+    // Rola a página até a <div class="videomenu">
     containerDiv.scrollIntoView({ behavior: "smooth" });
   }
 
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Exibe os vídeos anteriores
     for (var i = currentIndex - itemsPerPage; i < currentIndex; i++) {
       if (portfolioItems[i]) {
-        portfolioItems[i].style.display = "block";
+        portfolioItems[i].style.display = "block"; 
       }
     }
 
@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
       prevButton.disabled = true;
     }
 
-    // Rola a página até a <div class="container">
+    // Rola a página até a <div class="videomenu">
     containerDiv.scrollIntoView({ behavior: "smooth" });
   }
 
@@ -286,8 +286,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Evento de clique no botão "Próximo"
   nextButton.addEventListener("click", function (event) {
-    if (!nextButton.disabled) {
-      showNextVideos(event);
+    if (!nextButton.disabled) { 
+      showNextVideos(event); 
     }
   });
 
