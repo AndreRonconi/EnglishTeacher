@@ -214,41 +214,99 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   var portfolioItems = document.querySelectorAll(".portfolio__item");
+//   var nextButton = document.getElementById("nextButton");
+//   var currentIndex = 0;
+//   var itemsPerPage = 6;
+
+//   // Função para exibir os próximos vídeos
+//   function showNextVideos() {
+//     // Oculta os vídeos atuais
+//     for (var i = 0; i < portfolioItems.length; i++) {
+//       portfolioItems[i].style.display = "none";
+//     }
+
+//     // Exibe os próximos vídeos
+//     for (var i = currentIndex; i < currentIndex + itemsPerPage; i++) {
+//       if (portfolioItems[i]) {
+//         portfolioItems[i].style.display = "block";
+//       }
+//     }
+
+//     currentIndex += itemsPerPage;
+
+//     // Desabilita o botão quando todos os vídeos já foram exibidos
+//     if (currentIndex >= portfolioItems.length) {
+//       nextButton.disabled = true;
+//     }
+//   }
+
+//   // Exibe os primeiros vídeos
+//   showNextVideos();
+
+//   // Evento de clique no botão "Próximo"
+//   nextButton.addEventListener("click", function () {
+//     if (!nextButton.disabled) {
+//       showNextVideos();
+//     }
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
-  var portfolioItems = document.querySelectorAll(".portfolio__item");
+  var portfolioItems = document.querySelectorAll(".portfolio-items > div");
+  var prevButton = document.getElementById("prevButton");
   var nextButton = document.getElementById("nextButton");
   var currentIndex = 0;
   var itemsPerPage = 6;
+  var totalSessions = Math.ceil(portfolioItems.length / itemsPerPage);
 
-  // Função para exibir os próximos vídeos
-  function showNextVideos() {
-    // Oculta os vídeos atuais
+  // Função para exibir a sessão atual
+  function showCurrentSession() {
+    var start = currentIndex * itemsPerPage;
+    var end = start + itemsPerPage;
+
+    // Oculta todos os vídeos
     for (var i = 0; i < portfolioItems.length; i++) {
       portfolioItems[i].style.display = "none";
     }
 
-    // Exibe os próximos vídeos
-    for (var i = currentIndex; i < currentIndex + itemsPerPage; i++) {
+    // Exibe os vídeos da sessão atual
+    for (var i = start; i < end; i++) {
       if (portfolioItems[i]) {
         portfolioItems[i].style.display = "block";
       }
     }
-
-    currentIndex += itemsPerPage;
-
-    // Desabilita o botão quando todos os vídeos já foram exibidos
-    if (currentIndex >= portfolioItems.length) {
-      nextButton.disabled = true;
-    }
   }
 
-  // Exibe os primeiros vídeos
-  showNextVideos();
+  // Função para avançar para a próxima sessão
+  function showNextSession() {
+    currentIndex++;
+
+    if (currentIndex >= totalSessions) {
+      currentIndex = 0;
+    }
+
+    showCurrentSession();
+  }
+
+  // Função para voltar para a sessão anterior
+  function showPreviousSession() {
+    currentIndex--;
+
+    if (currentIndex < 0) {
+      currentIndex = totalSessions - 1;
+    }
+
+    showCurrentSession();
+  }
+
+  // Exibe a sessão atual
+  showCurrentSession();
 
   // Evento de clique no botão "Próximo"
-  nextButton.addEventListener("click", function () {
-    if (!nextButton.disabled) {
-      showNextVideos();
-    }
-  });
+  nextButton.addEventListener("click", showNextSession);
+
+  // Evento de clique no botão "Voltar"
+  prevButton.addEventListener("click", showPreviousSession);
 });

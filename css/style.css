@@ -181,6 +181,62 @@ ol {
 }
 
 /* buttons */
+.next-btn {
+  display: inline-block;
+  font-size: 14px;
+  color: #000544;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  background-color: #ffffff;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  width: 110px;
+  height: 50px;
+  cursor: pointer;
+  align-items: center;
+  padding-top: 12px;
+}
+.next-btn:hover {
+  color: #ffffff;
+  background-color: #001485;
+}
+.next-btn:hover:before {
+  height: 10%;
+  width: 10%;
+}
+.next-btn:hover:after {
+  height: 10%;
+  width: 10%;
+}
+.next-btn:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #001485;
+  border-top: 2px solid #001485;
+  content: '';
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+}
+.next-btn:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border-right: 2px solid #001485;
+  border-bottom: 2px solid #001485;
+  content: '';
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+}
 .primary-btn {
   display: inline-block;
   font-size: 15px;
@@ -1368,6 +1424,7 @@ ol {
   text-align: center;
   display: inline-block;
   margin-right: 6px;
+  margin-left: 6px;
 }
 
 /*---------------------
