@@ -1250,6 +1250,10 @@ ol {
 
 .portfolio__item {
   margin-bottom: 35px;
+  display: none;
+}
+.portfolio__item:nth-child(-n+6) {
+  display: block;
 }
 .portfolio__item:hover .portfolio__item__text h4:after {
   opacity: 1;

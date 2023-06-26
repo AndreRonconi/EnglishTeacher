@@ -205,3 +205,50 @@ function playVideo(video) {
 function pauseVideo(video) {
   video.pause();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var portfolioItems = document.querySelectorAll(".portfolio__item");
+
+  for (var i = 6; i < portfolioItems.length; i++) {
+    portfolioItems[i].style.display = "none";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var portfolioItems = document.querySelectorAll(".portfolio__item");
+  var nextButton = document.getElementById("nextButton");
+  var currentIndex = 0;
+  var itemsPerPage = 6;
+
+  // Função para exibir os próximos vídeos
+  function showNextVideos() {
+    // Oculta os vídeos atuais
+    for (var i = 0; i < portfolioItems.length; i++) {
+      portfolioItems[i].style.display = "none";
+    }
+
+    // Exibe os próximos vídeos
+    for (var i = currentIndex; i < currentIndex + itemsPerPage; i++) {
+      if (portfolioItems[i]) {
+        portfolioItems[i].style.display = "block";
+      }
+    }
+
+    currentIndex += itemsPerPage;
+
+    // Desabilita o botão quando todos os vídeos já foram exibidos
+    if (currentIndex >= portfolioItems.length) {
+      nextButton.disabled = true;
+    }
+  }
+
+  // Exibe os primeiros vídeos
+  showNextVideos();
+
+  // Evento de clique no botão "Próximo"
+  nextButton.addEventListener("click", function () {
+    if (!nextButton.disabled) {
+      showNextVideos();
+    }
+  });
+});
