@@ -7,25 +7,25 @@
     Created: Colorib
 ---------------------------------------------------------  */
 
-'use strict';
+"use strict";
 
 (function ($) {
   /*------------------
         Preloader
     --------------------*/
-  $(window).on('load', function () {
-    $('.loader').fadeOut();
-    $('#preloder').delay(200).fadeOut('slow');
+  $(window).on("load", function () {
+    $(".loader").fadeOut();
+    $("#preloder").delay(200).fadeOut("slow");
 
     /*------------------
             Portfolio filter
         --------------------*/
-    $('.portfolio__filter li').on('click', function () {
-      $('.portfolio__filter li').removeClass('active');
-      $(this).addClass('active');
+    $(".portfolio__filter li").on("click", function () {
+      $(".portfolio__filter li").removeClass("active");
+      $(this).addClass("active");
     });
-    if ($('.portfolio__gallery').length > 0) {
-      var containerEl = document.querySelector('.portfolio__gallery');
+    if ($(".portfolio__gallery").length > 0) {
+      var containerEl = document.querySelector(".portfolio__gallery");
       var mixer = mixitup(containerEl);
     }
   });
@@ -33,35 +33,35 @@
   /*------------------
         Background Set
     --------------------*/
-  $('.set-bg').each(function () {
-    var bg = $(this).data('setbg');
-    $(this).css('background-image', 'url(' + bg + ')');
+  $(".set-bg").each(function () {
+    var bg = $(this).data("setbg");
+    $(this).css("background-image", "url(" + bg + ")");
   });
 
   //Masonary
-  $('.work__gallery').masonry({
-    itemSelector: '.work__item',
-    columnWidth: '.grid-sizer',
+  $(".work__gallery").masonry({
+    itemSelector: ".work__item",
+    columnWidth: ".grid-sizer",
     gutter: 10,
   });
 
   /*------------------
 		Navigation
 	--------------------*/
-  $('.mobile-menu').slicknav({
-    prependTo: '#mobile-menu-wrap',
+  $(".mobile-menu").slicknav({
+    prependTo: "#mobile-menu-wrap",
     allowParentLinks: true,
   });
 
   /*------------------
 		Hero Slider
 	--------------------*/
-  $('.hero__slider').owlCarousel({
+  $(".hero__slider").owlCarousel({
     loop: true,
     dots: true,
     mouseDrag: false,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
     items: 1,
     margin: 0,
     smartSpeed: 1200,
@@ -69,11 +69,11 @@
     autoplay: true,
   });
 
-  var dot = $('.hero__slider .owl-dot');
+  var dot = $(".hero__slider .owl-dot");
   dot.each(function () {
     var index = $(this).index() + 1;
     if (index < 10) {
-      $(this).html('0').append(index);
+      $(this).html("0").append(index);
     } else {
       $(this).html(index);
     }
@@ -82,7 +82,7 @@
   /*------------------
         Testimonial Slider
     --------------------*/
-  $('.testimonial__slider').owlCarousel({
+  $(".testimonial__slider").owlCarousel({
     loop: true,
     margin: 0,
     items: 3,
@@ -107,7 +107,7 @@
   /*------------------
         Latest Slider
     --------------------*/
-  $('.latest__slider').owlCarousel({
+  $(".latest__slider").owlCarousel({
     loop: true,
     margin: 0,
     items: 3,
@@ -132,7 +132,7 @@
   /*------------------
         Logo Slider
     --------------------*/
-  $('.logo__carousel').owlCarousel({
+  $(".logo__carousel").owlCarousel({
     loop: true,
     margin: 100,
     items: 6,
@@ -159,23 +159,23 @@
   /*------------------
         Video Popup
     --------------------*/
-  $('.video-popup').magnificPopup({
-    type: 'iframe',
+  $(".video-popup").magnificPopup({
+    type: "iframe",
   });
 
   /*------------------
         Counter
     --------------------*/
-  $('.counter_num').each(function () {
+  $(".counter_num").each(function () {
     $(this)
-      .prop('Counter', 0)
+      .prop("Counter", 0)
       .animate(
         {
           Counter: $(this).text(),
         },
         {
           duration: 4000,
-          easing: 'swing',
+          easing: "swing",
           step: function (now) {
             $(this).text(Math.ceil(now));
           },
@@ -184,15 +184,15 @@
   });
 })(jQuery);
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   var link = document.querySelector('a[href^="#"]');
-  link.addEventListener('click', function (e) {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
-    var target = this.getAttribute('href');
-    if (target.charAt(0) === '#') {
+    var target = this.getAttribute("href");
+    if (target.charAt(0) === "#") {
       var element = document.querySelector(target);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   });
@@ -277,13 +277,12 @@ document.addEventListener("DOMContentLoaded", function () {
       prevButton.disabled = true;
     }
 
-    // Rola a página até a <div class="container"> 
+    // Rola a página até a <div class="container">
     containerDiv.scrollIntoView({ behavior: "smooth" });
-    
   }
 
   // Exibe os primeiros vídeos
-  showNextVideos(new Event('click'));
+  showNextVideos(new Event("click"));
 
   // Evento de clique no botão "Próximo"
   nextButton.addEventListener("click", function (event) {
@@ -302,13 +301,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Desabilita o botão "Voltar" ao carregar a página
   prevButton.disabled = true;
 });
-
-
-
-
-
-
-
-
-
-
