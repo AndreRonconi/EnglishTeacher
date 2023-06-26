@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var prevButton = document.getElementById("prevButton");
   var currentIndex = 0;
   var itemsPerPage = 6;
-  var containerDiv = document.querySelector(".menu");
+  var containerDiv = document.querySelector(".videomenu");
 
   // Oculta os vídeos além dos primeiros 6
   for (var i = 6; i < portfolioItems.length; i++) {
