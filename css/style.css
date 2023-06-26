@@ -900,7 +900,7 @@ ol {
 }
 .callto.sp__callto {
   padding-top: 0;
-  background: linear-gradient(to bottom, #000030, #00065f, #000030);
+  background: linear-gradient(to bottom, #00065f, #000030);
 }
 
 .callto__text h2 {
@@ -1211,14 +1211,15 @@ ol {
   padding-bottom: 60px;
   padding-top: 110px;
 }
-.services2 {
+.services3 {
   background-image: linear-gradient(to bottom, #000014, #000030);
 }
-
+.services4 {
+  background-image: linear-gradient(to bottom, #000030, #00065f);
+}
 .services__title p {
   margin-bottom: 45px;
 }
-
 .services__item {
   margin-bottom: 45px;
   margin-top: 60px;
@@ -1269,6 +1270,9 @@ ol {
 .services__pic__item.services__pic__item--large {
   height: auto;
 }
+.borderradius {
+  border-radius: 3%;
+}
 
 /*---------------------
   Services Page
@@ -1284,11 +1288,15 @@ ol {
 .logo {
   background: linear-gradient(to bottom, #000030, #00065f, #000030);
   padding: 100px 20px;
+  color: #ffffff;
 }
 
 .logo__carousel.owl-carousel .owl-item img {
   width: auto;
   display: inline-block;
+}
+.logo__text {
+  text-decoration: #ffffff;
 }
 
 /*---------------------
