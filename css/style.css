@@ -1211,6 +1211,9 @@ ol {
   padding-bottom: 60px;
   padding-top: 110px;
 }
+.services2 {
+  background-image: linear-gradient(to bottom, #000014, #000030);
+}
 
 .services__title p {
   margin-bottom: 45px;
@@ -1255,12 +1258,23 @@ ol {
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
 }
+.services__pic__item {
+  height: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  align-content: center;
+}
+.services__pic__item.services__pic__item--large {
+  height: auto;
+}
 
 /*---------------------
   Services Page
 -----------------------*/
 .services-page {
-  background: linear-gradient(to bottom, #000030, #00065f, #000030);
+  background: linear-gradient(to bottom, #000030, #00065f, #000014);
   padding-bottom: 50px;
 }
 
