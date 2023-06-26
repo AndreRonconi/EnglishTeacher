@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var portfolioItems = document.querySelectorAll(".portfolio-items > div");
+  var portfolioItems = document.querySelectorAll(".row.portfolio-items > div");
   var prevButton = document.getElementById("prevButton");
   var nextButton = document.getElementById("nextButton");
   var currentIndex = 0;
