@@ -208,18 +208,15 @@ function pauseVideo(video) {
 
 document.addEventListener("DOMContentLoaded", function () {
   var portfolioItems = document.querySelectorAll(".portfolio__item");
-
-  for (var i = 6; i < portfolioItems.length; i++) {
-    portfolioItems[i].style.display = "none";
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var portfolioItems = document.querySelectorAll(".portfolio__item");
   var nextButton = document.getElementById("nextButton");
   var prevButton = document.getElementById("prevButton");
   var currentIndex = 0;
   var itemsPerPage = 6;
+
+  // Oculta os vídeos além dos primeiros 6
+  for (var i = 6; i < portfolioItems.length; i++) {
+    portfolioItems[i].style.display = "none";
+  }
 
   // Função para exibir os próximos vídeos
   function showNextVideos() {
@@ -242,11 +239,13 @@ document.addEventListener("DOMContentLoaded", function () {
       nextButton.disabled = true;
     }
 
-    // Habilita o botão "Voltar" quando há vídeos anteriores a serem exibidos
-    prevButton.disabled = false;
+    // Habilita o botão "Voltar" quando pelo menos um estágio foi avançado
+    if (currentIndex > itemsPerPage) {
+      prevButton.disabled = false;
+    }
   }
 
-  // Função para voltar ao estágio anterior
+  // Função para voltar um estágio
   function showPreviousVideos() {
     currentIndex -= itemsPerPage;
 
@@ -262,10 +261,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Habilita o botão "Próximo" novamente
+    // Habilita o botão "Próximo"
     nextButton.disabled = false;
 
-    // Desabilita o botão "Voltar" se estiver no primeiro estágio
+    // Desabilita o botão "Voltar" quando estiver no estágio inicial
     if (currentIndex <= itemsPerPage) {
       prevButton.disabled = true;
     }
@@ -291,5 +290,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Desabilita o botão "Voltar" ao carregar a página
   prevButton.disabled = true;
 });
-
 
