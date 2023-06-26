@@ -268,13 +268,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Oculta todos os vídeos
     for (var i = 0; i < portfolioItems.length; i++) {
-      portfolioItems[i].style.display = "none";
+      portfolioItems[i].classList.add("hidden");
     }
 
     // Exibe os vídeos da sessão atual
     for (var i = start; i < end; i++) {
       if (portfolioItems[i]) {
-        portfolioItems[i].style.display = "block";
+        portfolioItems[i].classList.remove("hidden");
       }
     }
   }
