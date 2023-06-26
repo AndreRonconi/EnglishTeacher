@@ -217,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   var portfolioItems = document.querySelectorAll(".portfolio__item");
   var nextButton = document.getElementById("nextButton");
+  var prevButton = document.getElementById("prevButton");
   var currentIndex = 0;
   var itemsPerPage = 6;
 
@@ -236,9 +237,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
     currentIndex += itemsPerPage;
 
-    // Desabilita o botão quando todos os vídeos já foram exibidos
+    // Desabilita o botão "Próximo" quando todos os vídeos já foram exibidos
     if (currentIndex >= portfolioItems.length) {
       nextButton.disabled = true;
+    }
+
+    // Habilita o botão "Voltar" quando há vídeos anteriores a serem exibidos
+    prevButton.disabled = false;
+  }
+
+  // Função para voltar ao estágio anterior
+  function showPreviousVideos() {
+    currentIndex -= itemsPerPage;
+
+    // Oculta os vídeos atuais
+    for (var i = 0; i < portfolioItems.length; i++) {
+      portfolioItems[i].style.display = "none";
+    }
+
+    // Exibe os vídeos anteriores
+    for (var i = currentIndex - itemsPerPage; i < currentIndex; i++) {
+      if (portfolioItems[i]) {
+        portfolioItems[i].style.display = "block";
+      }
+    }
+
+    // Habilita o botão "Próximo" novamente
+    nextButton.disabled = false;
+
+    // Desabilita o botão "Voltar" se estiver no primeiro estágio
+    if (currentIndex <= itemsPerPage) {
+      prevButton.disabled = true;
     }
   }
 
@@ -251,5 +280,16 @@ document.addEventListener("DOMContentLoaded", function () {
       showNextVideos();
     }
   });
+
+  // Evento de clique no botão "Voltar"
+  prevButton.addEventListener("click", function () {
+    if (!prevButton.disabled) {
+      showPreviousVideos();
+    }
+  });
+
+  // Desabilita o botão "Voltar" ao carregar a página
+  prevButton.disabled = true;
 });
+
 
