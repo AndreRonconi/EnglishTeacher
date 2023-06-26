@@ -212,6 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var prevButton = document.getElementById("prevButton");
   var currentIndex = 0;
   var itemsPerPage = 6;
+  var containerDiv = document.querySelector(".menu");
 
   // Oculta os vídeos além dos primeiros 6
   for (var i = 6; i < portfolioItems.length; i++) {
@@ -219,7 +220,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Função para exibir os próximos vídeos
-  function showNextVideos() {
+  function showNextVideos(event) {
+    event.preventDefault();
+
     // Oculta os vídeos atuais
     for (var i = 0; i < portfolioItems.length; i++) {
       portfolioItems[i].style.display = "none";
@@ -243,10 +246,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentIndex > itemsPerPage) {
       prevButton.disabled = false;
     }
+
+    // Rola a página até a <div class="container">
+    containerDiv.scrollIntoView();
   }
 
   // Função para voltar um estágio
-  function showPreviousVideos() {
+  function showPreviousVideos(event) {
+    event.preventDefault();
+
     currentIndex -= itemsPerPage;
 
     // Oculta os vídeos atuais
@@ -268,26 +276,33 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentIndex <= itemsPerPage) {
       prevButton.disabled = true;
     }
+
+    // Rola a página até a <div class="container">
+    containerDiv.scrollIntoView();
   }
 
   // Exibe os primeiros vídeos
-  showNextVideos();
+  showNextVideos(new Event('click'));
 
   // Evento de clique no botão "Próximo"
-  nextButton.addEventListener("click", function () {
+  nextButton.addEventListener("click", function (event) {
     if (!nextButton.disabled) {
-      showNextVideos();
+      showNextVideos(event);
     }
   });
 
   // Evento de clique no botão "Voltar"
-  prevButton.addEventListener("click", function () {
+  prevButton.addEventListener("click", function (event) {
     if (!prevButton.disabled) {
-      showPreviousVideos();
+      showPreviousVideos(event);
     }
   });
 
   // Desabilita o botão "Voltar" ao carregar a página
   prevButton.disabled = true;
 });
+
+
+
+
 
