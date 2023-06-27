@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Função para exibir os próximos vídeos
-  function showNextVideos(event) {
+  function showNextVideos(event, jump=true) {
     event.preventDefault();
 
     // Oculta os vídeos atuais
@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Rola a página até a <div class="videomenu">
-    containerDiv.scrollIntoView({ behavior: "smooth" });
+    if(jump) {containerDiv.scrollIntoView({ behavior: "smooth" });}
   }
 
   // Função para voltar um estágio
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Exibe os primeiros vídeos
-  showNextVideos(new Event("click"));
+  showNextVideos(new Event("click"), false);
 
   // Evento de clique no botão "Próximo"
   nextButton.addEventListener("click", function (event) {
