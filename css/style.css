@@ -504,6 +504,7 @@ ol {
 .hero__slider.owl-carousel .owl-item.active .hero__text span {
   top: 0;
   opacity: 1;
+  align-items: center;
 }
 .hero__slider.owl-carousel .owl-item.active .hero__text h2 {
   top: 0;
