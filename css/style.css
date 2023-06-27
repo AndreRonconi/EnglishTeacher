@@ -1215,6 +1215,9 @@ ol {
   background-image: linear-gradient(to bottom, #000014, #000030);
 }
 .services4 {
+  background-image: linear-gradient(to bottom, #000030, #00065f, #000030);
+}
+.services5 {
   background-image: linear-gradient(to bottom, #000030, #00065f);
 }
 .services__title p {
