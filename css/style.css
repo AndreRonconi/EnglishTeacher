@@ -1454,70 +1454,68 @@ ol {
 }
 
 /*---------------------
-    Blog
+    Ead
 -----------------------*/
 .blog {
   background: #100028;
 }
-
-.blog__item {
+.ead__item {
   border: 1px solid #ffffff;
   padding: 40px 48px 35px 30px;
   position: relative;
   z-index: 1;
   margin-bottom: 45px;
 }
-.blog__item:hover {
+.ead__item:hover {
   border: 1px solid #ffffff !important;
   background: url(../img/ead/ead-1.jpg) no-repeat;
   background-size: cover;
 }
-.blog__item:hover ul li {
-  color: #ffffff;
+.ead__item2 {
+  border: 1px solid #ffffff;
+  padding: 40px 48px 35px 30px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 45px;
 }
-.blog__item:hover p {
-  color: #ffffff;
+.ead__item2:hover {
+  border: 1px solid #ffffff !important;
+  background: url(../img/ead/ead-2.jpg) no-repeat;
+  background-size: cover;
 }
-.blog__item h4 {
+.ead__item3 {
+  border: 1px solid #ffffff;
+  padding: 40px 48px 35px 30px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 45px;
+}
+.ead__item3:hover {
+  border: 1px solid #ffffff !important;
+  background: url(../img/ead/ead-3.jpg) no-repeat;
+  background-size: cover;
+}
+.ead__text h4 {
   color: #ffffff;
   font-weight: 700;
   line-height: 31px;
   margin-bottom: 18px;
 }
-.blog__item ul {
-  margin-bottom: 20px;
-}
-.blog__item ul li {
-  color: #777777;
-  list-style: none;
-  font-size: 14px;
-  font-weight: 300;
-  margin-right: 25px;
-  position: relative;
-  display: inline-block;
-}
-.blog__item ul li:after {
-  position: absolute;
-  right: -16px;
-  top: 0px;
-  content: '/';
-}
-.blog__item ul li:last-child {
-  margin-right: 0;
-}
-.blog__item ul li:last-child:after {
-  display: none;
-}
-.blog__item p {
+.ead__text p {
   font-weight: 300;
   line-height: 29px;
   margin-bottom: 22px;
 }
-.blog__item a {
+.ead__text a {
   font-size: 16px;
   color: #ffffff;
 }
-.blog__item a span {
+.ead__text a:hover {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.ead__text a span {
   font-size: 16px;
   color: #ffffff;
   opacity: 0.5;
