@@ -868,7 +868,7 @@ ol {
 }
 .blog__item.latest__item:hover {
   border: 1px solid #000000 !important;
-  background: url(../img/blog/blog-1.jpg);
+  background: url(../img/ead/ead-1.jpg);
   background-size: cover;
 }
 
@@ -1469,7 +1469,7 @@ ol {
 }
 .blog__item:hover {
   border: 1px solid #ffffff !important;
-  background: url(../img/blog/blog-2.jpg) no-repeat;
+  background: url(../img/ead/ead-1.jpg) no-repeat;
   background-size: cover;
 }
 .blog__item:hover ul li {
