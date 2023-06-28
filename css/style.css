@@ -882,7 +882,7 @@ ol {
 .latest__slider.owl-carousel .owl-dots button {
   height: 8px;
   width: 8px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #ffffff;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -1461,14 +1461,14 @@ ol {
 }
 
 .blog__item {
-  border: 1px solid #222222;
+  border: 1px solid #ffffff;
   padding: 40px 48px 35px 30px;
   position: relative;
   z-index: 1;
   margin-bottom: 45px;
 }
 .blog__item:hover {
-  border: 1px solid transparent !important;
+  border: 1px solid #ffffff !important;
   background: url(../img/blog/blog-2.jpg) no-repeat;
   background-size: cover;
 }
@@ -1752,10 +1752,10 @@ ol {
 .blog__details__comment form textarea {
   height: 120px;
   width: 100%;
-  border: 1px solid rgba(225, 225, 225, 0.5);
+  border: 1px solid #ffffff;
   background: transparent;
   font-size: 16px;
-  color: #adadad;
+  color: #ffffff;
   padding-top: 12px;
   padding-left: 20px;
   font-weight: 300;
@@ -1763,7 +1763,7 @@ ol {
   resize: none;
 }
 .blog__details__comment form textarea:placeholder {
-  color: #adadad;
+  color: #ffffff;
 }
 
 .input__list {
@@ -1774,17 +1774,17 @@ ol {
   height: 50px;
   width: calc(33.33% - 20px);
   float: left;
-  border: 1px solid rgba(225, 225, 225, 0.5);
+  border: 1px solid #ffffff;
   background: transparent;
   font-size: 16px;
-  color: #adadad;
+  color: #ffffff;
   padding-left: 20px;
   font-weight: 300;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 .input__list input:placeholder {
-  color: #adadad;
+  color: #ffffff;
 }
 
 /*---------------------
