@@ -301,3 +301,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Desabilita o botão "Voltar" ao carregar a página
   prevButton.disabled = true;
 });
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-9D8Y2XF2EY');
