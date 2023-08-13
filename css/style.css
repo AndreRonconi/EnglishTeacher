@@ -1180,13 +1180,14 @@ ol {
 }
 
 .testimonial__author__pic {
-  position: left;
+  float: left;
   margin-right: 20px;
 }
 .testimonial__author__pic img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  position: absolute;
 }
 
 .testimonial__author__text {
