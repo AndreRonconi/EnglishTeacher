@@ -1180,7 +1180,7 @@ ol {
 }
 
 .testimonial__author__pic {
-  float: left;
+  position: left;
   margin-right: 20px;
 }
 .testimonial__author__pic img {
