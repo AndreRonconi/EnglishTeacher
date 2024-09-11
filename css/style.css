@@ -2326,3 +2326,24 @@ ol {
 .services-margin {
   margin-bottom: 200px;
 }
+
+.price {
+  color: #fff;
+}
+
+.card1 {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.price_title {
+  margin-top: 10%;
+}
+.price_desc {
+  margin-top: 10px;
+}
