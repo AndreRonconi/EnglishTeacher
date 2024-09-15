@@ -1461,6 +1461,7 @@ ol {
 }
 .ead__item {
   border: 1px solid #ffffff;
+  border-radius: 3%;
   padding: 40px 48px 35px 30px;
   position: relative;
   z-index: 1;
@@ -2327,10 +2328,6 @@ ol {
   margin-bottom: 200px;
 }
 
-.price {
-  color: #fff;
-}
-
 .card1 {
   border: 2px solid rgb(255, 255, 255);
   padding: 20px;
@@ -2341,9 +2338,85 @@ ol {
   align-items: center;
 }
 
+.plano__item {
+  background: #757575;
+  border: 1px solid #ffffff;
+  border-radius: 2%;
+  padding: 20px 5px 20px 5px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 45px;
+}
+.plano__item2 {
+  background: #06052c;
+  border: 1px solid #ffffff;
+  border-radius: 2%;
+  padding: 20px 5px 20px 5px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 45px;
+}
+.plano__item3 {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 2%;
+  padding: 20px 5px 20px 5px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 45px;
+}
 .price_title {
   margin-top: 10%;
 }
 .price_desc {
   margin-top: 10px;
+  color: #ffffff;
+}
+.title_basic{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background: #757575;
+  color: #ffffff;
+}
+.basic{
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.price_basic {
+  margin-top: 10%;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.title_premium{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background: #06052c;
+  color: #ffffff;
+}
+.premium{
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.price_premium {
+  margin-top: 10%;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.title_VIP{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background: #000000;
+  color: #ffffff;
+}
+.VIP{
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.price_VIP {
+  margin-top: 10%;
+  margin-bottom: 10px;
+  color: #ffffff;
 }
