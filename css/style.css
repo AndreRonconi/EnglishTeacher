@@ -2339,75 +2339,99 @@ ol {
 }
 
 .plano__item {
-  background: #757575;
+  background: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 2%;
-  padding: 20px 5px 20px 5px;
+  padding: 10px 5px 10px 5px;
   position: relative;
   z-index: 1;
-  margin-bottom: 45px;
+  margin-bottom: 10px;
 }
 .plano__item2 {
-  background: #06052c;
+  background: #4193ff;
   border: 1px solid #ffffff;
   border-radius: 2%;
-  padding: 20px 5px 20px 5px;
+  padding: 10px 5px 10px 5px;
   position: relative;
   z-index: 1;
-  margin-bottom: 45px;
+  margin-bottom: 10px;
 }
 .plano__item3 {
   background-color: #000000;
   border: 1px solid #ffffff;
   border-radius: 2%;
-  padding: 20px 5px 20px 5px;
+  padding: 10px 5px 10px 5px;
   position: relative;
   z-index: 1;
-  margin-bottom: 45px;
+  margin-bottom: 10px;
 }
 .price_title {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .price_desc {
-  margin-top: 10px;
+  margin-top: 0px;
   color: #ffffff;
 }
 .title_basic{
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
-  background: #757575;
+  background: #000000;
   color: #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.title_head_b {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Play', sans-serif;
+  color: #000;
 }
 .basic{
-  color: #ffffff;
+  color: #000000;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 .price_basic {
   margin-top: 10%;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #000000;
 }
 .title_premium{
-  border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
-  background: #06052c;
+  background: #006eff;
   color: #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.title_head_p {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Play', sans-serif;
+  color: #000;
 }
 .premium{
-  color: #ffffff;
+  color: #000000;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 .price_premium {
-  margin-top: 10%;
-  margin-bottom: 10px;
-  color: #ffffff;
+  margin-bottom: 5px;
+  color: #000000;
 }
 .title_VIP{
-  border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
-  background: #000000;
+  background: #202020;
+  color: #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.title_head_v {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Play', sans-serif;
   color: #ffffff;
 }
 .VIP{
@@ -2416,7 +2440,6 @@ ol {
   margin-bottom: 5px;
 }
 .price_VIP {
-  margin-top: 10%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #ffffff;
 }
