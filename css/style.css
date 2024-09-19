@@ -2338,7 +2338,7 @@ ol {
 }
 
 .plano__item {
-  background: #d4ffff;
+  background: #c0dbff;
   border-radius: 2%;
   padding: 10px 5px 10px 5px;
   position: relative;
@@ -2346,7 +2346,7 @@ ol {
   margin-bottom: 10px;
 }
 .plano__item2 {
-  background: #8ae2ff;
+  background: #7ab4ff;
   border-radius: 2%;
   padding: 10px 5px 10px 5px;
   position: relative;
@@ -2354,7 +2354,7 @@ ol {
   margin-bottom: 10px;
 }
 .plano__item3 {
-  background-color: #004173;
+  background-color: #0050b8;
   border-radius: 2%;
   padding: 10px 5px 10px 5px;
   position: relative;
