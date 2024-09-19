@@ -2338,8 +2338,7 @@ ol {
 }
 
 .plano__item {
-  background: #ffffff;
-  border: 1px solid #ffffff;
+  background: #d4ffff;
   border-radius: 2%;
   padding: 10px 5px 10px 5px;
   position: relative;
@@ -2347,8 +2346,7 @@ ol {
   margin-bottom: 10px;
 }
 .plano__item2 {
-  background: #6aa7f8;
-  border: 1px solid #ffffff;
+  background: #8ae2ff;
   border-radius: 2%;
   padding: 10px 5px 10px 5px;
   position: relative;
@@ -2356,8 +2354,7 @@ ol {
   margin-bottom: 10px;
 }
 .plano__item3 {
-  background-color: #000000;
-  border: 1px solid #ffffff;
+  background-color: #004173;
   border-radius: 2%;
   padding: 10px 5px 10px 5px;
   position: relative;
@@ -2372,7 +2369,6 @@ ol {
   color: #ffffff;
 }
 .title_basic{
-  border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
   background: #000000;
   color: #ffffff;
@@ -2398,7 +2394,7 @@ ol {
 }
 .title_premium{
   border-radius: 10px;
-  background: #006eff;
+  background: #000000;
   color: #ffffff;
   margin-left: 5px;
   margin-right: 5px;
@@ -2421,7 +2417,7 @@ ol {
 }
 .title_VIP{
   border-radius: 10px;
-  background: #202020;
+  background: #000000;
   color: #ffffff;
   margin-left: 5px;
   margin-right: 5px;
