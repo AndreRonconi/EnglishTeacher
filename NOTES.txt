@@ -1,0 +1,9 @@
+1. Instale o NodeJS
+2. Pelo terminal, digite:
+   npm install
+3. Depois diginte:
+   npm run dev
+4. Clique no link para abrir o site
+5. Ao terminar digite:
+   npm run build
+6. Adiciona no git e envia para o servidor
