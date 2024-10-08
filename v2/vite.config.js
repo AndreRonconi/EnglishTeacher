@@ -11,7 +11,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  // base: `${process.cwd()}/`,
+  base: `/v2/dist/`,
   plugins: [
     {
       name: 'app-literal',
