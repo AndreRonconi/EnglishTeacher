@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    ${ metas({ title: 'Home' }) }
+    <style>
+      /* .home-call-to-action {
+        
+      } */
+    </style>
+  </head>
+  <body>
+
+    ${ header() }
+
+    <section class="bg-gradient text-white">
+      <div class="container px-lg-5 py-5">
+        <div class="row py-5">
+          <div class="col-12 col-lg-7">
+            <div class="pe-lg-5">
+              <small><b>CURSO COMPLETO</b></small> <br>
+              <h1 class="mb-4">
+                Fale inglês durante sua viagem!
+              </h1>
+              <div class="h5">
+                <p>Pratique no conforto da sua casa ou quando quiser. Nosso curso de inglês online é projetado para ajudar você a atingir um mínimo de conhecimento para falar inglês de forma eficaz.</p>
+                <p class="mt-5">
+                  <a href="https://pay.herospark.com/fale-ingles-no-exterior-sem-dificuldades-130320" class="btn btn-lg btn-success me-2">Começar agora!</a>
+                  <a href="${whatsapp}&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn btn-lg btn-outline-light">Contato</a>
+                </p>
+              </div>
+              <div class="pt-4">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/BQLL65gHTfI" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container px-lg-5 py-5">
+        <div class="py-5">
+          <h1 class="mb-4">
+            CURSO GRATUITO DE INGLÊS!
+          </h1>
+        </div>
+        <div class="row py-5">
+          ${ cursos.curso1.videos.map(video => `
+            <div class="col-12 col-lg-4">
+              <a href="${ video.link }" class="play-btn video-popup">
+                <img src="${ video.cover }" class="img-fluid rounded-2 overflow-hidden">
+              </a>
+              <div class="video-preview d-none rounded-2 overflow-hidden">
+                <a href="${ video.link }" class="video-popup ratio ratio-16x9">
+                  <video muted="" loop="" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
+                    <source src="${ video.preview }">
+                  </video>
+                </a>
+              </div>
+              <div class="text-center pt-3">
+                <h4>
+                  <a href="${ video.link }" class="video-popup">${ video.name }</a>
+                </h4>
+                <p class="opacity-75">
+                  ${ video.description }
+                </p>
+              </div>
+            </div>
+          `) }
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    ${ footer() }
+
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

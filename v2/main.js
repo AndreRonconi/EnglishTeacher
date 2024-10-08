@@ -22,3 +22,18 @@
 // `
 
 // setupCounter(document.querySelector('#counter'))
+
+document.querySelectorAll('.play-btn')
+.forEach(link => {
+  const previewEl = link.parentNode.querySelector('.video-preview')
+  link.addEventListener('mouseover', e => {
+    link.classList.add('d-none')
+    previewEl.classList.remove('d-none')
+    previewEl.querySelector('video').play()
+  })
+  previewEl?.addEventListener('mouseout', e => {
+    link.classList.remove('d-none')
+    previewEl.classList.add('d-none')
+    previewEl.querySelector('video').stop()
+  })
+})
