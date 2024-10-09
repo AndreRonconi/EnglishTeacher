@@ -1,0 +1,54 @@
+<style>
+  .modal-header {
+    padding: 0 !important;
+    background: var(--primary);
+    border-bottom-color: rgba(0, 0, 0, .25);
+    color: #fff;
+  }
+  .modal-minimized {
+    position: fixed;
+    bottom: -4px;
+    right: 0;
+  }
+  .dark .modal {
+    --bs-modal-border-color: #FFF2;
+    --bs-modal-border-width: 1px;
+  }
+</style>
+
+<div id="${id}" class="modal fade ${typeof(className) !== 'undefined' ? className : ''}" tabindex="-1">
+  <div class="modal-dialog" style="max-width: ${width}px">
+    <div class="modal-content">
+
+      <!-- Header -->
+      ${typeof(title) !== 'undefined' ? `
+      <div class="modal-header text-dark">
+        <div class="d-flex align-items-center p-2 ps-3">
+
+          <!-- Título + Ícone -->
+          <h5 class="modal-title mb-0">
+            <i class="bi me-2 bi-${icon}"></i>
+            ${title}
+          </h5>
+
+        </div>
+        <div class="pe-2">
+          <button type="button" class="btn px-2 modal-close" onclick="window.closeModal('${id}')">
+            <i class="bi bi-x h3"></i>
+          </button>
+        </div>
+      </div>` : `
+      <button type="button" class="btn px-2 modal-close float-end position-absolute"
+        onclick="window.closeModal('${id}')" style="right: 1rem; top: 0.5rem; z-index: 10;">
+        <i class="bi bi-x h3"></i>
+      </button>`}
+
+      <!-- Body -->
+      <div class="modal-body px-4">
+        ${content}
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="${id}-backdrop" class="modal-backdrop fade d-none"></div>

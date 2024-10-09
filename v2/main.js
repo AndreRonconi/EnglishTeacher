@@ -23,17 +23,46 @@
 
 // setupCounter(document.querySelector('#counter'))
 
-document.querySelectorAll('.play-btn')
-.forEach(link => {
+// import { get, hide, show, toggle } from '@webarthur/kingdom'
+import { each, hide, on, show, toggle, update } from '@webarthur/kingdom'
+import { open } from './assets/js/modal.js'
+
+each('.play-btn', link => {
   const previewEl = link.parentNode.querySelector('.video-preview')
-  link.addEventListener('mouseover', e => {
-    link.classList.add('d-none')
-    previewEl.classList.remove('d-none')
+
+  // Toca o vídeo ao passar o mouse
+  on(link, 'mouseover', e => {
+    hide(link)
+    show(previewEl)
     previewEl.querySelector('video').play()
   })
-  previewEl?.addEventListener('mouseout', e => {
-    link.classList.remove('d-none')
-    previewEl.classList.add('d-none')
-    previewEl.querySelector('video').stop()
+  
+  // Pára o vídeo ao perder foco do mouse
+  if (previewEl) {
+    on(previewEl, 'mouseout', e => {
+      hide(previewEl)
+      show(link)
+      previewEl.querySelector('video').stop()
+    })
+  }
+})
+
+// Abre modal ao clicar na thumb
+each('.video-popup', link => {
+  on(link, 'click', e => {
+    e.preventDefault()
+    open('modal-video')
+    update('#video', `
+      <div class="text-center">
+        <div class="video-popup ratio ratio-16x9">
+          <iframe class="mfp-iframe" src="${link.href}?autoplay=1" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    `)
   })
+})
+
+// Pára vídeo ao fechar modal
+on('.modal-close', 'click', e => {
+  update('#video', '')
 })

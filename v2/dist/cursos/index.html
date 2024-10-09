@@ -96,13 +96,27 @@ h1 {
 .site-menu a:hover::before {
   border-bottom: 2px solid black;
 }
+.modal-body {
+  padding: 0!important;
+}
+.modal-dialog {
+  margin-left: 2rem!important;
+  margin-right: 2rem!important;
+}
+.modal-content {
+  background-color: black;
+}
+.modal-close:hover,
+.modal-close {
+  background-color: white;
+  line-height: 1;
+  height: 48px;
+  width: 48px;
+  top: -22px;
+  position: relative;
+}
 </style>
-    <style>
-      /* .home-call-to-action {
-        
-      } */
-    </style>
-    <script type="module" crossorigin src="/v2/dist/assets/main--Z7OsZUJ.js"></script>
+    <script type="module" crossorigin src="/v2/dist/assets/main-PYJ9O88Q.js"></script>
   </head>
   <body>
 
@@ -133,7 +147,7 @@ h1 {
   <div class="flex-grow-1 ps-5 ms-4 d-none d-lg-flex">
     <ul class="nav site-menu justify-content-center">
       <li class="nav-item">
-        <a href="/" class="btn">Home</a>
+        <a href="/v2/dist/" class="btn">Home</a>
       </li>
       <!-- <li class="nav-item">
         <a href="" class="btn">Sobre</a>
@@ -151,7 +165,7 @@ h1 {
         <a href="" class="btn">Alunos</a>
       </li> -->
       <li class="nav-item">
-        <a href="/cursos/" class="btn">Cursos</a>
+        <a href="/v2/dist/cursos/" class="btn">Cursos</a>
       </li>
       <li class="nav-item">
         <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn">Contato</a>
@@ -176,6 +190,44 @@ h1 {
 
 </nav>
 
+    <style>
+  .modal-header {
+    padding: 0 !important;
+    background: var(--primary);
+    border-bottom-color: rgba(0, 0, 0, .25);
+    color: #fff;
+  }
+  .modal-minimized {
+    position: fixed;
+    bottom: -4px;
+    right: 0;
+  }
+  .dark .modal {
+    --bs-modal-border-color: #FFF2;
+    --bs-modal-border-width: 1px;
+  }
+</style>
+
+<div id="modal-video" class="modal fade " tabindex="-1">
+  <div class="modal-dialog" style="max-width: 1500px">
+    <div class="modal-content">
+
+      <!-- Header -->
+      
+      <button type="button" class="btn px-2 modal-close float-end position-absolute"
+        onclick="window.closeModal('modal-video')" style="right: 1rem; top: 0.5rem; z-index: 10;">
+        <i class="bi bi-x h3"></i>
+      </button>
+
+      <!-- Body -->
+      <div class="modal-body px-4">
+        <div id="video"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="modal-video-backdrop" class="modal-backdrop fade d-none"></div>
 
     <section class="bg-gradient text-white">
       <div class="container px-lg-5 py-5">
@@ -209,32 +261,13 @@ h1 {
 
     <section class="bg-light">
       <div class="container px-lg-5 py-5">
-        <div class="py-5">
+        <div class="pt-5">
           <h1 class="mb-4">
             CURSO GRATUITO DE INGLÊS!
           </h1>
+          <p class="h5">Aprenda a falar inglês de forma simples e descontraída.</p>
         </div>
         <div class="row py-5">
-          <div class="col-12 col-lg-4">
-            <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="play-btn video-popup">
-              <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
-            </a>
-            <div class="video-preview d-none rounded-2 overflow-hidden">
-              <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup ratio ratio-16x9">
-                <video muted="" loop="" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                  <source src="/v2/dist/assets/img/videos/00.mp4">
-                </video>
-              </a>
-            </div>
-            <div class="text-center pt-3">
-              <h4>
-                <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup">Unit 00 - Saia do básico!</a>
-              </h4>
-              <p class="opacity-75">
-                Numbers / Colors / Days of the week
-              </p>
-            </div>
-          </div>
           
             <div class="col-12 col-lg-4">
               <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="play-btn video-popup">
@@ -242,14 +275,31 @@ h1 {
               </a>
               <div class="video-preview d-none rounded-2 overflow-hidden">
                 <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup ratio ratio-16x9">
-                  <video muted="" loop="" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                    <source src="/assets/img/videos/00.mp4">
-                  </video>
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
                 </a>
               </div>
-              <div class="text-center pt-3">
+              <div class="text-center pt-3 pb-3">
                 <h4>
                   <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup">Unit 00 - Saia do básico!</a>
+                </h4>
+                <p class="opacity-75">
+                  Greetings Nationalities Verb to be (part 1)
+                </p>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4">
+              <a href="https://www.youtube.com/embed/2sZxL20Bfq4" class="play-btn video-popup">
+                <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
+              </a>
+              <div class="video-preview d-none rounded-2 overflow-hidden">
+                <a href="https://www.youtube.com/embed/2sZxL20Bfq4" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
+                </a>
+              </div>
+              <div class="text-center pt-3 pb-3">
+                <h4>
+                  <a href="https://www.youtube.com/embed/2sZxL20Bfq4" class="video-popup">Unit 01 - Getting to know...</a>
                 </h4>
                 <p class="opacity-75">
                   Numbers / Colors / Days of the week
@@ -258,106 +308,172 @@ h1 {
             </div>
           
             <div class="col-12 col-lg-4">
-              <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="play-btn video-popup">
+              <a href="https://www.youtube.com/embed/EWZg42x3m4o" class="play-btn video-popup">
                 <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
               </a>
               <div class="video-preview d-none rounded-2 overflow-hidden">
-                <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup ratio ratio-16x9">
-                  <video muted="" loop="" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                    <source src="/assets/img/videos/00.mp4">
-                  </video>
+                <a href="https://www.youtube.com/embed/EWZg42x3m4o" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
                 </a>
               </div>
-              <div class="text-center pt-3">
+              <div class="text-center pt-3 pb-3">
                 <h4>
-                  <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup">Unit 00 - Saia do básico!</a>
+                  <a href="https://www.youtube.com/embed/EWZg42x3m4o" class="video-popup">Unit 02 - More about you!</a>
                 </h4>
                 <p class="opacity-75">
-                  Numbers / Colors / Days of the week
+                  What is + It is Professions Vocabulary
                 </p>
               </div>
             </div>
           
             <div class="col-12 col-lg-4">
-              <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="play-btn video-popup">
+              <a href="https://www.youtube.com/embed/5nHlIzk2Fbk" class="play-btn video-popup">
                 <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
               </a>
               <div class="video-preview d-none rounded-2 overflow-hidden">
-                <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup ratio ratio-16x9">
-                  <video muted="" loop="" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                    <source src="/assets/img/videos/00.mp4">
-                  </video>
+                <a href="https://www.youtube.com/embed/5nHlIzk2Fbk" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
                 </a>
               </div>
-              <div class="text-center pt-3">
+              <div class="text-center pt-3 pb-3">
                 <h4>
-                  <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup">Unit 00 - Saia do básico!</a>
+                  <a href="https://www.youtube.com/embed/5nHlIzk2Fbk" class="video-popup">Unit 03 - Where is everyone?</a>
                 </h4>
                 <p class="opacity-75">
-                  Numbers / Colors / Days of the week
+                  Useful Vocabulary Verb to be (part 2)
                 </p>
               </div>
             </div>
           
             <div class="col-12 col-lg-4">
-              <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="play-btn video-popup">
+              <a href="https://www.youtube.com/embed/3Yu5nwBQXus" class="play-btn video-popup">
                 <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
               </a>
               <div class="video-preview d-none rounded-2 overflow-hidden">
-                <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup ratio ratio-16x9">
-                  <video muted="" loop="" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                    <source src="/assets/img/videos/00.mp4">
-                  </video>
+                <a href="https://www.youtube.com/embed/3Yu5nwBQXus" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
                 </a>
               </div>
-              <div class="text-center pt-3">
+              <div class="text-center pt-3 pb-3">
                 <h4>
-                  <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup">Unit 00 - Saia do básico!</a>
+                  <a href="https://www.youtube.com/embed/3Yu5nwBQXus" class="video-popup">Unit 04 - My hometown.</a>
                 </h4>
                 <p class="opacity-75">
-                  Numbers / Colors / Days of the week
+                  Articles (A, AN and THE) There is + There are
                 </p>
               </div>
             </div>
           
             <div class="col-12 col-lg-4">
-              <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="play-btn video-popup">
+              <a href="https://www.youtube.com/embed/xnoR07vYT00" class="play-btn video-popup">
                 <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
               </a>
               <div class="video-preview d-none rounded-2 overflow-hidden">
-                <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup ratio ratio-16x9">
-                  <video muted="" loop="" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                    <source src="/assets/img/videos/00.mp4">
-                  </video>
+                <a href="https://www.youtube.com/embed/xnoR07vYT00" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
                 </a>
               </div>
-              <div class="text-center pt-3">
+              <div class="text-center pt-3 pb-3">
                 <h4>
-                  <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup">Unit 00 - Saia do básico!</a>
+                  <a href="https://www.youtube.com/embed/xnoR07vYT00" class="video-popup">Unit 05 - Who is that?</a>
                 </h4>
                 <p class="opacity-75">
-                  Numbers / Colors / Days of the week
+                  Family Vocabulary Simple Present
                 </p>
               </div>
             </div>
           
             <div class="col-12 col-lg-4">
-              <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="play-btn video-popup">
+              <a href="https://www.youtube.com/embed/jC2trxp7KNI" class="play-btn video-popup">
                 <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
               </a>
               <div class="video-preview d-none rounded-2 overflow-hidden">
-                <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup ratio ratio-16x9">
-                  <video muted="" loop="" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                    <source src="/assets/img/videos/00.mp4">
-                  </video>
+                <a href="https://www.youtube.com/embed/jC2trxp7KNI" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
                 </a>
               </div>
-              <div class="text-center pt-3">
+              <div class="text-center pt-3 pb-3">
                 <h4>
-                  <a href="https://www.youtube.com/embed/d47ZIuPDcXA" class="video-popup">Unit 00 - Saia do básico!</a>
+                  <a href="https://www.youtube.com/embed/jC2trxp7KNI" class="video-popup">Unit 06 - Why don't we go out?</a>
                 </h4>
                 <p class="opacity-75">
-                  Numbers / Colors / Days of the week
+                  Question Words Adverbs os frequency
+                </p>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4">
+              <a href="https://www.youtube.com/embed/9mTZWq2vaZw" class="play-btn video-popup">
+                <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
+              </a>
+              <div class="video-preview d-none rounded-2 overflow-hidden">
+                <a href="https://www.youtube.com/embed/9mTZWq2vaZw" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
+                </a>
+              </div>
+              <div class="text-center pt-3 pb-3">
+                <h4>
+                  <a href="https://www.youtube.com/embed/9mTZWq2vaZw" class="video-popup">Unit 07 - What's for dinner?</a>
+                </h4>
+                <p class="opacity-75">
+                  Food Vocabulary Quantifiers
+                </p>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4">
+              <a href="https://www.youtube.com/embed/-BD7veRCWUY" class="play-btn video-popup">
+                <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
+              </a>
+              <div class="video-preview d-none rounded-2 overflow-hidden">
+                <a href="https://www.youtube.com/embed/-BD7veRCWUY" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
+                </a>
+              </div>
+              <div class="text-center pt-3 pb-3">
+                <h4>
+                  <a href="https://www.youtube.com/embed/-BD7veRCWUY" class="video-popup">Unit 08 - Let's go shopping!</a>
+                </h4>
+                <p class="opacity-75">
+                  Shopping Vocabulary Demonstrative Pronouns
+                </p>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4">
+              <a href="https://www.youtube.com/embed/CLyw-sl0Co0" class="play-btn video-popup">
+                <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
+              </a>
+              <div class="video-preview d-none rounded-2 overflow-hidden">
+                <a href="https://www.youtube.com/embed/CLyw-sl0Co0" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
+                </a>
+              </div>
+              <div class="text-center pt-3 pb-3">
+                <h4>
+                  <a href="https://www.youtube.com/embed/CLyw-sl0Co0" class="video-popup">Unit 09 - Plans for the weekend.</a>
+                </h4>
+                <p class="opacity-75">
+                  Weather vocabulary Present Continuous
+                </p>
+              </div>
+            </div>
+          
+            <div class="col-12 col-lg-4">
+              <a href="https://www.youtube.com/embed/Gq8XmuzbQHA" class="play-btn video-popup">
+                <img src="../assets/img/videos/capas/00.jpg" class="img-fluid rounded-2 overflow-hidden">
+              </a>
+              <div class="video-preview d-none rounded-2 overflow-hidden">
+                <a href="https://www.youtube.com/embed/Gq8XmuzbQHA" class="video-popup ratio ratio-16x9">
+                  <video src="/v2/dist/assets/img/videos/00.mp4" muted loop></video>
+                </a>
+              </div>
+              <div class="text-center pt-3 pb-3">
+                <h4>
+                  <a href="https://www.youtube.com/embed/Gq8XmuzbQHA" class="video-popup">Unit 10 - Get well soon.</a>
+                </h4>
+                <p class="opacity-75">
+                  Sports and Symptoms vocabulary PS x PC
                 </p>
               </div>
             </div>
@@ -375,40 +491,37 @@ h1 {
         <h2>Quem é Prof André Ronconi?</h2>
         <p>Professor de Inglês particular com experiência no âmbito de aulas online desde 2017, com ênfase em pronúncia e fonética da língua inglesa. Além disso, estuda JavaScript e desenvolvimento web.</p>
         <p>
-          <a href="">Saiba mais</a>
+          <a href="/v2/dist/">Saiba mais</a>
         </p>
       </div>
       <div class="col-12 col-lg-4 pb-4 pb-lg-0">
         <h2>Atalhos</h2>
         <ul class="list-unstyled">
-          <li class="">
-            <a href="" class="btn btn-link ps-0">Área do aluno</a>
+          <li>
+            <a href="/v2/dist/#metodo" class="btn btn-link ps-0">Método</a>
           </li>
-          <li class="">
-            <a href="" class="btn btn-link ps-0">Contato</a>
+          <li>
+            <a href="/v2/dist/#planos" class="btn btn-link ps-0">Planos</a>
           </li>
-          <li class="">
-            <a href="" class="btn btn-link ps-0">Recomendações</a>
+          <li>
+            <a href="/v2/dist/#depoimentos" class="btn btn-link ps-0">Depoimentos</a>
           </li>
-          <li class="">
-            <a href="" class="btn btn-link ps-0">Reportar um problema</a>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn btn-link ps-0">Contato</a>
           </li>
         </ul>
       </div>
       <div class="col-12 col-lg-3 pb-4 pb-lg-0">
         <h2>Serviços</h2>
         <ul class="list-unstyled">
-          <li class="">
-            <a href="" class="btn btn-link ps-0">Acesso a plataforma</a>
+          <li>
+            <a href="https://student.flexge.com/login" target="_blank" class="btn btn-link ps-0">Acesso a plataforma</a>
           </li>
-          <li class="">
-            <a href="" class="btn btn-link ps-0">Aulas ao vivo</a>
+          <li>
+            <a href="/v2/dist/cursos/" class="btn btn-link ps-0">Cursos</a>
           </li>
-          <li class="">
-            <a href="" class="btn btn-link ps-0">Cursos</a>
-          </li>
-          <li class="">
-            <a href="" class="btn btn-link ps-0">Conteúdo gratuito</a>
+          <li>
+            <a href="/v2/dist/cursos/" class="btn btn-link ps-0">Conteúdo gratuito</a>
           </li>
         </ul>
       </div>

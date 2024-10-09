@@ -4,8 +4,12 @@ import config from './config.js'
 import cursos from './cursos/cursos-data.js'
 import { resolve } from 'path'
 
+// const sitePath = process.env.NODE_ENV === 'production' ? '' : '/v2/dist'
+const sitePath = '/v2/dist'
+
 Literal.options.context = config
 Literal.options.context.cursos = cursos
+Literal.options.context.sitePath = sitePath
 
 export default defineConfig({
   server: {
