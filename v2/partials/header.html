@@ -1,69 +1,78 @@
-<nav class="d-flex container py-2 align-items-center my-2 position-relative" style="z-index: 1;">
+<nav class="site-navbar d-flex py-2 align-items-center" style="z-index: 1;">
 
   <!-- MENU MOBILE -->
-  <!-- <div>
-    <button class="btn">
-      <i class="bi bi-list h1"></i>
+  <div>
+    <button id="open-mobile-menu" class="btn px-4 border-0">
+      <i class="bi bi-list h1 m-0"></i>
     </button>
-  </div> -->
+  </div>
   
-  <!-- <a> -->
-    <!-- BANDEIRAS -->
-    <img src="https://profandre.com.br/img/services-1.png" width="70" alt="">
-  <!-- </a> -->
+  <a href="${sitePath}/">
+    <img src="${sitePath}/assets/img/logo.png" width="70" alt="Logo Prof. André Ronconi">
+  </a>
 
   <!-- LOGO -->
-  <div class="ps-3">
-    <span class="h5">
-      <strong>André Ronconi</strong>
-    </span>
+  <div id="site-brand" class="ps-3">
+    <a href="${sitePath}/" class="h5">
+      <strong>Prof. André Ronconi</strong>
+    </a>
     <br>
-    Prof. de Inglês
+    Especialista em Inglês
   </div>
 
-  <!-- MENU -->
-  <div class="flex-grow-1 ps-5 ms-4 d-none d-lg-flex">
-    <ul class="nav site-menu justify-content-center">
-      <li class="nav-item">
-        <a href="${sitePath}/" class="btn">Home</a>
-      </li>
-      <!-- <li class="nav-item">
-        <a href="" class="btn">Sobre</a>
-      </li> -->
-      <!-- <li class="nav-item">
-        <a href="" class="btn">Serviços</a>
-      </li> -->
-      <li class="nav-item">
-        <a href="#metodo" class="btn">Método</a>
-      </li>
-      <li class="nav-item">
-        <a href="#planos" class="btn">Planos</a>
-      </li>
-      <!-- <li class="nav-item">
-        <a href="" class="btn">Alunos</a>
-      </li> -->
-      <li class="nav-item">
-        <a href="${sitePath}/cursos/" class="btn">Cursos</a>
-      </li>
-      <li class="nav-item">
-        <a href="${whatsapp}&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn">Contato</a>
-      </li>
-    </ul>
-  </div>
+  <div id="mobile-menu" class="d-none d-flex d-lg-flex flex-grow-1 position-relative">
 
-  <!-- REDES SOCIAIS -->
-  <div>
-    <ul class="nav social-buttons">
-      <li class="nav-item">
-        <a href="https://www.facebook.com/ProfAndreRonconi/" target="_blank" class="btn px-3"><i class="bi bi-facebook"></i></a>
-      </li>
-      <li class="nav-item">
-        <a href="https://www.instagram.com/profandreronconi/" target="_blank" class="btn px-3"><i class="bi bi-instagram"></i></a>
-      </li>
-      <li class="nav-item">
-        <a href="https://www.youtube.com/@profandreronconi/videos" target="_blank" class="btn px-3"><i class="bi bi-youtube"></i></a>
-      </li>
-    </ul>
+    <div class="text-start d-lg-none">
+      <button id="close-mobile-menu" class="btn px-4 border-0">
+        <i class="bi bi-x h1 m-0"></i>
+      </button>
+    </div>
+
+    <!-- MENU -->
+    <div class="site-menu-container flex-grow-1 ps-5 ms-4 xd-none xd-lg-flex">
+      <ul class="nav site-menu justify-content-center">
+        <li class="nav-item">
+          <a href="${sitePath}/" class="btn">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="" class="btn">Sobre</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a href="" class="btn">Serviços</a>
+        </li> -->
+        <li class="nav-item">
+          <a href="#metodo" class="btn">Método</a>
+        </li>
+        <li class="nav-item">
+          <a href="#planos" class="btn">Planos</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="" class="btn">Alunos</a>
+        </li> -->
+        <li class="nav-item">
+          <a href="${sitePath}/cursos/" class="btn">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a href="${whatsapp}&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn">Contato</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- REDES SOCIAIS -->
+    <div class="xd-none xd-lg-block">
+      <ul class="nav social-buttons">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/ProfAndreRonconi/" target="_blank" class="btn px-3"><i class="bi bi-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/profandreronconi/" target="_blank" class="btn px-3"><i class="bi bi-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.youtube.com/@profandreronconi/videos" target="_blank" class="btn px-3"><i class="bi bi-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+
   </div>
 
 </nav>

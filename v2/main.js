@@ -31,7 +31,7 @@ each('.play-btn', link => {
   const previewEl = link.parentNode.querySelector('.video-preview')
 
   // Toca o vídeo ao passar o mouse
-  on(link, 'mouseover', e => {
+  on(link, 'mouseover', () => {
     hide(link)
     show(previewEl)
     previewEl.querySelector('video').play()
@@ -39,7 +39,7 @@ each('.play-btn', link => {
   
   // Pára o vídeo ao perder foco do mouse
   if (previewEl) {
-    on(previewEl, 'mouseout', e => {
+    on(previewEl, 'mouseout', () => {
       hide(previewEl)
       show(link)
       previewEl.querySelector('video').stop()
@@ -63,6 +63,15 @@ each('.video-popup', link => {
 })
 
 // Pára vídeo ao fechar modal
-on('.modal-close', 'click', e => {
-  update('#video', '')
+on('.modal-close', 'click', () => update('#video', ''))
+
+// Abre menu mobile
+on('#open-mobile-menu', 'click', () => show('#mobile-menu'))
+
+// Fecha menu mobile
+on('#close-mobile-menu', 'click', () => hide('#mobile-menu'))
+
+// Fecha menu mobile ao clicar em um link
+each('#mobile-menu .btn', btn => {
+  on(btn, 'click', () => hide('#mobile-menu'))
 })

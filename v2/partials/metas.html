@@ -1,10 +1,17 @@
 <meta charset="UTF-8" />
-<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>${ title }</title>
-<!-- <title>Prof André Ronconi</title> -->
-<link rel="icon" type="image/png" href="/assets/img/logo.png" />
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="${sitePath}/favicon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="${sitePath}/favicon.svg" />
+<link rel="shortcut icon" href="${sitePath}/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="${sitePath}/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Prof André Ronconi" />
+<link rel="manifest" href="${sitePath}/site.webmanifest" />
+
+<!-- <link rel="icon" type="image/png" href="${sitePath}/assets/img/logo.png" /> -->
 
 <!-- BOOTSTRAP ICONS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -50,6 +57,13 @@ blockquote {
 }
 h1 {
   font-weight: 600;
+}
+#site-brand a {
+  text-decoration: none;
+}
+.site-navbar {
+  max-width: 1320px;
+  margin: auto;
 }
 .bg-light {
   background-color: antiquewhite;
@@ -111,5 +125,47 @@ h1 {
   width: 48px;
   top: -22px;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #mobile-menu {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    flex-direction: column;
+    padding-top: 16px;
+    z-index: 100;
+  }
+  #mobile-menu > div {
+    margin: 0!important;
+    padding: 0!important;
+    flex-grow: unset!important;
+    text-align: center;
+  }
+  #mobile-menu .site-menu-container .nav-item {
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  #mobile-menu .site-menu-container .nav-item .btn {
+    font-size: 1.15rem;
+    width: 100%;
+  }
+  #mobile-menu .site-menu-container .nav-item .btn::before {
+    border: 0!important;
+  }
+  #mobile-menu .social-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  #mobile-menu .social-buttons .btn {
+    font-size: 2rem;
+  }
 }
 </style>
