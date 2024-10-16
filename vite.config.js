@@ -4,8 +4,8 @@ import config from './config.js'
 import cursos from './cursos/cursos-data.js'
 import { resolve } from 'path'
 
-// const sitePath = process.env.NODE_ENV === 'production' ? '' : '/v2/dist'
-const sitePath = '/v2/dist'
+const sitePath = process.env.NODE_ENV === 'production' ? '' : '/dist'
+// const sitePath = '/dist'
 
 Literal.options.context = config
 Literal.options.context.cursos = cursos
@@ -15,7 +15,8 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: `/v2/dist/`,
+  // base: `/v2/dist/`,
+  base: sitePath,
   plugins: [
     {
       name: 'app-literal',
