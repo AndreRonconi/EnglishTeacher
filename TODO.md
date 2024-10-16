@@ -1,6 +1,6 @@
-* Menu mobile
-* Atualizar links.html
-* Favicon
-* Revisar páginas internas
+* Cursos mobile
+
+* Criar artigos
+* Redirecionamentos
+* webp imagens
 * Build
-* 
