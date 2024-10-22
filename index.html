@@ -6,6 +6,11 @@
   <body>
 
     ${ header() }
+    ${ modal({
+      id: 'modal-video',
+      width: 1500,
+      content: '<div id="video"></div>'
+    }) }
 
     <section class="bg-gradient text-white">
       <div class="container px-lg-5">
@@ -58,7 +63,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <a href="https://www.youtube.com/embed/gV5jHazpLGs">
+            <a href="https://www.youtube.com/embed/gV5jHazpLGs" class="video-popup">
               <img src="/assets/img/flexge.png" class="img-fluid shadow rounded-2">
             </a>
           </div>

@@ -246,6 +246,44 @@ h1 {
 
 </nav>
 
+    <style>
+  .modal-header {
+    padding: 0 !important;
+    background: var(--primary);
+    border-bottom-color: rgba(0, 0, 0, .25);
+    color: #fff;
+  }
+  .modal-minimized {
+    position: fixed;
+    bottom: -4px;
+    right: 0;
+  }
+  .dark .modal {
+    --bs-modal-border-color: #FFF2;
+    --bs-modal-border-width: 1px;
+  }
+</style>
+
+<div id="modal-video" class="modal fade " tabindex="-1">
+  <div class="modal-dialog" style="max-width: 1500px">
+    <div class="modal-content">
+
+      <!-- Header -->
+      
+      <button type="button" class="btn px-2 modal-close float-end position-absolute"
+        onclick="window.closeModal('modal-video')" style="right: 1rem; top: 0.5rem; z-index: 10;">
+        <i class="bi bi-x h3"></i>
+      </button>
+
+      <!-- Body -->
+      <div class="modal-body px-4">
+        <div id="video"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="modal-video-backdrop" class="modal-backdrop fade d-none"></div>
 
     <section class="bg-gradient text-white">
       <div class="container px-lg-5">
@@ -298,7 +336,7 @@ h1 {
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <a href="https://www.youtube.com/embed/gV5jHazpLGs">
+            <a href="https://www.youtube.com/embed/gV5jHazpLGs" class="video-popup">
               <img src="./assets/flexge-C70duyGT.png" class="img-fluid shadow rounded-2">
             </a>
           </div>
