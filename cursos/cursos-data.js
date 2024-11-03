@@ -5,7 +5,7 @@ export default {
         name: 'Unit 01 - Bem vindo ao Inglês!',
         description: 'Numbers / Colors / Days of the week',
         cover: '/assets/img/videos/capas/01.jpg',
-        preview: '/assets/img/videos/01.mp4',
+        preview: '/assets/img/videos/capas/01b.jpg',
         link: 'https://www.youtube.com/embed/hWAs0F15WSk'
       },
       {
