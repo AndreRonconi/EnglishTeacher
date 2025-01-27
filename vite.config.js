@@ -36,6 +36,7 @@ export default defineConfig({
         cursos: resolve(__dirname, "cursos/index.html"),
         links: resolve(__dirname, "links.html"),
         clicaqui: resolve(__dirname, "clique_aqui/index.html"),
+        smart: resolve(__dirname, "smart.html"),
       },
     },
   },
