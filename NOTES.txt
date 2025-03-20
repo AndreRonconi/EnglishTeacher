@@ -1,3 +1,6 @@
+
+INSTALAÇÃO
+
 1. Instale o NodeJS
 2. Pelo terminal, digite:
    npm install
@@ -7,3 +10,10 @@
 5. Ao terminar digite:
    npm run build
 6. Adiciona no git e envia para o servidor
+
+ARTIGOS
+
+1. Os artigos estão na pasta artigos/paginas
+2. O nome dos arquivos pode ser qualquer um com extensão .md
+3. Os arquivos tem cabeçalho YML e texto em MarkDown
+4. Todos os arquivos são gerados na build

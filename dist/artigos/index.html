@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Artigos e Dicas de Inglês - Prof. André Ronconi - Professor de Inglês particular</title>
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Prof André Ronconi" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- <link rel="icon" type="image/png" href="/assets/img/logo.png" /> -->
+
+<!-- BOOTSTRAP ICONS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- BOOTSTRAP CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+  
+}
+p, ul, blockquote {
+  line-height: 1.75rem !important;
+}
+footer h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+footer a {
+  color: white !important;
+  font-weight: 400!important;
+}
+footer a.btn {
+  padding-top: .5rem;
+  padding-bottom: .15rem!important;
+}
+footer .h5 {
+  font-weight: 600;
+}
+blockquote {
+  font-style: italic;
+}
+.btn {
+  /* font-size: 1rem; */
+  padding: .5rem 1.75rem;
+  border-radius: 100px;
+  font-weight: 600;
+}
+h1 {
+  font-weight: 600;
+}
+#site-brand a {
+  text-decoration: none;
+}
+.site-navbar {
+  max-width: 1320px;
+  margin: auto;
+}
+.bg-light {
+  background-color: antiquewhite;
+}
+.text-lg {
+  font-size: 4rem;
+}
+.btn-outline-light {
+  border-width: 2px;
+}
+.h5 {
+  font-weight: 400;
+}
+.bold {
+  font-weight: 600!important;
+}
+.bg-gradient {
+  background: rgb(6,24,48);
+  background: linear-gradient(10deg, rgba(6,24,48,1) 0%, rgba(34,79,144,1) 100%) !important;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.social-buttons a {
+  font-size: 1.25rem;
+  opacity: 1;
+}
+.social-buttons a:hover {
+  opacity: .75;
+}
+.site-menu .btn {
+  border: 0!important;
+}
+.site-menu a::before{
+  content: ' ';
+  display: block;
+  border-bottom: 2px solid white;
+  position: relative;
+  top: 30px;
+}
+.site-menu a:hover::before {
+  border-bottom: 2px solid black;
+}
+.modal-body {
+  padding: 0!important;
+}
+.modal {
+  padding-left: 2rem!important;
+  padding-right: 2rem!important;
+}
+.modal-content {
+  background-color: black;
+}
+.modal-close:hover,
+.modal-close {
+  background-color: white;
+  line-height: 1;
+  height: 48px;
+  width: 48px;
+  top: -22px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #mobile-menu {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    flex-direction: column;
+    padding-top: 16px;
+    z-index: 100;
+  }
+  #mobile-menu > div {
+    margin: 0!important;
+    padding: 0!important;
+    flex-grow: unset!important;
+    text-align: center;
+  }
+  #mobile-menu .site-menu-container .nav-item {
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  #mobile-menu .site-menu-container .nav-item .btn {
+    font-size: 1.15rem;
+    width: 100%;
+  }
+  #mobile-menu .site-menu-container .nav-item .btn::before {
+    border: 0!important;
+  }
+  #mobile-menu .social-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  #mobile-menu .social-buttons .btn {
+    font-size: 2rem;
+  }
+}
+</style>
+  </head>
+  <body>
+
+    <nav class="site-navbar d-flex py-2 align-items-center" style="z-index: 1;">
+
+  <!-- MENU MOBILE -->
+  <div>
+    <button id="open-mobile-menu" class="d-lg-none btn px-4 border-0">
+      <i class="bi bi-list h1 m-0"></i>
+    </button>
+  </div>
+  
+  <a href="/">
+    <img src="/assets/img/logo.png" width="70" alt="Logo Prof. André Ronconi">
+  </a>
+
+  <!-- LOGO -->
+  <div id="site-brand" class="ps-3">
+    <a href="/" class="h5">
+      <strong>Prof. André Ronconi</strong>
+    </a>
+    <br>
+    Especialista em Inglês
+  </div>
+
+  <div id="mobile-menu" class="d-none d-flex d-lg-flex flex-grow-1 position-relative">
+
+    <div class="text-start d-lg-none">
+      <button id="close-mobile-menu" class="btn px-4 border-0">
+        <i class="bi bi-x h1 m-0"></i>
+      </button>
+    </div>
+
+    <!-- MENU -->
+    <div class="site-menu-container flex-grow-1 ps-5 ms-4 xd-none xd-lg-flex">
+      <ul class="nav site-menu justify-content-center">
+        <li class="nav-item">
+          <a href="/" class="btn">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#metodo" class="btn">Método</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#planos" class="btn">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a href="/cursos/" class="btn">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn">Contato</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- REDES SOCIAIS -->
+    <div class="xd-none xd-lg-block">
+      <ul class="nav social-buttons">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/ProfAndreRonconi/" target="_blank" class="btn px-3"><i class="bi bi-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/profandreronconi/" target="_blank" class="btn px-3"><i class="bi bi-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.youtube.com/@profandreronconi/videos" target="_blank" class="btn px-3"><i class="bi bi-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</nav>
+
+
+    <!-- Header Begin -->
+    <header class="header border-top pt-4">
+
+      <!-- Breadcrumb Begin -->
+      <div class="container text-center mt-3">
+        <h1 class="h2">Artigos</h1>
+      </div>
+      <!-- Breadcrumb End -->
+
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Blog Articles Section Begin -->
+    <section class="blog">
+      <div class="container mb-5 pb-5">
+
+        <!-- Section Title -->
+        <div class="py-3">
+          <span>Dicas e Notícias</span>
+          <h2>Leia Nossos Artigos</h2>
+        </div>
+
+        <div class="row">
+
+          
+
+          
+            <div class="col-lg-4 col-md-6 py-3">
+              <div>
+                <a href="/artigos/o-erro-mais-comum-ao-aprender-ingles-e-como-evita-lo.html">
+                  <img src="/assets/img/videos/capas/01b.jpg" alt="O Erro Mais Comum ao Aprender Inglês (E Como Evitá-lo)" class="img-fluid w-100">
+                </a>
+                <div class="pt-3 pb-3">
+                  <h4>
+                    <a href="/artigos/o-erro-mais-comum-ao-aprender-ingles-e-como-evita-lo.html">O Erro Mais Comum ao Aprender Inglês (E Como Evitá-lo)</a>
+                  </h4>
+                  <div class="py-2 mb-2">
+                    <small class="opacity-75">15/03/2025</small>
+                  </div>
+                  <p>Você estuda inglês há anos, mas não consegue se comunicar bem? Veja o erro mais comum e como evitá-lo para falar com mais fluência!</p>
+                  <a href="/artigos/o-erro-mais-comum-ao-aprender-ingles-e-como-evita-lo.html" class="primary-btn">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-lg-4 col-md-6 py-3">
+              <div>
+                <a href="/artigos/como-manter-a-motivacao-ao-aprender-ingles.html">
+                  <img src="/assets/img/videos/capas/01b.jpg" alt="Como Manter a Motivação ao Aprender Inglês" class="img-fluid w-100">
+                </a>
+                <div class="pt-3 pb-3">
+                  <h4>
+                    <a href="/artigos/como-manter-a-motivacao-ao-aprender-ingles.html">Como Manter a Motivação ao Aprender Inglês</a>
+                  </h4>
+                  <div class="py-2 mb-2">
+                    <small class="opacity-75">15/03/2025</small>
+                  </div>
+                  <p>Aprender inglês pode ser desafiador, mas manter a motivação é essencial. Veja dicas simples para tornar o estudo mais leve e eficiente!</p>
+                  <a href="/artigos/como-manter-a-motivacao-ao-aprender-ingles.html" class="primary-btn">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-lg-4 col-md-6 py-3">
+              <div>
+                <a href="/artigos/como-aprender-ingles-mais-rapido-o-poder-da-imersao.html">
+                  <img src="/assets/img/videos/capas/01b.jpg" alt="Como Aprender Inglês Mais Rápido: O Poder da Imersão" class="img-fluid w-100">
+                </a>
+                <div class="pt-3 pb-3">
+                  <h4>
+                    <a href="/artigos/como-aprender-ingles-mais-rapido-o-poder-da-imersao.html">Como Aprender Inglês Mais Rápido: O Poder da Imersão</a>
+                  </h4>
+                  <div class="py-2 mb-2">
+                    <small class="opacity-75">15/03/2025</small>
+                  </div>
+                  <p>Descubra como acelerar seu aprendizado de inglês com técnicas de imersão eficazes. Dicas práticas para melhorar sua fluência rapidamente!</p>
+                  <a href="/artigos/como-aprender-ingles-mais-rapido-o-poder-da-imersao.html" class="primary-btn">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-lg-4 col-md-6 py-3">
+              <div>
+                <a href="/artigos/como-aprender-ingles-mais-rapido-o-poder-da-imersao.html">
+                  <img src="/assets/img/videos/capas/01b.jpg" alt="Como Aprender Inglês Mais Rápido: O Poder da Imersão" class="img-fluid w-100">
+                </a>
+                <div class="pt-3 pb-3">
+                  <h4>
+                    <a href="/artigos/como-aprender-ingles-mais-rapido-o-poder-da-imersao.html">Como Aprender Inglês Mais Rápido: O Poder da Imersão</a>
+                  </h4>
+                  <div class="py-2 mb-2">
+                    <small class="opacity-75">15/03/2025</small>
+                  </div>
+                  <p>Descubra como acelerar seu aprendizado de inglês com técnicas de imersão eficazes. Dicas práticas para melhorar sua fluência rapidamente!</p>
+                  <a href="/artigos/como-aprender-ingles-mais-rapido-o-poder-da-imersao.html" class="primary-btn">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          
+
+        </div>
+      </div>
+    </section>
+    <!-- Blog Articles Section End -->
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+<footer class="text-white bg-danger py-5">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-12 col-lg-5 pe-4 pb-4 pb-lg-0">
+        <h2>Quem é Prof André Ronconi?</h2>
+        <p>Professor de Inglês particular com experiência no âmbito de aulas online desde 2017, com ênfase em pronúncia e fonética da língua inglesa. Além disso, estuda JavaScript e desenvolvimento web.</p>
+        <p>
+          <a href="/">Saiba mais</a>
+        </p>
+      </div>
+      <div class="col-12 col-lg-4 pb-4 pb-lg-0">
+        <h2>Atalhos</h2>
+        <ul class="list-unstyled">
+          <li>
+            <a href="/#metodo" class="btn btn-link ps-0">Método</a>
+          </li>
+          <li>
+            <a href="/#planos" class="btn btn-link ps-0">Planos</a>
+          </li>
+          <li>
+            <a href="/#depoimentos" class="btn btn-link ps-0">Depoimentos</a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn btn-link ps-0" target="_blank">Contato</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-3 pb-4 pb-lg-0">
+        <h2>Serviços</h2>
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://student.flexge.com/login" target="_blank" class="btn btn-link ps-0">Acesso a plataforma</a>
+          </li>
+          <li>
+            <a href="/cursos/" class="btn btn-link ps-0">Cursos</a>
+          </li>
+          <li>
+            <a href="/cursos/" class="btn btn-link ps-0">Conteúdo gratuito</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="col">
+        <h2>Fique atento as atualizações</h2>
+        <p>Cadastre aqui o seu e-mail e não perca as novidades e atualizações!</p>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Informe seu email">
+          <span class="input-group-text">
+            <i class="bi bi-send"></i>
+          </span>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    ${ metas({ title: title + siteTitle }) }
+
+    <meta name="description" content="${description}" />
+    <meta name="keywords" content="${keywords.join(',')}" />
+    <meta name="author" content="André Ronconi">
+
+    <!-- OG Metas -->
+    <meta property="og:title" content="${title}">
+    <meta property="og:url" content="${sitePath}/artigos/${slug}.html">
+    <meta property="og:site_name" content="${siteTitle}">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:article:published_time" content="${dateISO}">
+    <meta property="og:article:modified_time" content="${dateISO}">
+    <meta property="og:article:author" content="André Ronconi">
+    <meta property="og:article:section" content="Dicas e Notícias">
+    <meta property="og:article:tag" content="${keywords.join(',')}">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="${description}">
+    <meta property="og:image" content="${cover}">
+
+    <style>
+      .container-sm {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+
+    ${ header() }
+
+    <section class="pb-5 mb-5 border-top pt-5">
+      <div class="container-sm">
+
+        <!-- Artigo Hero -->
+        <div>
+          <img src="${cover}" class="w-100" alt="Capa do artigo ${title}">
+        </div>
+
+        <!-- Artigo Conteúdo -->
+        <div class="mt-4">
+          <span>Dicas e Notícias</span>
+          <h2>${ title }</h2>
+
+          <div class="py-2 mb-4 opacity-75">
+            <small>
+              <span>por Prof. André Ronconi</span> &bull; 
+              <time datetime="${dateISO}">${dateFormated}</time>
+            </small>
+          </div>
+
+          <!-- Parágrafo de introdução... -->
+          ${ content }
+
+          <div class="d-flex">
+            <div class="pe-2">
+              <i class="bi bi-chat-quote"></i>
+            </div>
+            <blockquote>
+              <p>
+                Lembre-se de que a prática é a chave para aperfeiçoar sua pronúncia em inglês. Quanto mais você praticar, mais natural e fluente você se tornará. Então, não tenha medo de se arriscar e praticar regularmente. Com o tempo e a prática, você verá uma melhora significativa na sua pronúncia e na sua confiança ao falar inglês.
+              </p>
+              <h6>Prof. André Ronconi</h6>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    ${ footer() }
+
+  </body>
+</html>

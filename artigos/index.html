@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    ${ metas({ 
+      title: 'Artigos e Dicas de Inglês - ' + siteTitle
+    }) }
+  </head>
+  <body>
+
+    ${ header() }
+
+    <!-- Header Begin -->
+    <header class="header border-top pt-4">
+
+      <!-- Breadcrumb Begin -->
+      <div class="container text-center mt-3">
+        <h1 class="h2">Artigos</h1>
+      </div>
+      <!-- Breadcrumb End -->
+
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Blog Articles Section Begin -->
+    <section class="blog">
+      <div class="container mb-5 pb-5">
+
+        <!-- Section Title -->
+        <div class="py-3">
+          <span>Dicas e Notícias</span>
+          <h2>Leia Nossos Artigos</h2>
+        </div>
+
+        <div class="row">
+
+          ${articles.length === 0 ? `
+            <div class="col-12">
+              <div class="alert alert-warning">
+                <p>Nenhum artigo encontrado.</p>
+              </div>
+            </div>
+          ` : ''}
+
+          ${ articles.map(article => `
+            <div class="col-lg-4 col-md-6 py-3">
+              <div>
+                <a href="/artigos/${ article.slug }.html">
+                  <img src="${ article.cover }" alt="${ article.title }" class="img-fluid w-100">
+                </a>
+                <div class="pt-3 pb-3">
+                  <h4>
+                    <a href="/artigos/${ article.slug }.html">${ article.title }</a>
+                  </h4>
+                  <div class="py-2 mb-2">
+                    <small class="opacity-75">${ article.dateFormated }</small>
+                  </div>
+                  <p>${ article.description }</p>
+                  <a href="/artigos/${ article.slug }.html" class="primary-btn">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          `).join('') }
+
+        </div>
+      </div>
+    </section>
+    <!-- Blog Articles Section End -->
+
+    <!-- FOOTER -->
+    ${ footer() }
+
+  </body>
+</html>
