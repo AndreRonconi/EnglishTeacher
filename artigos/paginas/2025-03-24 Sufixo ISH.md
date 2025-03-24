@@ -26,3 +26,5 @@ Vejamos alguns exemplos:
 - His friend Marcus is a little **childish**. (O amigo dele, Marcus, é meio infantil.)
 - I prefer **bitterish** coffee. (Eu prefiro café um pouco amargo.)
 - Let's meet tomorrow around **nineish**. (Vamos nos encontrar amanhã por volta das nove.)
+
+
