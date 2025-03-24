@@ -1,4 +1,4 @@
-title: SELFISH, CHILDISH, GREENISH: o que essas palavras significam?
+title: "SELFISH, CHILDISH, GREENISH: o que essas palavras significam?"
 date: 2025-03-24 15:36
 cover: /assets/img/artigos/sufixoish.png
 description: Você sabe o que significam SELFISH, CHILDISH e GREENISH? Descubra agora e amplie seu vocabulário em inglês!
