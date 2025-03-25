@@ -15,7 +15,7 @@ keywords:
 
 O sufixo **"ISH"** pode trazer um significado interessante para palavras como **green** ou **small**, transformando-as em **greenish** (esverdeado) ou **smallish** (pequeno, mas não totalmente).
 
-Além dessas mudanças em cores e tamanhos, o sufixo também pode ser usado para indicar características de personalidade como em: **selfish** (egoísta) ou **childish** (infantil) e em sabores e sensações: **sweetish** (levemente doce) ou **bitterish**.
+Além dessas mudanças em cores e tamanhos, o sufixo também pode ser usado para indicar características de personalidade como em: **selfish** (egoísta) ou **childish** (infantil) e em sabores e sensações: **sweetish** (levemente doce) ou **bitterish** (levemente amargo).
 
 Por fim, o sufixo **"ISH"** pode ainda significar **por volta de**, como vemos em **nineish** (por volta das nove).
 
