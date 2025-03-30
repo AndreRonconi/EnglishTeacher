@@ -23,8 +23,8 @@ Por fim, entender os sons e produzi-los de maneira eficiente melhora sua comunic
 
 
 Outras palavras com sons parecidos:
-- Rat /ræt/ (rato) – Hat /hæt/ (chapéu)
-- Rabbit /ˈræb.ɪt/ (coelho) – Habit /ˈhæb.ɪt/ (hábito)
-- Right /raɪt/ (direita, certo) – Height /haɪt/ (altura)
+- **Rat** /ræt/ (rato) – **Hat** /hæt/ (chapéu)
+- **Rabbit** /ˈræb.ɪt/ (coelho) – **Habit** /ˈhæb.ɪt/ (hábito)
+- **Right** /raɪt/ (direita, certo) – **Height** /haɪt/ (altura)
 
 
