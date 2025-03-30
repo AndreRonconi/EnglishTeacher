@@ -1,7 +1,7 @@
 title: "Red ou Head? Por que sua pronúncia faz diferença?"
 date: 2025-03-24 15:36
 cover: /assets/img/artigos/redouhead.png
-description: "Entenda as diferenças do "R" em Inglês."
+description: Entenda as diferenças do R em Inglês.
 keywords:
   - erro ao aprender inglês
   - aprender inglês mais rápido
