@@ -43,6 +43,7 @@ Em um ambiente mais formal (reunião, e-mail de trabalho, entrevista), o ideal s
 
 
 Outras expressões úteis relacionadas:
+
 **You've got it wrong.** [play goititwrong.mp3] (Você entendeu errado.)
 **Are you sure you got it straight?** [play gotitstraight.mp3] (Você tem certeza que entendeu direito?)
 
