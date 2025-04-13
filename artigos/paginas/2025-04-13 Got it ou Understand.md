@@ -29,22 +29,22 @@ Então, o que é **"got it"**?
 **Tá comigo!**
 
 Exemplos:
-— **Can you pick me up at 6?** (Você pode me pegar as 6?)
-— **Got it!**  (Pode deixar!)
+— **Can you pick me up at 6?** (Você pode me pegar as 6?)<br>
+— **Got it!**  (Pode deixar!)<br>
 
-— **You need to click here, then select the file.** (Você precisa clicar aqui, depois selecionar o arquivo.)
-— **Got it?**  (Entendeu?)
+— **You need to click here, then select the file.** (Você precisa clicar aqui, depois selecionar o arquivo.)<br>
+— **Got it?**  (Entendeu?)<br>
 
 Em um ambiente mais formal (reunião, e-mail de trabalho, entrevista), o ideal seria dizer:
 
-**I understand.** [play iunderstand.mp3] (Eu entendi/entendo.)
-**Understood.** [play understood.mp3] (Entendido.)
-**That makes sense.** [play thatmakessense.mp3] (Faz sentido.)
+**I understand.** [play iunderstand.mp3] (Eu entendi/entendo.)<br>
+**Understood.** [play understood.mp3] (Entendido.)<br>
+**That makes sense.** [play thatmakessense.mp3] (Faz sentido.)<br>
 
 
-Outras expressões úteis relacionadas:
+Outras expressões úteis relacionadas:<br>
 
-**You've got it wrong.** [play goititwrong.mp3] (Você entendeu errado.)
+**You've got it wrong.** [play goititwrong.mp3] (Você entendeu errado.)<br>
 **Are you sure you got it straight?** [play gotitstraight.mp3] (Você tem certeza que entendeu direito?)
 
 
