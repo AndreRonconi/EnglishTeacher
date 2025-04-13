@@ -1,7 +1,7 @@
 title: "“Got it” ou “Understand”? Descubra quando usar cada um!"
-date: 2025-03-30 15:53
-cover: /assets/img/artigos/redouhead.png
-description: Conheça outros termos para dizer "entendi".
+date: 2025-04-13 17:20
+cover: /assets/img/artigos/gotit.png
+description: Conheça outros maneiras para dizer "entendi".
 keywords:
   - erro ao aprender inglês
   - aprender inglês mais rápido
