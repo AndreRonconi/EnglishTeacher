@@ -1,72 +1,77 @@
-<nav class="site-navbar d-flex py-2 align-items-center" style="z-index: 1;">
+<nav class="shadow position-relative" style="z-index:1000">
 
-  <!-- MENU MOBILE -->
-  <div>
-    <button id="open-mobile-menu" class="d-lg-none btn px-4 border-0">
-      <i class="bi bi-list h1 m-0"></i>
-    </button>
-  </div>
-  
-  <a href="${sitePath}/">
-    <img src="${sitePath}/assets/img/logo.png" width="70" alt="Logo Prof. André Ronconi">
-  </a>
+  <div class="site-navbar d-flex py-4 align-items-center">
 
-  <!-- LOGO -->
-  <div id="site-brand" class="ps-3">
-    <a href="${sitePath}/" class="h5">
-      <strong>Prof. André Ronconi</strong>
-    </a>
-    <br>
-    Especialista em Inglês
-  </div>
-
-  <div id="mobile-menu" class="d-none d-flex d-lg-flex flex-grow-1 position-relative">
-
-    <div class="text-start d-lg-none">
-      <button id="close-mobile-menu" class="btn px-4 border-0">
-        <i class="bi bi-x h1 m-0"></i>
+    <!-- MENU MOBILE -->
+    <div>
+      <button id="open-mobile-menu" class="d-lg-none btn px-4 border-0">
+        <i class="bi bi-list h1 m-0"></i>
       </button>
     </div>
+    
+    <a href="${sitePath}/">
+      <img src="${sitePath}/assets/img/logo-prof-andre-ronconi.png" width="264" height="52" alt="Logo Prof. André Ronconi" class="ms-2">
+    </a>
 
-    <!-- MENU -->
-    <div class="site-menu-container flex-grow-1 ps-5 ms-4 xd-none xd-lg-flex">
-      <ul class="nav site-menu justify-content-center">
-        <li class="nav-item">
-          <a href="${sitePath}/" class="btn">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="${sitePath}/#metodo" class="btn">Método</a>
-        </li>
-        <li class="nav-item">
-          <a href="${sitePath}/#planos" class="btn">Planos</a>
-        </li>
-        <li class="nav-item">
-          <a href="${sitePath}/cursos/" class="btn">Cursos</a>
-        </li>
-        <li class="nav-item">
-          <a href="${sitePath}/artigos/" class="btn">Artigos</a>
-        </li>
-        <li class="nav-item">
-          <a href="${whatsapp}&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn">Contato</a>
-        </li>
-      </ul>
+    <!-- LOGO -->
+    <!-- <div id="site-brand" class="ps-3">
+      <a href="${sitePath}/" class="h5">
+        <strong>Prof. André Ronconi</strong>
+      </a>
+      <br>
+      Especialista em Inglês
+    </div> -->
+
+    <div id="mobile-menu" class="d-none d-flex d-lg-flex flex-grow-1 position-relative">
+
+      <div class="text-start d-lg-none">
+        <button id="close-mobile-menu" class="btn px-4 border-0">
+          <i class="bi bi-x h1 m-0"></i>
+        </button>
+      </div>
+
+      <!-- MENU -->
+      <!-- <div class="site-menu-container flex-grow-1 ps-5 ms-4 xd-none xd-lg-flex"> -->
+      <div class="site-menu-container flex-grow-1 xd-none xd-lg-flex">
+        <ul class="nav site-menu justify-content-center">
+          <li class="nav-item">
+            <a href="${sitePath}/" class="btn">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="${sitePath}/#metodo" class="btn">Método</a>
+          </li>
+          <li class="nav-item">
+            <a href="${sitePath}/#planos" class="btn">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a href="${sitePath}/cursos/" class="btn">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a href="${sitePath}/artigos/" class="btn">Artigos</a>
+          </li>
+          <li class="nav-item">
+            <a href="${whatsapp}&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn">Contato</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- REDES SOCIAIS -->
+      <div class="xd-none xd-lg-block">
+        <ul class="nav social-buttons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/ProfAndreRonconi/" target="_blank" class="btn px-3"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/profandreronconi/" target="_blank" class="btn px-3"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.youtube.com/@profandreronconi/videos" target="_blank" class="btn px-3"><i class="bi bi-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- REDES SOCIAIS -->
-    <div class="xd-none xd-lg-block">
-      <ul class="nav social-buttons">
-        <li class="nav-item">
-          <a href="https://www.facebook.com/ProfAndreRonconi/" target="_blank" class="btn px-3"><i class="bi bi-facebook"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.instagram.com/profandreronconi/" target="_blank" class="btn px-3"><i class="bi bi-instagram"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.youtube.com/@profandreronconi/videos" target="_blank" class="btn px-3"><i class="bi bi-youtube"></i></a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
+</div>
 
 </nav>

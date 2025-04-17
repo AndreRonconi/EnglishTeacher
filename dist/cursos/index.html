@@ -56,7 +56,7 @@ blockquote {
 .btn {
   /* font-size: 1rem; */
   padding: .5rem 1.75rem;
-  border-radius: 100px;
+  /* border-radius: 100px; */
   font-weight: 600;
 }
 h1 {
@@ -65,6 +65,24 @@ h1 {
 #site-brand a {
   text-decoration: none;
 }
+#depoimentos .card {
+  color: white;
+  background-color: rgba(var(--bs-primary-rgb))!important;
+}
+.text-blue {
+  color: #012169;
+}
+.btn-primary,
+.bg-blue {
+  background-color: #012169!important;
+}
+.btn-primary {
+  border-color: #012169!important
+}
+.btn-primary:hover {
+  border-color: #000!important
+}
+
 .site-navbar {
   max-width: 1320px;
   margin: auto;
@@ -81,8 +99,14 @@ h1 {
 .h5 {
   font-weight: 400;
 }
+.text-normal {
+  font-weight: 400!important;
+}
 .bold {
   font-weight: 600!important;
+}
+.bolder {
+  font-weight: 700!important;
 }
 .bg-gradient {
   background: rgb(6,24,48);
@@ -192,76 +216,80 @@ if (window.location.hostname !== 'localhost') {
   </head>
   <body>
 
-    <nav class="site-navbar d-flex py-2 align-items-center" style="z-index: 1;">
+    <nav class="shadow border-bottom" style="z-index: 1000;">
 
-  <!-- MENU MOBILE -->
-  <div>
-    <button id="open-mobile-menu" class="d-lg-none btn px-4 border-0">
-      <i class="bi bi-list h1 m-0"></i>
-    </button>
-  </div>
-  
-  <a href="/">
-    <img src="/assets/img/logo.png" width="70" alt="Logo Prof. André Ronconi">
-  </a>
+  <div class="site-navbar d-flex py-4 align-items-center">
 
-  <!-- LOGO -->
-  <div id="site-brand" class="ps-3">
-    <a href="/" class="h5">
-      <strong>Prof. André Ronconi</strong>
-    </a>
-    <br>
-    Especialista em Inglês
-  </div>
-
-  <div id="mobile-menu" class="d-none d-flex d-lg-flex flex-grow-1 position-relative">
-
-    <div class="text-start d-lg-none">
-      <button id="close-mobile-menu" class="btn px-4 border-0">
-        <i class="bi bi-x h1 m-0"></i>
+    <!-- MENU MOBILE -->
+    <div>
+      <button id="open-mobile-menu" class="d-lg-none btn px-4 border-0">
+        <i class="bi bi-list h1 m-0"></i>
       </button>
     </div>
+    
+    <a href="/">
+      <img src="/assets/img/logo-prof-andre-ronconi.png" width="264" height="52" alt="Logo Prof. André Ronconi">
+    </a>
 
-    <!-- MENU -->
-    <div class="site-menu-container flex-grow-1 ps-5 ms-4 xd-none xd-lg-flex">
-      <ul class="nav site-menu justify-content-center">
-        <li class="nav-item">
-          <a href="/" class="btn">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="/#metodo" class="btn">Método</a>
-        </li>
-        <li class="nav-item">
-          <a href="/#planos" class="btn">Planos</a>
-        </li>
-        <li class="nav-item">
-          <a href="/cursos/" class="btn">Cursos</a>
-        </li>
-        <li class="nav-item">
-          <a href="/artigos/" class="btn">Artigos</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn">Contato</a>
-        </li>
-      </ul>
+    <!-- LOGO -->
+    <!-- <div id="site-brand" class="ps-3">
+      <a href="/" class="h5">
+        <strong>Prof. André Ronconi</strong>
+      </a>
+      <br>
+      Especialista em Inglês
+    </div> -->
+
+    <div id="mobile-menu" class="d-none d-flex d-lg-flex flex-grow-1 position-relative">
+
+      <div class="text-start d-lg-none">
+        <button id="close-mobile-menu" class="btn px-4 border-0">
+          <i class="bi bi-x h1 m-0"></i>
+        </button>
+      </div>
+
+      <!-- MENU -->
+      <div class="site-menu-container flex-grow-1 ps-5 ms-4 xd-none xd-lg-flex">
+        <ul class="nav site-menu justify-content-center">
+          <li class="nav-item">
+            <a href="/" class="btn">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/#metodo" class="btn">Método</a>
+          </li>
+          <li class="nav-item">
+            <a href="/#planos" class="btn">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a href="/cursos/" class="btn">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a href="/artigos/" class="btn">Artigos</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn">Contato</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- REDES SOCIAIS -->
+      <div class="xd-none xd-lg-block">
+        <ul class="nav social-buttons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/ProfAndreRonconi/" target="_blank" class="btn px-3"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/profandreronconi/" target="_blank" class="btn px-3"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.youtube.com/@profandreronconi/videos" target="_blank" class="btn px-3"><i class="bi bi-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- REDES SOCIAIS -->
-    <div class="xd-none xd-lg-block">
-      <ul class="nav social-buttons">
-        <li class="nav-item">
-          <a href="https://www.facebook.com/ProfAndreRonconi/" target="_blank" class="btn px-3"><i class="bi bi-facebook"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.instagram.com/profandreronconi/" target="_blank" class="btn px-3"><i class="bi bi-instagram"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.youtube.com/@profandreronconi/videos" target="_blank" class="btn px-3"><i class="bi bi-youtube"></i></a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
+</div>
 
 </nav>
 
@@ -483,18 +511,22 @@ if (window.location.hostname !== 'localhost') {
 
     <!-- FOOTER -->
     <!-- FOOTER -->
-<footer class="text-white bg-danger py-5">
+<footer class="text-white bg-blue py-5">
   <div class="container pt-5">
     <div class="row">
-      <div class="col-12 col-lg-5 pe-4 pb-4 pb-lg-0">
-        <h2>Quem é Prof André Ronconi?</h2>
-        <p>Professor de Inglês particular com experiência no âmbito de aulas online desde 2017, com ênfase em pronúncia e fonética da língua inglesa. Além disso, estuda JavaScript e desenvolvimento web.</p>
+      <div class="col-12 col-lg-6 pe-4 pb-4 pb-lg-0">
+        <!-- <h2>Quem é Prof André Ronconi?</h2> -->
         <p>
-          <a href="/">Saiba mais</a>
+          <img src="/assets/img/prof-andre-footer.png" width="330" alt="Prof. André Ronconi" class="img-fluid " >
         </p>
+        <p>Aulas de inglês online com metodologia prática e interativa. <br>
+          Desenvolva suas habilidades e ganhe confiança para falar!.</p>
+        <!-- <p>
+          <a href="/">Saiba mais</a>
+        </p> -->
       </div>
-      <div class="col-12 col-lg-4 pb-4 pb-lg-0">
-        <h2>Atalhos</h2>
+      <div class="col-12 col-lg-3 pb-4 pb-lg-0">
+        <h2>Links</h2>
         <ul class="list-unstyled">
           <li>
             <a href="/#metodo" class="btn btn-link ps-0">Método</a>
@@ -539,6 +571,5 @@ if (window.location.hostname !== 'localhost') {
 </footer>
 
     <div id="app"></div>
-
   </body>
 </html>
