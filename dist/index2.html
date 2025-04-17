@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Prof André Ronconi - Aprenda inglês de forma prática e acessível, com aulas personalizadas que se adaptam ao seu ritmo, suporte com aulas gravadas e todo o material incluído na mensalidade. Estude onde e quando quiser com nosso aplicativo para celular ou computador.</title>
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Prof André Ronconi" />
+<link rel="manifest" href="/site.webmanifest" />
+
+
+<!-- <link rel="icon" type="image/png" href="/assets/img/logo.png" /> -->
+
+<!-- BOOTSTRAP ICONS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- BOOTSTRAP CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+  
+}
+p, ul, blockquote {
+  line-height: 1.75rem !important;
+}
+footer h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+footer a {
+  color: white !important;
+  font-weight: 400!important;
+}
+footer a.btn {
+  padding-top: .5rem;
+  padding-bottom: .15rem!important;
+}
+footer .h5 {
+  font-weight: 600;
+}
+blockquote {
+  font-style: italic;
+}
+.btn {
+  /* font-size: 1rem; */
+  padding: .5rem 1.75rem;
+  /* border-radius: 100px; */
+  font-weight: 600;
+}
+h1 {
+  font-weight: 600;
+}
+#site-brand a {
+  text-decoration: none;
+}
+#depoimentos .card {
+  color: white;
+  background-color: rgba(var(--bs-primary-rgb))!important;
+}
+.text-blue {
+  color: #012169;
+}
+.btn-primary,
+.bg-blue {
+  background-color: #012169!important;
+}
+.btn-primary {
+  border-color: #012169!important
+}
+.btn-primary:hover {
+  border-color: #000!important
+}
+
+.site-navbar {
+  max-width: 1320px;
+  margin: auto;
+}
+.bg-light {
+  background-color: antiquewhite;
+}
+.text-lg {
+  font-size: 4rem;
+}
+.btn-outline-light {
+  border-width: 2px;
+}
+.h5 {
+  font-weight: 400;
+}
+.text-normal {
+  font-weight: 400!important;
+}
+.bold {
+  font-weight: 600!important;
+}
+.bolder {
+  font-weight: 700!important;
+}
+.bg-gradient {
+  background: rgb(6,24,48);
+  background: linear-gradient(10deg, rgba(6,24,48,1) 0%, rgba(34,79,144,1) 100%) !important;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.social-buttons a {
+  font-size: 1.25rem;
+  opacity: 1;
+}
+.social-buttons a:hover {
+  opacity: .75;
+}
+.site-menu .btn {
+  border: 0!important;
+}
+.site-menu a::before{
+  content: ' ';
+  display: block;
+  border-bottom: 2px solid white;
+  position: relative;
+  top: 30px;
+}
+.site-menu a:hover::before {
+  border-bottom: 2px solid black;
+}
+.modal-body {
+  padding: 0!important;
+}
+.modal {
+  padding-left: 2rem!important;
+  padding-right: 2rem!important;
+}
+.modal-content {
+  background-color: black;
+}
+.modal-close:hover,
+.modal-close {
+  background-color: white;
+  line-height: 1;
+  height: 48px;
+  width: 48px;
+  top: -22px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #mobile-menu {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    flex-direction: column;
+    padding-top: 16px;
+    z-index: 100;
+  }
+  #mobile-menu > div {
+    margin: 0!important;
+    padding: 0!important;
+    flex-grow: unset!important;
+    text-align: center;
+  }
+  #mobile-menu .site-menu-container .nav-item {
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  #mobile-menu .site-menu-container .nav-item .btn {
+    font-size: 1.15rem;
+    width: 100%;
+  }
+  #mobile-menu .site-menu-container .nav-item .btn::before {
+    border: 0!important;
+  }
+  #mobile-menu .social-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  #mobile-menu .social-buttons .btn {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSYZN49912"></script>
+<script>
+// verifica não está no localhost
+if (window.location.hostname !== 'localhost') {
+  // Google Analytics
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TSYZN49912');
+}
+</script>
+<!-- End Google tag (gtag.js) -->
+ 
+    <meta property="og:image" content="/banner.png" />
+    <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '891817738493682');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=891817738493682&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+    <script type="module" crossorigin src="./assets/main-DsdcJ4we.js"></script>
+  </head>
+  <body>
+
+    <nav class="shadow position-relative" style="z-index:1000">
+
+  <div class="site-navbar d-flex py-4 align-items-center">
+
+    <!-- MENU MOBILE -->
+    <div>
+      <button id="open-mobile-menu" class="d-lg-none btn px-4 border-0">
+        <i class="bi bi-list h1 m-0"></i>
+      </button>
+    </div>
+    
+    <a href="/">
+      <img src="/assets/img/logo-prof-andre-ronconi.png" width="264" height="52" alt="Logo Prof. André Ronconi" class="ms-2">
+    </a>
+
+    <!-- LOGO -->
+    <!-- <div id="site-brand" class="ps-3">
+      <a href="/" class="h5">
+        <strong>Prof. André Ronconi</strong>
+      </a>
+      <br>
+      Especialista em Inglês
+    </div> -->
+
+    <div id="mobile-menu" class="d-none d-flex d-lg-flex flex-grow-1 position-relative">
+
+      <div class="text-start d-lg-none">
+        <button id="close-mobile-menu" class="btn px-4 border-0">
+          <i class="bi bi-x h1 m-0"></i>
+        </button>
+      </div>
+
+      <!-- MENU -->
+      <!-- <div class="site-menu-container flex-grow-1 ps-5 ms-4 xd-none xd-lg-flex"> -->
+      <div class="site-menu-container flex-grow-1 xd-none xd-lg-flex">
+        <ul class="nav site-menu justify-content-center">
+          <li class="nav-item">
+            <a href="/" class="btn">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/#metodo" class="btn">Método</a>
+          </li>
+          <li class="nav-item">
+            <a href="/#planos" class="btn">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a href="/cursos/" class="btn">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a href="/artigos/" class="btn">Artigos</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn">Contato</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- REDES SOCIAIS -->
+      <div class="xd-none xd-lg-block">
+        <ul class="nav social-buttons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/ProfAndreRonconi/" target="_blank" class="btn px-3"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/profandreronconi/" target="_blank" class="btn px-3"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.youtube.com/@profandreronconi/videos" target="_blank" class="btn px-3"><i class="bi bi-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+</div>
+
+</nav>
+
+    <style>
+  .modal-header {
+    padding: 0 !important;
+    background: var(--primary);
+    border-bottom-color: rgba(0, 0, 0, .25);
+    color: #fff;
+  }
+  .modal-minimized {
+    position: fixed;
+    bottom: -4px;
+    right: 0;
+  }
+  .dark .modal {
+    --bs-modal-border-color: #FFF2;
+    --bs-modal-border-width: 1px;
+  }
+</style>
+
+<div id="modal-video" class="modal fade " tabindex="-1">
+  <div class="modal-dialog" style="max-width: 900px">
+    <div class="modal-content">
+
+      <!-- Header -->
+      
+      <button type="button" class="btn px-2 modal-close float-end position-absolute"
+        onclick="window.closeModal('modal-video')" style="right: 1rem; top: 0.5rem; z-index: 10;">
+        <i class="bi bi-x h3"></i>
+      </button>
+
+      <!-- Body -->
+      <div class="modal-body px-4">
+        <div id="video"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="modal-video-backdrop" class="modal-backdrop fade d-none"></div>
+
+    <section style="background:url(./assets/bg-heo-CpqCxRnc.png) no-repeat center center; background-size: cover;">
+      <div class="container">
+        <div class="row me-lg-5 align-items-end">
+          <div class="col-12 col-lg-5 pt-5">
+            <div class="pt-lg-5 text-blue">
+              <!-- <small><b>ESPECIALISTA</b></small> <br>
+              <h1>
+                Prof. André Ronconi
+              </h1> -->
+              <h2 class="display-5 bolder">
+                Aprenda no seu ritmo, alcance a fluencia do seu jeito.
+              </h2>
+              <p class="h4 text-normal my-4">Domine o ingles com confianca e destrave sua
+                comunicacao em poucos dias. Aprenda ingles
+                de forma pratica e personalizada, mesmo que
+                voce ache que nao tem tempo ou ja tenha
+                tentado de tudo antes.</p>
+              <!-- <p class="h5 my-3">Cristão, Marido e Pai. Apaixonado pela língua inglesa, André é professor de Inglês particular com experiência no âmbito de aulas online desde 2017, com ênfase em pronúncia e fonética da língua inglesa.</p>
+              <ul class="list-unstyled pb-4 my-3">
+                <li>
+                  <i class="bi bi-check-lg mx-2"></i>
+                  Graduado em Letras/Inglês – UNESA (2017)
+                </li>
+                <li>
+                  <i class="bi bi-check-lg mx-2"></i>
+                  Pós-Graduado em Ensino da Língua Inglesa – UNESA (2018)
+                </li>
+                <li>
+                  <i class="bi bi-check-lg mx-2"></i>
+                  Língua Inglesa e Uso de Tecnologias Educacionais – UFPI (2019)
+                </li>
+              </ul> -->
+              <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn btn-lg btn-danger me-2" target="_blank">Começar agora!</a>
+              <a href="#planos" class="btn btn-lg btn-outline-dark">Planos</a>
+              <div style="height: 5rem"></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <img src="./assets/prof-andre-ronconi-DFxDdNAi.png" class="img-fluid" alt="Prof. André Ronconi" >
+          </div>
+        </div>
+      </div>
+      <img src="./assets/line-flag-CujVl8Yj.png" class="img-fluid w-100" alt="">
+    </section>
+
+    <!-- SECTION: DEPOIMENTOS -->
+    <section id="depoimentos">
+      <div class="pt-5 pb-5">
+        <div class="container pt-lg-5 text-center text-blue" style="max-width:1000px">
+          <!-- <small class="bold">AMADO PELOS CLIENTES</small> <br> -->
+          <h2 class="h1">
+            Veja o que esta acontecendo com quem 
+            decidiu destravar o ingles comigo:
+          </h2>
+          <p class="h4 text-normal m-auto mt-3" style="max-width:700px">
+            Pessoas comuns que ja tinham tentado diversos metodos
+            hoje falam ingles com seguranca, leveza e naturalidade.
+          </p>
+        </div>
+      </div>
+      <div class="container pb-lg-5">
+        <div class="row pb-5">
+          <div class="col mb-3">
+            <div class="card py-4 px-5 shadow">
+              <header class="d-flex pt-2">
+                <div class="pe-3">
+                  <img src="./assets/Rauana-Vpuxi5X-.jpg" width="50" alt="" class="rounded-circle m-auto mb-2">
+                </div>
+                <div>
+                  <h3 class="h5 bold mb-0">Rauana Kesseli</h3>
+                  <p>Analista de RH</p>
+                </div>
+              </header>
+              <div class="d-flex pb-2">
+                <i class="bi bi-quote"></i>
+                <blockquote class="m-0 ps-2">Eu adoro as aulas com o André! Além de serem bem
+                  descontraídas, ele sempre incentiva para que eu dê o meu
+                  melhor. Consegui perceber que avancei rápido na compreensão
+                  e na pronúncia do idioma e sou muito grata por todo
+                  aprendizado adquirido!</blockquote>
+                <i class="bi bi-quote rotate"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card py-4 px-5 shadow">
+              <header class="d-flex pt-2">
+                <div class="pe-3">
+                  <img src="./assets/Priscila-DLfASec-.jpg" width="50" alt="" class="rounded-circle m-auto mb-2">
+                </div>
+                <div>
+                  <h3 class="h5 bold mb-0">Priscila Neu</h3>
+                  <p>Desenvolvedora de sistemas</p>
+                </div>
+              </header>
+              <div class="d-flex pb-2">
+                <i class="bi bi-quote"></i>
+                <blockquote class="m-0 ps-2">André é um ótimo professor, muito solícito, comprometido,
+                  atencioso, tem uma didática bem dinâmica, o que deixa as
+                  aulas mais leves e descontraídas!!! Tenho evoluído bastante
+                  desde que comecei a fazer as aulas com ele. Fora o suporte
+                  acessível, sempre que necessário! Thanks teacher!</blockquote>
+                <i class="bi bi-quote rotate"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card py-4 px-5 shadow">
+              <header class="d-flex pt-2">
+                <div class="pe-3">
+                  <img src="./assets/Rodrigo-DCjkhDTm.jpg" width="50" alt="" class="rounded-circle m-auto mb-2">
+                </div>
+                <div>
+                  <h3 class="h5 bold mb-0">Rodrigo Timmers</h3>
+                  <p>Empresário</p>
+                </div>
+              </header>
+              <div class="d-flex pb-2">
+                <i class="bi bi-quote"></i>
+                <blockquote class="m-0 ps-2">Excelente prof! Atencioso, prestativo e interessado com o
+                  aprendizado do aluno. Aulas interessantes e descontraídas.
+                  Estou gostando muito!</blockquote>
+                <i class="bi bi-quote rotate"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row pb-5" style="margin-top:-50px">
+          <div class="col mb-3">
+            <div class="card py-4 px-5 shadow">
+              <header class="d-flex pt-2">
+                <div class="pe-3">
+                  <img src="/assets/img/testimonial/tiago.enc" width="50" alt="" class="rounded-circle m-auto mb-2">
+                </div>
+                <div>
+                  <h3 class="h5 bold mb-0">Tiago Oliveira</h3>
+                  <p>Analista de TI</p>
+                </div>
+              </header>
+              <div class="d-flex pb-2">
+                <i class="bi bi-quote"></i>
+                <blockquote class="m-0 ps-2">As aulas de inglês com o professor André foram uma experiência transformadora para o meu aprendizado.
+                  <p>
+                  Um dos pontos mais marcantes é a sua pontualidade, que garante que cada minuto da aula seja aproveitado ao máximo, sem interrupções ou perda de tempo. Essa organização foi essencial para manter a consistência do meu progresso.
+                  <p>
+                  Outro diferencial é o ensino da fonética, algo que considero um divisor de águas no meu aprendizado. Ele me ensinou a pronunciar as palavras corretamente, o que não só melhorou minha confiança ao falar, mas também ajudou a evitar mal-entendidos em situações reais. Essa atenção aos detalhes fez toda a diferença.
+                  <p>
+                  Além disso, o professor André sabe criar um ambiente descontraído, que torna o aprendizado mais leve e divertido. Isso me ajudou a superar a vergonha de errar, algo tão comum ao aprender um novo idioma. Sentir-me à vontade durante as aulas foi crucial para o meu desenvolvimento.
+                  <p>
+                  Por fim, é impossível não destacar a especialização do professor. Ele é extremamente preparado e utiliza métodos que englobam todas as áreas do aprendizado: fala, escrita, audição e leitura. Graças a essa abordagem completa, consegui progredir de forma consistente em todas essas habilidades.
+                  <p>
+                  O professor André é um verdadeiro facilitador no processo de aprendizado, e sua metodologia é inspiradora. Recomendo suas aulas a qualquer pessoa que deseja aprender inglês de forma eficaz e prazerosa.</blockquote>
+                <i class="bi bi-quote rotate"></i>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="row pb-5" style="margin-top:-50px">
+          <div class="col mb-3">
+            <div class="card py-4 px-5 shadow">
+              <header class="d-flex pt-2">
+                <div class="pe-3">
+                  <img src="./assets/patrick-Cz0n7j-r.png" width="50" alt="" class="rounded-circle m-auto mb-2">
+                </div>
+                <div>
+                  <h3 class="h5 bold mb-0">Patrick iCat</h3>
+                  <p>Engenheiro de Software</p>
+                </div>
+              </header>
+              <div class="d-flex pb-2">
+                <i class="bi bi-quote"></i>
+                <blockquote class="m-0 ps-2">Sou grato por ter a oportunidade de aprender com um profissional tão dedicado e apaixonado. Agradeço por tornar o aprendizado do inglês uma jornada tão enriquecedora e motivadora!</blockquote>
+                <i class="bi bi-quote rotate"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card py-4 px-5 shadow">
+              <header class="d-flex pt-2">
+                <div class="pe-3">
+                  <img src="./assets/ivair-CuX-Uk09.enc" width="50" alt="" class="rounded-circle m-auto mb-2">
+                </div>
+                <div>
+                  <h3 class="h5 bold mb-0">Ivair Durão</h3>
+                  <p>Imigrante</p>
+                </div>
+              </header>
+              <div class="d-flex pb-2">
+                <i class="bi bi-quote"></i>
+                <blockquote class="m-0 ps-2">A plataforma me fez voltar a estudar para passar de fase e isso é muito legal. Estou aprendendo! O app avisa onde você precisa melhorar, está sendo bem legal. Muito obrigado André pelo seu apoio vou estudar melhor agora!</blockquote>
+                <i class="bi bi-quote rotate"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card py-4 px-5 shadow">
+              <header class="d-flex pt-2">
+                <div class="pe-3">
+                  <img src="./assets/luana-R4uq04vS.png" width="50" alt="" class="rounded-circle m-auto mb-2">
+                </div>
+                <div>
+                  <h3 class="h5 bold mb-0">Luana Cristina</h3>
+                  <p>Estudante</p>
+                </div>
+              </header>
+              <div class="d-flex pb-2">
+                <i class="bi bi-quote"></i>
+                <blockquote class="m-0 ps-2">Gostei bastante do conteúdo, o professor é  muito legal e sempre acompanhando a nossa rotina de estudos, a Plataforma é ótima tudo bem organizado e fácil de aprender! </blockquote>
+                <i class="bi bi-quote rotate"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- SECTION: SOBRE FLEXGE -->
+    <section id="metodo" class="bg-blue text-white py-5">
+      <div class="container py-lg-5">
+
+        <div class="row pb-5">
+          <div class="col-12 col-lg-6">
+            <!-- <small class="bold">CONHEÇA A PLATAFORMA FLEXGE</small> <br> -->
+            <h2 class="mb-4">
+              <span class="bolder">Plataforma Flexge:</span> tecnologia
+              a favor da sua fluência
+            </h2>
+            <div class="h5">
+              <p>Com a plataforma Flexge, voce finalmente
+                destrava seu ingles falado, aprimora sua
+                pronuncia e ganha seguranca para conversar
+                em qualquer situacao real.</p>
+              <h3>Beneficios:</h3>
+              <ul>
+                <li>Material completo incluso, sem custo extra</li>
+                <li>Aula semanal ao vivo para praticar de verdade, com correção e orientação personalizada</li>
+                <li>Desafios interativos para acompanhar sua evolução</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 pt-3">
+            <a href="https://www.youtube.com/embed/gV5jHazpLGs" class="video-popup">
+              <img src="./assets/flexge-C70duyGT.png" class="img-fluid shadow rounded-2">
+            </a>
+          </div>
+        </div>
+
+        <!-- <div class="row mt-4">
+          <div class="col mb-3">
+            <div class="card py-4 px-5 text-center shadow">
+              <img src="/assets/img/icons/1.svg" width="70" alt="" class="m-auto mt-3 mb-4">
+              <h3 class="h5 mb-3">+31.000 EXERCÍCIOS</h3>
+              <p>Conte com milhares de exercícios gamificados para praticar as 4 habilidades linguísticas (reading, listening, writing e speaking).</p>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card py-4 px-5 text-center shadow">
+              <img src="/assets/img/icons/2.svg" width="70" alt="" class="m-auto mt-3 mb-4">
+              <h3 class="h5 mb-3">SISTEMA DE PONTUAÇÃO</h3>
+              <p>Na plataforma de estudo Flexge, você conquista pontos conforme realiza os exercícios e avança no conteúdo, participando de rankings com outros alunos.</p>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card py-4 px-5 text-center shadow">
+              <img src="/assets/img/icons/3.svg" width="70" alt="" class="m-auto mt-3 mb-4">
+              <h3 class="h5 mb-3">ÁUDIOS GRAVADOS POR NATIVOS</h3>
+              <p>Desenvolva as habilidades de listening e speaking com áudios gravados por falantes nativos da língua, aprendendo o inglês falado em diferentes regiões e países.</p>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- SECTION: PLANOS -->
+    <section id="planos" style="background:url(./assets/bg-planos-B0MWCFAo.png) no-repeat center center; background-size: cover;">
+      <div class="container px-lg-5 py-lg-5">
+        <div class="pt-5 text-center text-blue">
+          <!-- <small class="bold">Planos que cabem no seu bolso!</small> <br> -->
+          <h2 class="h1">
+            Aprenda no seu ritmo
+          </h2>
+          <p class="h4 text-normal m-auto mt-3" style="max-width:450px">
+            Escolha qual o plano ideal para você
+            e alcance a fluência do seu jeito!
+          </p>
+        </div>
+        <div class="row py-5">
+          <div class="col mb-3">
+            <div class="card shadow p-5 pt-4">
+              <header class="pb-2 mb-2 border-bottom text-blue pt-2">
+                <h2 class="mb-0 text-center bold">
+                  SPEAKING CLUB
+                </h2>
+                <p class="text-center h5">
+                  Aulas de conversação
+                </p>
+              </header>
+              <!-- <p class="text-center h5 my-4">
+                <span class="opacity-50">R$</span>
+                <span class="text-lg bold">99</span>
+                <span class="opacity-50">/mês</span>
+              </p> -->
+              <div class="h5 mb-0">
+                <ul class="list-unstyled">
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Acesso ilimitado a plataforma Flexge
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Aplicativo para celular ou computador
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Suporte por WhatsApp
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Material didático incluso
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    1x aula ao vivo por semana
+                  </li>
+                </ul>
+                <p class="text-center text-blue h5 mt-5 mb-4">
+                  <span class="opacity-75">R$</span>
+                  <span class="text-lg ">99*</span>
+                  <span class="opacity-75">/mês</span>
+                </p>
+                <p class="text-center">
+                  <a href="https://wa.me/5586999907211?text=Escolhi%20o%20plano%20para%20fazer%20aulas%20de%20conversação%2C%20quais%20os%20hor%C3%A1rios%20dispon%C3%ADveis%3F" target="_blank" class="btn btn-primary btn-lg w-100 my-2">Garantir vaga</a>
+                </p>
+                <!-- <small class="opacity-75">* Caso tenha interesse em usar o app para atividades, terá um acréscimo de 28 reais na mensalidade</small> -->
+              </div>
+              <small class="opacity-75">* Opcional: Acesso ao app Flexge por +R$ 28/mês</small>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card shadow p-5 pt-4">
+              <header class="pb-2 mb-2 border-bottom text-blue pt-2">
+                <h2 class="mb-0 text-center bold">
+                  FOCUS
+                </h2>
+                <p class="text-center h5">
+                  Para duplas ou trios
+                </p>
+              </header>
+              
+              <!-- <p class="text-center h5 my-4">
+                <span class="opacity-50">R$</span>
+                <span class="text-lg bold">329</span>
+                <span class="position-relative" style="top:-2rem; margin-right: -.5rem;">*</span>
+                <span class="opacity-50">/mês*</span>
+              </p> -->
+              <div class="h5 mb-0">
+                <ul class="list-unstyled">
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Acesso ilimitado a plataforma Flexge
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Aplicativo para celular ou computador
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Suporte por WhatsApp
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Material didático incluso
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    1x aula ao vivo por semana
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    1x encontro semanal extra (aula de conversação)
+                  </li>
+                </ul>
+                <p class="text-center text-blue h5 mt-5 mb-4">
+                  <span class="opacity-75">R$</span>
+                  <span class="text-lg ">329</span>
+                  <span class="opacity-75">/mês</span>
+                </p>
+                <p class="text-center">
+                  <a href="https://wa.me/5586999907211?text=Escolhi%20o%20plano%20para%20fazer%20aulas%20em%20duplas%2C%20quais%20os%20hor%C3%A1rios%20dispon%C3%ADveis%3F" target="_blank" class="btn btn-primary btn-lg w-100 my-2">Garantir vaga</a>
+                </p>
+              </div>
+              <small class="opacity-75">* Descontos para que faz 2x por semana</small>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card shadow p-5 pt-4">
+              <header class="pb-2 mb-2 border-bottom text-blue pt-2">
+                <h2 class="mb-0 text-center bold">
+                  PERSONAL
+                </h2>
+                <p class="text-center h5">
+                  Aulas individuais
+                </p>
+              </header>
+              <!-- <p class="text-center h5 my-4">
+                <span class="opacity-50">R$</span>
+                <span class="text-lg bold">499</span>
+                <span class="position-relative" style="top:-2rem; margin-right: -.5rem;">*</span>
+                <span class="opacity-50">/mês*</span>
+              </p> -->
+              <div class="h5 mb-0">
+                <ul class="list-unstyled">
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Acesso ilimitado a plataforma Flexge
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Aplicativo para celular ou computador
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Suporte por WhatsApp
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    Material didático incluso
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    1x aula ao vivo por semana
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    1x encontro semanal extra (aula de conversação)
+                  </li>
+                  <li class="d-flex my-3">
+                    <i class="bi bi-check-lg text-success me-3"></i>
+                    1x remarcação de emergência por mês
+                  </li>
+                </ul>
+                <p class="text-center text-blue h5 mt-5 mb-4">
+                  <span class="opacity-75">R$</span>
+                  <span class="text-lg ">499</span>
+                  <span class="opacity-75">/mês</span>
+                </p>
+                <p class="text-center">
+                  <a href="https://wa.me/5586999907211?text=Escolhi%20o%20plano%20para%20fazer%20aulas%20individuais,%20quais%20os%20hor%C3%A1rios%20dispon%C3%ADveis?" target="_blank" class="btn btn-primary btn-lg w-100 my-2">Garantir vaga</a>
+                </p>
+              </div>
+              <small class="opacity-75">* Descontos para que faz 2x por semana</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VÍDEOS -->
+    <section id="metodo" class="bg-blue text-white py-5">
+      <div class="container py-lg-5">
+
+        <div class="pt-5 pb-5">
+          <div class="container pt-lg-5 text-center text-white" style="max-width:1000px">
+            <!-- <small class="bold">AMADO PELOS CLIENTES</small> <br> -->
+            <h2 class="h1">
+              Comece Gratis e veja resultados hoje mesmo!
+            </h2>
+            <p class="h4 text-normal m-auto mt-3" style="max-width:1000px">
+              Mais de 100 alunos ja comecaram por aqui e estao falando ingles com
+              confianca. Descubra agora por que tantos alunos recomendam!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section style="background:url(./assets/bg-sobre-AyNNFSG9.png) no-repeat center center; background-size: cover;">
+      <div class="container px-lg-5 py-lg-5">
+        <div class="row py-5 text-blue">
+          <div class="col-12 col-lg-5 d-lg-none pb-4">
+            <img src="./assets/prof-andre-ronconi-D_fZuDnp.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <img src="./assets/prof-andre-ronconi-D_fZuDnp.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-lg-7 p-5">
+            <div class="pe-lg-5">
+              <h1 class="mb-4 h1">
+                <small>Conheça o professor</small> <br>
+                <span class="display-4 bolder">André Ronconi</span>
+              </h1>
+              <div class="h4 text-normal">
+                <p>Desde 2017, ajudo pessoas comuns a superar
+                  o medo de falar inglês. Meu objetivo e tornar 
+                  o aprendizado leve e direto ao ponto, com
+                  ênfase especial em pronuncia, fluência e
+                  comunicação real. Sou Cristão, marido e pai -
+                  acredito que aprender inglês pode e deve ser
+                  simples, acessível e divertido.</p>
+              </div>
+              <div class="pt-4">
+                <a href="#planos" class="btn btn-lg btn-primary me-2">Conheça os Planos!</a>
+                <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn btn-lg btn-outline-dark" target="_blank">Contato</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+<footer class="text-white bg-blue py-5">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-12 col-lg-6 pe-4 pb-4 pb-lg-0">
+        <!-- <h2>Quem é Prof André Ronconi?</h2> -->
+        <p>
+          <img src="/assets/img/prof-andre-footer.png" width="330" alt="Prof. André Ronconi" class="img-fluid " >
+        </p>
+        <p>Aulas de inglês online com metodologia prática e interativa. <br>
+          Desenvolva suas habilidades e ganhe confiança para falar!.</p>
+        <!-- <p>
+          <a href="/">Saiba mais</a>
+        </p> -->
+      </div>
+      <div class="col-12 col-lg-3 pb-4 pb-lg-0">
+        <h2>Links</h2>
+        <ul class="list-unstyled">
+          <li>
+            <a href="/#metodo" class="btn btn-link ps-0">Método</a>
+          </li>
+          <li>
+            <a href="/#planos" class="btn btn-link ps-0">Planos</a>
+          </li>
+          <li>
+            <a href="/#depoimentos" class="btn btn-link ps-0">Depoimentos</a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=5586999907211&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!" class="btn btn-link ps-0" target="_blank">Contato</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-3 pb-4 pb-lg-0">
+        <h2>Serviços</h2>
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://student.flexge.com/login" target="_blank" class="btn btn-link ps-0">Acesso a plataforma</a>
+          </li>
+          <li>
+            <a href="/cursos/" class="btn btn-link ps-0">Cursos</a>
+          </li>
+          <li>
+            <a href="/cursos/" class="btn btn-link ps-0">Conteúdo gratuito</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="col">
+        <h2>Fique atento as atualizações</h2>
+        <p>Cadastre aqui o seu e-mail e não perca as novidades e atualizações!</p>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Informe seu email">
+          <span class="input-group-text">
+            <i class="bi bi-send"></i>
+          </span>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</footer>
+
+    <div id="app"></div>
+
+  </body>
+</html>
