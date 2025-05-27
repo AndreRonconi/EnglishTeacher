@@ -47,7 +47,7 @@ export default defineConfig({
         clicaqui: resolve(__dirname, "clique_aqui/index.html"),
         smart: resolve(__dirname, "smart.html"),
         test: resolve(__dirname, "index2.html"),
-        planos: resolve(__dirname, "planos.html"),
+        planos: resolve(__dirname, "planos/index.html"),
       },
     },
   },
