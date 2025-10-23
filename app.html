@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portal do Aluno – Prof André (HTML Simples)</title>
+  <style>
+    :root {
+      --bg: #f6f7f8;
+      --card: #ffffff;
+      --text: #111111;
+      --muted: #6b7280;
+      --accent: #111111;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--text); }
+    a { color: var(--accent); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+    .topbar { background: var(--card); border-bottom: 1px solid var(--border); }
+    .topbar-inner { display:flex; align-items:center; justify-content:space-between; gap:12px; padding: 12px 16px; max-width:1100px; margin:0 auto; }
+    .brand { display:flex; align-items:center; gap:8px; }
+    .brand img { height: 34px; }
+    .brand .title { font-weight: 600; font-size: 16px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+    .grid { display:grid; gap:16px; }
+    @media (min-width: 900px){ .grid-3 { grid-template-columns: repeat(3, 1fr);} .grid-2{ grid-template-columns: repeat(2, 1fr);} }
+    .muted { color: var(--muted); font-size: 13px; }
+    .btn { border: 1px solid var(--border); background: #fff; padding: 8px 12px; border-radius: 12px; cursor: pointer; font-size: 14px; }
+    .btn:hover { background: #fafafa; }
+    .pill { display:inline-block; padding:4px 10px; border:1px solid var(--border); border-radius: 999px; font-size:12px; }
+    .nav { display:flex; gap:8px; flex-wrap: wrap; }
+    .nav button { border:1px solid var(--border); background:#fff; padding:8px 10px; border-radius:12px; font-size: 14px; cursor:pointer; }
+    .nav button.active { background: #111; color: #fff; border-color: #111; }
+    .hidden { display:none; }
+    .table { width:100%; border-collapse: collapse; font-size: 14px; }
+    .table th, .table td { text-align:left; padding: 8px; border-top: 1px solid var(--border); }
+    .progress-wrap { background:#e5e7eb; border-radius: 999px; height: 8px; overflow:hidden; }
+    .progress-bar { height: 8px; background:#111; }
+    .input { width:100%; padding:8px 10px; border:1px solid var(--border); border-radius:12px; font-size:14px; }
+    .tags { display:flex; gap:6px; flex-wrap: wrap; }
+    .tag { font-size: 12px; border:1px solid var(--border); border-radius:999px; padding:4px 8px; background:#fff; }
+    .list { list-style:none; padding:0; margin:0; }
+    .list li { display:flex; align-items:center; justify-content:space-between; padding:10px 0; border-top:1px solid var(--border); }
+    .list li:first-child { border-top: none; }
+
+    /* login */
+    .login-wrap { min-height: 100vh; display:grid; place-items:center; padding: 24px; }
+    .login-card { width:100%; max-width: 420px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="https://profandre.com.br/wp-content/uploads/2024/01/logo-prof-andre.png" alt="Prof André"/>
+        <div>
+          <div class="title">Portal do Aluno</div>
+          <div class="muted">Versão HTML simples (MVP)</div>
+        </div>
+      </div>
+      <div id="userBox" class="muted">—</div>
+    </div>
+  </header>
+
+  <!-- LOGIN (simples, sem senha) -->
+  <section id="loginSection" class="login-wrap">
+    <div class="card login-card">
+      <div class="brand" style="margin-bottom:8px">
+        <img src="https://profandre.com.br/wp-content/uploads/2024/01/logo-prof-andre.png" alt="Prof André"/>
+        <strong>Portal do Aluno</strong>
+      </div>
+      <p class="muted">Acesse com seu e-mail cadastrado (simulação).</p>
+      <label class="muted">E-mail</label>
+      <input id="emailInput" class="input" type="email" placeholder="voce@exemplo.com" />
+      <div style="margin-top:12px; display:flex; gap:8px;">
+        <button class="btn" onclick="login()">Entrar</button>
+        <span class="pill">MVP</span>
+      </div>
+      <p class="muted" style="margin-top:10px">Na versão final, use login com senha/link mágico.</p>
+    </div>
+  </section>
+
+  <!-- APP -->
+  <main id="app" class="container hidden">
+    <!-- Navegação -->
+    <div class="card" style="margin-top:16px;">
+      <div class="nav">
+        <button data-tab="dashboard" class="active" onclick="switchTab(event)">Visão Geral</button>
+        <button data-tab="calendar" onclick="switchTab(event)">Calendário</button>
+        <button data-tab="links" onclick="switchTab(event)">Links das Aulas</button>
+        <button data-tab="history" onclick="switchTab(event)">Histórico</button>
+        <button data-tab="payments" onclick="switchTab(event)">Pagamentos</button>
+        <button data-tab="materials" onclick="switchTab(event)">Materiais</button>
+        <button data-tab="videos" onclick="switchTab(event)">Meus Vídeos</button>
+        <button data-tab="progress" onclick="switchTab(event)">Progresso CEFR</button>
+        <button style="margin-left:auto" class="btn" onclick="logout()">Sair</button>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <section id="tab-dashboard" class="grid grid-3" style="margin-top:16px;">
+      <div class="card">
+        <div style="display:flex; align-items:center; justify-content:space-between;">
+          <div>
+            <div style="font-weight:600;">Nível atual (Flexge → CEFR)</div>
+            <div class="muted">Listening / Speaking / Reading / Writing</div>
+          </div>
+          <div id="currentLevel" style="font-weight:700; font-size:24px;">A2</div>
+        </div>
+        <div style="margin-top:12px;" id="skills"></div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:600; margin-bottom:6px;">Próxima fatura</div>
+        <div id="nextInvoice"></div>
+        <div style="margin-top:10px; display:flex; gap:8px;">
+          <button class="btn">Ver histórico</button>
+          <button class="btn">Baixar boleto/recibo</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:600; margin-bottom:6px;">Próximas aulas</div>
+        <ul id="upcomingList" class="list"></ul>
+      </div>
+
+      <div class="card" style="grid-column: 1 / -1;">
+        <div style="font-weight:600; margin-bottom:8px;">Materiais recomendados</div>
+        <div id="materialsReco" class="grid grid-3"></div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:600;">Streak</div>
+        <div class="muted">Dias seguidos estudando</div>
+        <div id="streak" style="font-size:28px; font-weight:700; margin-top:6px;">0 🔥</div>
+      </div>
+    </section>
+
+    <!-- CALENDÁRIO -->
+    <section id="tab-calendar" class="hidden" style="margin-top:16px;">
+      <div class="card">
+        <div style="display:flex; align-items:center; justify-content:space-between;">
+          <div style="font-weight:600;">Calendário</div>
+          <a href="#" class="muted">+ Sincronizar Google Calendar</a>
+        </div>
+        <ul id="calendarList" class="list" style="margin-top:8px;"></ul>
+      </div>
+    </section>
+
+    <!-- LINKS DAS AULAS -->
+    <section id="tab-links" class="hidden" style="margin-top:16px;">
+      <div class="card">
+        <div style="font-weight:600;">Links das Aulas</div>
+        <div id="linksGrid" class="grid grid-2" style="margin-top:10px;"></div>
+      </div>
+    </section>
+
+    <!-- HISTÓRICO -->
+    <section id="tab-history" class="hidden" style="margin-top:16px;">
+      <div class="card">
+        <div style="font-weight:600;">Histórico de Aulas</div>
+        <table class="table" style="margin-top:8px;">
+          <thead>
+            <tr><th>Data</th><th>Título</th><th>Presença</th><th>Notas</th></tr>
+          </thead>
+          <tbody id="historyBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PAGAMENTOS -->
+    <section id="tab-payments" class="hidden" style="margin-top:16px;">
+      <div class="card">
+        <div style="font-weight:600;">Vencimentos & Pagamentos</div>
+        <div id="paymentsBox" style="margin-top:8px;"></div>
+        <p class="muted" style="margin-top:8px;">Integração futura com Asaas/Stripe/Pagar.me.</p>
+      </div>
+    </section>
+
+    <!-- MATERIAIS -->
+    <section id="tab-materials" class="hidden" style="margin-top:16px;">
+      <div class="card">
+        <div style="font-weight:600;">Pesquisa de Materiais</div>
+        <div style="display:flex; gap:8px; margin-top:8px;">
+          <input id="searchInput" class="input" placeholder="Busque por nível, tema ou habilidade…" />
+          <button class="btn" onclick="applySearch()">Buscar</button>
+        </div>
+        <div id="materialsGrid" class="grid grid-3" style="margin-top:10px;"></div>
+      </div>
+    </section>
+
+    <!-- VÍDEOS -->
+    <section id="tab-videos" class="hidden" style="margin-top:16px;">
+      <div class="card">
+        <div style="font-weight:600;">Meus Vídeos</div>
+        <div id="videosGrid" class="grid grid-3" style="margin-top:10px;"></div>
+      </div>
+    </section>
+
+    <!-- PROGRESSO CEFR -->
+    <section id="tab-progress" class="hidden" style="margin-top:16px;">
+      <div class="card">
+        <div style="display:flex; align-items:center; justify-content:space-between;">
+          <div>
+            <div style="font-weight:600;">Progresso CEFR</div>
+            <div class="muted">Metodologia Flexge mapeada (L/S/R/W)</div>
+          </div>
+          <div class="muted">Média: <strong id="avgScore">—%</strong></div>
+        </div>
+        <div id="progressSkills" style="margin-top:10px;"></div>
+        <div class="card" style="margin-top:12px; background:#fafafa;">
+          <div style="font-weight:600;">Próximo alvo: <span id="nextLevel">—</span></div>
+          <ul class="muted" style="margin-top:6px;">
+            <li>Completar 2 aulas focadas na sua habilidade mais fraca.</li>
+            <li>Enviar 1 gravação de fala (2 min) para feedback.</li>
+            <li>Fazer um quiz de revisão (80%+).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // ====== DADOS MOCK ======
+    const mockUser = {
+      id: 'u_001',
+      name: 'Aluno Exemplo',
+      plan: 'Conversation Club',
+      email: 'aluno@exemplo.com',
+      currentLevel: 'A2',
+      progress: { listening: 60, speaking: 55, reading: 70, writing: 48 },
+      streakDays: 6,
+      nextPayment: { dueDate: addDaysISO(10, 19), amountBRL: 229.00, status: 'pending' }
+    };
+
+    const mockUpcoming = [
+      { id:'c1', title:'Conversation Club – Seg 19h', startISO: addDaysISO(1, 19), endISO: addDaysISO(1, 20), platform:'Google Meet', url:'#' },
+      { id:'c2', title:'B1 Listening – Qua 19h', startISO: addDaysISO(3, 19), endISO: addDaysISO(3, 20), platform:'Zoom', url:'#' },
+    ];
+
+    const mockHistory = [
+      { id:'h1', title:'A2 Grammar – Past Simple', dateISO: addDaysISO(-7, 19), attendance:'present', notes:'Bom desempenho em perguntas WH.' },
+      { id:'h2', title:'Conversation Club – Travel', dateISO: addDaysISO(-10, 19), attendance:'absent', notes:'' },
+      { id:'h3', title:'Pronunciation – /ɪ/ vs /i:/', dateISO: addDaysISO(-14, 19), attendance:'present', notes:'Melhora na entonação.' },
+    ];
+
+    const mockMaterials = [
+      { id:'m1', title:'A1 – Daily Routine (PDF)', tags:['A1','Daily Routine','Reading'], type:'PDF', url:'#' },
+      { id:'m2', title:'A2 – Travel English (Vídeo)', tags:['A2','Travel','Listening'], type:'Vídeo', url:'#' },
+      { id:'m3', title:'B1 – Job Interview (Quiz)', tags:['B1','Work','Speaking'], type:'Quiz', url:'#' },
+      { id:'m4', title:'Phonetics – Minimal Pairs /θ/ /ð/ (Áudio)', tags:['All Levels','Pronunciation','Listening'], type:'Áudio', url:'#' },
+    ];
+
+    const mockVideos = [
+      'dQw4w9WgXcQ',
+      '3JZ_D3ELwOQ',
+      'LXb3EKWsInQ',
+    ];
+
+    // ====== UTIL ======
+    function addDaysISO(daysDelta, hour){
+      const d = new Date();
+      d.setDate(d.getDate()+daysDelta); d.setHours(hour||12,0,0,0); return d.toISOString();
+    }
+    function fmtDate(iso){ return new Date(iso).toLocaleDateString('pt-BR', { weekday:'short', day:'2-digit', month:'2-digit' }); }
+    function fmtTime(iso){ return new Date(iso).toLocaleTimeString('pt-BR', { hour:'2-digit', minute:'2-digit' }); }
+    function nextCEFR(level){ const order=['A1','A2','B1','B2','C1','C2']; const i=order.indexOf(level); return order[Math.min(i+1, order.length-1)]; }
+
+    // ====== AUTH MOCK ======
+    function login(){
+      const email = document.getElementById('emailInput').value || 'aluno@exemplo.com';
+      const user = { ...mockUser, email };
+      localStorage.setItem('portal_user', JSON.stringify(user));
+      mountApp(user);
+    }
+    function logout(){
+      localStorage.removeItem('portal_user');
+      document.getElementById('app').classList.add('hidden');
+      document.getElementById('loginSection').classList.remove('hidden');
+      document.getElementById('userBox').textContent = '—';
+    }
+
+    // ====== TABS ======
+    function switchTab(evt){
+      const key = evt.target.getAttribute('data-tab');
+      document.querySelectorAll('[id^="tab-"]').forEach(el=>el.classList.add('hidden'));
+      document.getElementById('tab-'+key).classList.remove('hidden');
+      document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+      evt.target.classList.add('active');
+    }
+
+    // ====== RENDER ======
+    function mountApp(user){
+      // header
+      document.getElementById('userBox').textContent = `${user.name} • Plano: ${user.plan}`;
+      // sections visibility
+      document.getElementById('loginSection').classList.add('hidden');
+      document.getElementById('app').classList.remove('hidden');
+
+      // dashboard
+      document.getElementById('currentLevel').textContent = user.currentLevel;
+      const s = user.progress;
+      document.getElementById('skills').innerHTML = [
+        ['Listening', s.listening],
+        ['Speaking', s.speaking],
+        ['Reading', s.reading],
+        ['Writing', s.writing],
+      ].map(([name,val])=>
+        `<div style="margin-bottom:8px"><div class="muted" style="display:flex;justify-content:space-between"><span>${name}</span><strong>${val}%</strong></div><div class="progress-wrap"><div class="progress-bar" style="width:${val}%"></div></div></div>`
+      ).join('');
+
+      const inv = user.nextPayment;
+      document.getElementById('nextInvoice').innerHTML = inv
+        ? `<div class="muted">Vencimento</div><div><strong>${fmtDate(inv.dueDate)}</strong> — R$ ${inv.amountBRL.toFixed(2)} <span class="pill">${inv.status==='paid'?'Pago':inv.status==='pending'?'Pendente':'Em atraso'}</span></div>`
+        : '<span class="muted">Sem faturas no momento.</span>';
+
+      document.getElementById('streak').textContent = user.streakDays + ' 🔥';
+
+      // próximas aulas
+      document.getElementById('upcomingList').innerHTML = mockUpcoming.map(c=>
+        `<li><div><div style="font-weight:600">${c.title}</div><div class="muted">${fmtDate(c.startISO)} • ${fmtTime(c.startISO)} – ${fmtTime(c.endISO)} • ${c.platform}</div></div><a class="btn" href="${c.url}">Entrar</a></li>`
+      ).join('');
+
+      // materiais recomendados (3)
+      document.getElementById('materialsReco').innerHTML = mockMaterials.slice(0,3).map(m=>cardMaterial(m)).join('');
+
+      // calendário (lista)
+      document.getElementById('calendarList').innerHTML = mockUpcoming.map(c=>
+        `<li><div><div style="font-weight:600">${c.title}</div><div class="muted">${fmtDate(c.startISO)} • ${fmtTime(c.startISO)} – ${fmtTime(c.endISO)} • ${c.platform}</div></div><a class="btn" href="${c.url}">Entrar</a></li>`
+      ).join('');
+
+      // links
+      document.getElementById('linksGrid').innerHTML = mockUpcoming.map(c=>
+        `<div class="card"><div class="muted">${c.platform}</div><div style="font-weight:600">${c.title}</div><div class="muted">${fmtDate(c.startISO)} • ${fmtTime(c.startISO)}</div><a class="btn" style="margin-top:8px" href="${c.url}">Entrar na aula</a></div>`
+      ).join('');
+
+      // histórico
+      document.getElementById('historyBody').innerHTML = mockHistory.map(h=>
+        `<tr><td>${fmtDate(h.dateISO)}</td><td>${h.title}</td><td>${h.attendance==='present'?'Presente':'Faltou'}</td><td class="muted">${h.notes||'—'}</td></tr>`
+      ).join('');
+
+      // pagamentos
+      const stLbl = inv?.status==='paid'?'Pago':inv?.status==='pending'?'Pendente':'Em atraso';
+      document.getElementById('paymentsBox').innerHTML = inv
+        ? `<div class="muted">Próximo vencimento</div><div><strong>${fmtDate(inv.dueDate)}</strong> — R$ ${inv.amountBRL.toFixed(2)} <span class="pill">${stLbl}</span></div>`
+        : `<span class="muted">Sem lançamentos</span>`;
+
+      // materiais (lista completa)
+      renderMaterials(mockMaterials);
+
+      // vídeos
+      document.getElementById('videosGrid').innerHTML = mockVideos.map(id =>
+        `<div class="card"><div style="aspect-ratio:16/9; background:#000; overflow:hidden; border-radius:10px;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/${id}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>`
+      ).join('');
+
+      // progresso CEFR
+      const avg = Math.round((s.listening + s.speaking + s.reading + s.writing)/4);
+      document.getElementById('avgScore').textContent = avg + '%';
+      const nLevel = nextCEFR(user.currentLevel);
+      document.getElementById('nextLevel').textContent = nLevel;
+      document.getElementById('progressSkills').innerHTML = document.getElementById('skills').innerHTML;
+    }
+
+    function cardMaterial(m){
+      return `<div class="card"><div class="muted">${m.type}</div><div style="font-weight:600">${m.title}</div><div class="tags" style="margin-top:6px;">${m.tags.map(t=>`<span class=tag>${t}</span>`).join('')}</div><a class="btn" style="margin-top:8px" href="${m.url}">Acessar</a></div>`;
+    }
+
+    function renderMaterials(list){
+      document.getElementById('materialsGrid').innerHTML = list.map(m=>cardMaterial(m)).join('');
+    }
+
+    function applySearch(){
+      const q = (document.getElementById('searchInput').value||'').toLowerCase();
+      const filtered = mockMaterials.filter(m => m.title.toLowerCase().includes(q) || m.tags.some(t=>t.toLowerCase().includes(q)) );
+      renderMaterials(filtered);
+    }
+
+    // boot
+    (function init(){
+      const saved = localStorage.getItem('portal_user');
+      if(saved){ try { mountApp(JSON.parse(saved)); } catch(e){} }
+    })();
+  </script>
+</body>
+</html>
