@@ -48,7 +48,6 @@ export default defineConfig({
         smart: resolve(__dirname, "smart.html"),
         test: resolve(__dirname, "index2.html"),
         planos: resolve(__dirname, "planos.html"),
-        app: resolve(__dirname, "app.html"),
       },
     },
   },
