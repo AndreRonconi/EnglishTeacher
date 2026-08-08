@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="pt">
+
 <head>
     ${ metas({ title: 'Prof André Ronconi - Aulas de inglês' }) }
     <meta property="og:image" content="${sitePath}/banner.png" />
     <!-- Meta Pixel Code -->
     <script>
-        ! function(f, b, e, v, n, t, s) {
+        ! function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function() {
+            n = f.fbq = function () {
                 n.callMethod ?
                     n.callMethod.apply(n, arguments) : n.queue.push(
                         arguments)
@@ -31,6 +32,7 @@
             src="https://www.facebook.com/tr?id=891817738493682&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 </head>
+
 <body>
     ${ header() }
     ${ modal({
@@ -38,8 +40,7 @@
     width: 900,
     content: '<div id="video"></div>'
     }) }
-    <section
-        style="background:url(/assets/img/hero/bg-heo.png) no-repeat center center; background-size: cover;">
+    <section style="background:url(/assets/img/hero/bg-heo.png) no-repeat center center; background-size: cover;">
         <div class="container">
             <div class="row me-lg-5 align-items-end">
                 <div class="col-12 col-lg-5 pt-5">
@@ -74,27 +75,22 @@
                 </li>
               </ul> -->
                         <a href="${whatsapp}&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!"
-                            class="btn btn-lg btn-danger me-2"
-                            target="_blank">Começar agora!</a>
-                        <a href="#planos"
-                            class="btn btn-lg btn-outline-dark">Planos</a>
+                            class="btn btn-lg btn-danger me-2" target="_blank">Começar agora!</a>
+                        <a href="#planos" class="btn btn-lg btn-outline-dark">Planos</a>
                         <div style="height: 5rem"></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-7">
-                    <img src="/assets/img/hero/prof-andre-ronconi.png"
-                        class="img-fluid" alt="Prof. André Ronconi">
+                    <img src="/assets/img/hero/prof-andre-ronconi.png" class="img-fluid" alt="Prof. André Ronconi">
                 </div>
             </div>
         </div>
-        <img src="/assets/img/hero/line-flag.png" class="img-fluid w-100"
-            alt="">
+        <img src="/assets/img/hero/line-flag.png" class="img-fluid w-100" alt="">
     </section>
     <!-- SECTION: DEPOIMENTOS -->
     <section id="depoimentos">
         <div class="pt-5 pb-5">
-            <div class="container pt-lg-5 text-center text-blue"
-                style="max-width:1000px">
+            <div class="container pt-lg-5 text-center text-blue" style="max-width:1000px">
                 <!-- <small class="bold">AMADO PELOS CLIENTES</small> <br> -->
                 <h2 class="h1">
                     Veja o que está acontecendo com quem
@@ -107,8 +103,7 @@
             </div>
         </div>
         <div class="carousel-container">
-            <button class="carousel-button left"
-                onclick="scrollCarousel(-1)">‹</button>
+            <button class="carousel-button left" onclick="scrollCarousel(-1)">‹</button>
             <div class="carousel-track" id="carouselTrack">
                 <!-- Depoimento 1 -->
                 <div class="testimonial-card card">
@@ -122,8 +117,7 @@
                 </div>
                 <!-- Depoimento 2 -->
                 <div class="testimonial-card card">
-                    <img src="/assets/img/testimonial/priscila.jpg"
-                        alt="Priscila">
+                    <img src="/assets/img/testimonial/priscila.jpg" alt="Priscila">
                     <p>"André é um ótimo professor, muito solícito,
                         comprometido, atencioso, tem uma didática bem dinâmica,
                         o que deixa as aulas mais leves e descontraídas!"</p>
@@ -132,8 +126,7 @@
                 </div>
                 <!-- Depoimento 3 -->
                 <div class="testimonial-card card">
-                    <img src="/assets/img/testimonial/rodrigo.jpg"
-                        alt="Rodrigo">
+                    <img src="/assets/img/testimonial/rodrigo.jpg" alt="Rodrigo">
                     <p>"Excelente prof! Atencioso, prestativo e interessado com
                         o aprendizado do aluno. Aulas interessantes e
                         descontraídas."</p>
@@ -142,8 +135,7 @@
                 </div>
                 <!-- Depoimento 4 -->
                 <div class="testimonial-card card">
-                    <img src="/assets/img/testimonial/patrick.jpg"
-                        alt="Patrick">
+                    <img src="/assets/img/testimonial/patrick.jpg" alt="Patrick">
                     <p>"Sou grato por ter a oportunidade de aprender com um
                         profissional tão dedicado e apaixonado. Agradeço por
                         tornar o aprendizado do inglês motivador."</p>
@@ -207,8 +199,7 @@
                     <small>Biomédica</small>
                 </div>
             </div>
-            <button class="carousel-button right"
-                onclick="scrollCarousel(1)">›</button>
+            <button class="carousel-button right" onclick="scrollCarousel(1)">›</button>
             <div class="carousel-indicators" id="carouselIndicators">
                 <span class="dot active"></span>
                 <span class="dot"></span>
@@ -220,277 +211,896 @@
             </div>
         </div>
     </section>
-    <!-- SECTION: SOBRE FLEXGE -->
-    <section id="metodo" class="bg-blue text-white py-5">
-        <h1 class="flex" align="center">Estrutura especializada para deixar VOCÊ
-            FLUENTE</h1>
-        <div class="container py-lg-5">
-            <div class="row pb-5">
-                <div class="col-12 col-lg-6">
-                    <h2 class="mb-4">
-                        <span class="bolder">Conheça a plataforma Flexge:</span>
-                        A
-                        fluência que você precisa com a tecnologia que você
-                        merece!
-                    </h2>
-                    <div class="h5">
-                        <p>Você estuda inglês há um tempo, mas trava na hora de
-                            falar?<br>
-                            Com a Flexge (app do aluno), você finalmente ganha a
-                            confiança para se expressar com clareza em qualquer
-                            situação real, mesmo que você tenha vergonha de
-                            errar.
-                        </p>
-                        <br>
-                        <h3>Veja as vantagens ao se matricular:</h3>
-                        <ul>
-                            <li>Material didático do básico ao avançado incluso
-                            </li>
-                            <li>Aula ao vivo semanal com correção individual
-                            </li>
-                            <li> Desafios interativos para acelerar sua evolução
-                            </li>
-                            <li>Foco especial em pronúncia, com orientação
-                                direta do Prof. André Ronconi</li>
-                            <li>*Bônus 1: Conversação em grupo com outros
-                                alunos, para treinar o inglês de verdade</li>
-                            <li>*Bônus 2: Suporte via WhatsApp, com
-                                acompanhamento real</li>
-                            <li>*Bônus 3: Comunidade VIP de alunos</li>
-                        </ul>
+    <!-- SECTION: METODOLOGIA BRIDGE -->
+    <section id="metodo" class="bg-blue text-white py-5" style="background: linear-gradient(135deg, #051c55 0%, #0a2b7a 100%);">
+        <div class="container py-lg-4 py-3">
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark px-3 py-2 text-uppercase fw-bold mb-2 shadow-sm">Metodologia Exclusiva & Tecnologia</span>
+                <h2 class="display-6 fw-black text-white mb-3" style="font-weight: 800;">
+                    Estrutura especializada para deixar VOCÊ FLUENTE
+                </h2>
+                <p class="h5 opacity-90 mx-auto" style="max-width: 760px; font-weight: 300; line-height: 1.6;">
+                    Você estuda inglês há um tempo, mas trava na hora de falar? Conheça a <strong>Metodologia Bridge</strong> e o <strong>Portal do Aluno Bridge School</strong>: a fluência que você precisa com a tecnologia, praticidade e acompanhamento que você merece!
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="p-4 rounded-4 w-100 d-flex flex-column h-100 shadow-sm" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px);">
+                        <div class="p-3 rounded-3 mb-3 d-inline-block text-center" style="background: rgba(255, 255, 255, 0.12); width: max-content;">
+                            <i class="bi bi-chat-quote-fill fs-3 text-warning"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2 text-white">Aulas Ao Vivo & Práticas</h4>
+                        <p class="small text-white-50 mb-0">Treine a fala em situações reais com feedback em tempo real para destravar sua comunicação sem medo de errar.</p>
                     </div>
-                    <span>Vagas limitadas, consulte horários</span>
                 </div>
-                <div class="col-12 col-lg-6 pt-3">
-                    <a href="https://www.youtube.com/embed/zFJfrEcs7bA"
-                        class="video-popup">
-                        <img src="/assets/img/flexge.png"
-                            class="img-fluid shadow rounded-2">
-                    </a>
-                    <p align="center">Assista ao vídeo e veja como funciona o
-                        app do aluno</p>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="p-4 rounded-4 w-100 d-flex flex-column h-100 shadow-sm" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px);">
+                        <div class="p-3 rounded-3 mb-3 d-inline-block text-center" style="background: rgba(255, 255, 255, 0.12); width: max-content;">
+                            <i class="bi bi-laptop-fill fs-3 text-warning"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2 text-white">Portal Bridge School</h4>
+                        <p class="small text-white-50 mb-0">Acesso exclusivo ao portal do aluno com material didático completo do básico ao avançado, exercícios interativos e acompanhamento de evolução.</p>
+                    </div>
                 </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="p-4 rounded-4 w-100 d-flex flex-column h-100 shadow-sm" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px);">
+                        <div class="p-3 rounded-3 mb-3 d-inline-block text-center" style="background: rgba(255, 255, 255, 0.12); width: max-content;">
+                            <i class="bi bi-mic-fill fs-3 text-warning"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2 text-white">Foco em Pronúncia</h4>
+                        <p class="small text-white-50 mb-0">Orientação individualizada direta com o Prof. André Ronconi para aperfeiçoar sua dicção e sonoridade.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="p-4 rounded-4 w-100 d-flex flex-column h-100 shadow-sm" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px);">
+                        <div class="p-3 rounded-3 mb-3 d-inline-block text-center" style="background: rgba(255, 255, 255, 0.12); width: max-content;">
+                            <i class="bi bi-people-fill fs-3 text-warning"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2 text-white">Clubes & Suporte VIP</h4>
+                        <p class="small text-white-50 mb-0">Participação em Conversation Club, Reading Club, canal via WhatsApp e comunidade exclusiva de alunos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <span class="badge bg-light text-dark px-4 py-2 fs-6 fw-bold shadow-sm rounded-pill">
+                    <i class="bi bi-clock-history me-1 text-primary"></i> Vagas limitadas • Consulte disponibilidade de horários
+                </span>
             </div>
         </div>
     </section>
     <!-- SECTION: PLANOS -->
-    <section id="planos"
-        style="background:url(/assets/img/planos/bg-planos.png) no-repeat center center; background-size: cover;">
-        <div class="container px-lg-5 py-lg-5">
-            <div class="pt-5 text-center text-blue">
-                <!-- <small class="bold">Planos que cabem no seu bolso!</small> <br> -->
-                <h2 class="h1">
+    <!-- SECTION: PLANOS (BRIDGE APP DESIGN) -->
+    <section id="planos" style="background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);">
+        <div class="container px-lg-4 py-lg-5 py-4">
+            <!-- Header Section -->
+            <div class="pt-4 text-center">
+                <span class="badge bg-primary px-3 py-2 text-uppercase fw-bold mb-2 shadow-sm"
+                    style="background-color: #051c55 !important;">Planos & Investimento</span>
+                <h2 class="display-5 fw-black text-dark tracking-tight mb-2"
+                    style="color: #051c55 !important; font-weight: 900;">
                     Aprenda no seu ritmo
                 </h2>
-                <p class="h4 text-normal m-auto mt-3" style="max-width:450px">
-                    Escolha o plano ideal para você
-                    e alcance a fluência do seu jeito!
+                <p class="h5 text-muted m-auto" style="max-width: 580px;">
+                    Escolha o plano ideal para você e alcance a fluência com a metodologia exclusiva Bridge.
                 </p>
-            </div>
-            <!-- CONVERSATION -->
-            <div class="row py-5">
-                <div class="col mb-3">
-                    <div class="card shadow p-5 pt-4">
-                        <header class="pb-2 mb-2 border-bottom text-blue pt-2">
-                            <i class="fi fi-sr-comment-alt"></i>
-                            <h2 class="mb-0 text-center bold">
-                                CONVERSATION CLUB
-                            </h2>
-                            <p class="text-center h5">
-                                Destrave sua fala com interações reais e sem julgamentos.
-                            </p>
-                        </header>
-                        <div class="h5 mb-0">
-                            <p>Você já estudou inglês, mas sente que as palavras somem na hora de falar? Nossas aulas de conversação em grupo são o treino de campo que você precisa.
-                            Com encontros 2x por semana e temas do cotidiano, você pratica em pequenos grupos de até 5 pessoas para garantir o máximo de tempo de fala. É o ambiente seguro para errar, aprender e finalmente ganhar a fluência leve que você sempre quis.
-                            <p style="font-weight: bold; font-size: 14px;">Requisito: Exclusivo para quem já possui base (A1/A2). Não disponível para iniciantes "do zero".</p>
-                            <P>O que você tem direito:</P><ul class="list-unstyled">
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Acesso ilimitado ao ambiente do aluno                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Aplicativo para celular ou computador
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Suporte por WhatsApp 7 dias por semana
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Material didático incluso
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Comunidade VIP de alunos
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    2x aulas ao vivo por semana
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Bônus: Aula ao vivo de inglês com músicas
-                                </li>
 
-                            </ul>
-                            <p class="text-center text-blue h5 mt-5 mb-4">
-                                <span class="opacity-75">R$</span>
-                                <span class="text-lg ">249</span>
-                                <span class="opacity-75">/mês</span>
-                            </p>
-                            <p class="text-center">
-                                <a href="https://wa.me/5586999907211?text=Escolhi%20o%20plano%20para%20fazer%20aulas%20de%20conversação%2C%20quais%20os%20hor%C3%A1rios%20dispon%C3%ADveis%3F"
-                                    target="_blank"
-                                    class="btn btn-primary btn-lg max-width-100 my-2">Garantir
-                                    vaga</a>
-                            </p>
+                <!-- Box Informativo: Vantagens das Aulas em Grupo -->
+                <div class="mt-4 mx-auto p-3 p-md-4 text-start shadow-sm border"
+                    style="max-width: 880px; background: #ffffff; border-radius: 20px; border-color: #cbd5e1 !important;">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="p-2 rounded-3 me-3 text-white d-flex align-items-center justify-content-center"
+                            style="background: #051c55;">
+                            <i class="bi bi-lightbulb-fill text-warning fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0 fw-bold fs-5" style="color: #051c55;">
+                                Vantagens das Aulas em Grupo
+                            </h5>
+                            <small class="text-muted">Prática dinâmica e imersão para acelerar seu aprendizado</small>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-3">
+                        <div class="col d-flex align-items-start">
+                            <span class="badge rounded-circle p-2 me-2 mt-1"
+                                style="background: #e0e7ff; color: #3730a3;"><i class="bi bi-speedometer2"></i></span>
+                            <div>
+                                <strong class="d-block text-dark small fw-bold">Aceleração da Fluência</strong>
+                                <small class="text-secondary" style="font-size: 0.8rem;">Prática dinâmica em ambiente
+                                    imersivo e sem julgamentos.</small>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <span class="badge rounded-circle p-2 me-2 mt-1"
+                                style="background: #e0e7ff; color: #3730a3;"><i class="bi bi-translate"></i></span>
+                            <div>
+                                <strong class="d-block text-dark small fw-bold">Múltiplos Sotaques</strong>
+                                <small class="text-secondary" style="font-size: 0.8rem;">Exposição a diferentes ritmos e
+                                    repertórios reais de fala.</small>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <span class="badge rounded-circle p-2 me-2 mt-1"
+                                style="background: #e0e7ff; color: #3730a3;"><i class="bi bi-stars"></i></span>
+                            <div>
+                                <strong class="d-block text-dark small fw-bold">Combo Perfeito</strong>
+                                <small class="text-secondary" style="font-size: 0.8rem;">A aula individual foca na sua
+                                    necessidade; o grupo treina a espontaneidade.</small>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- FOCUS -->
-            <div class="row py-5">
-                <div class="col mb-3">
-                    <div class="card shadow p-5 pt-4">
-                        <header class="pb-2 mb-2 border-bottom text-blue pt-2">
-                            <i class="fi fi-ss-users"></i>
-                            <h2 class="mb-0 text-center bold">
-                                FOCUS
-                            </h2>
-                            <p class="text-center h5">
-                                Alta performance em dupla: Atenção personalizada para resultados reais.
-                            </p>
-                        </header>
-                        <div class="h5 mb-0">
-                            <p>Ganhe a intensidade de uma aula particular com a dinâmica da interação em dupla. São até 4 horas semanais de aulas ao vivo, desenhadas para quem deseja um ambiente de aprendizado seguro e focado.
-                            Com o suporte da plataforma Flexge e materiais exclusivos, cada minuto da aula é aproveitado para lapidar sua fala e expandir seu vocabulário com correções em tempo real. Segurança para falar, foco para evoluir.</p>
-                            <ul class="list-unstyled">
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Acesso ilimitado a plataforma Flexge
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Acesso ilimitado ao ambiente do aluno
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Aplicativo para celular ou computador
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Suporte por WhatsApp 7 dias por semana
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Material didático incluso
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Comunidade VIP de alunos
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    1x aula ao vivo por semana (em duplas)
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    2x encontros semanais extras (aula de conversação)
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Bônus: Aula ao vivo de inglês com músicas
-                                </li>
-                            </ul>
-                            <p class="text-center text-blue h5 mt-5 mb-4">
-                                <span class="opacity-75">R$</span>
-                                <span class="text-lg ">399</span>
-                                <span class="opacity-75">/mês</span>
-                            </p>
-                            <p class="text-center">
-                                <a href="https://wa.me/5586999907211?text=Escolhi%20o%20plano%20para%20fazer%20aulas%20em%20duplas%2C%20quais%20os%20hor%C3%A1rios%20dispon%C3%ADveis%3F"
-                                    target="_blank"
-                                    class="btn btn-primary btn-lg max-width-100 my-2">Garantir
-                                    vaga</a>
-                            </p>
+
+            <!-- Horizontal Plan Cards Stack (Bridge Portal Style) -->
+            <div class="d-flex flex-column gap-5 py-5" style="max-width: 1050px; margin: 0 auto;">
+
+                <!-- 1. PLANO PREMIUM (FIRST CARD - FULL WIDTH CONFIGURATOR) -->
+                <div class="position-relative pt-5 pb-4 px-4 px-sm-5 text-white rounded-4 shadow-2xl border"
+                    style="border-radius: 24px !important; background: linear-gradient(135deg, #051c55 0%, #092778 50%, #041644 100%); border: 2px solid #fbbf24 !important;">
+                    <!-- Floating Top Badge -->
+                    <div class="position-absolute top-0 start-0 translate-middle-y ms-4 ms-sm-5" style="z-index: 10;">
+                        <span
+                            class="px-4 py-1.5 text-uppercase fw-black text-dark shadow-md d-inline-flex align-items-center gap-1"
+                            style="font-size: 11px; border-radius: 9999px; background: linear-gradient(90deg, #fbbf24, #fde047, #f59e0b); letter-spacing: 0.5px;">
+                            👑 Acompanhamento VIP Individual
+                        </span>
+                    </div>
+
+                    <!-- Header -->
+                    <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3 pb-4 mb-4 border-bottom"
+                        style="border-color: rgba(255,255,255,0.15) !important;">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="p-3 rounded-4 shrink-0 shadow-sm d-flex align-items-center justify-content-center"
+                                style="width: 56px; height: 56px; background: rgba(251, 191, 36, 0.2); color: #fde047; border: 1px solid rgba(251, 191, 36, 0.4);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fde047"
+                                    viewBox="0 0 16 16">
+                                    <path d="M8 0l2.4 5 4.6-3-1.6 7H2.6L1 2l4.6 3zM1 13h14v2H1z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="h3 fw-black text-white mb-0" style="font-weight: 900;">Plano Premium</h3>
+                                <p class="small font-semibold text-warning mb-0">Aulas individuais com professores
+                                    certificados Bridge + clubes</p>
+                            </div>
+                        </div>
+
+                        <div class="px-3 py-1.5 rounded-3 d-flex align-items-center gap-2"
+                            style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);">
+                            <i class="bi bi-stars text-warning"></i>
+                            <span class="small fw-bold text-light">Professores Certificados Bridge</span>
+                        </div>
+                    </div>
+
+                    <!-- 1. Frequency Selection Buttons -->
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center gap-2 small fw-bold text-warning mb-3">
+                            <i class="bi bi-person-check-fill"></i>
+                            <span>1. Escolha a Frequência das Aulas Individuais:</span>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-sm-3 g-3">
+                            <div class="col">
+                                <div onclick="document.getElementById('freq-1x').click()"
+                                    class="p-3 rounded-3 border text-start cursor-pointer transition-all h-100 d-flex align-items-center gap-3"
+                                    style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
+                                    <input type="radio" name="premium-frequency" id="freq-1x" value="1x" checked
+                                        onchange="updatePremiumUI()"
+                                        style="width: 18px; height: 18px; accent-color: #fbbf24; cursor: pointer; flex-shrink: 0; margin: 0;">
+                                    <div>
+                                        <span class="text-white fw-bold d-block"
+                                            style="font-size: 14px; line-height: 1.2;">1x por semana</span>
+                                        <small class="text-warning fw-semibold d-block mt-0.5"
+                                            style="font-size: 12px;">R$ 429,00 / mês</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div onclick="document.getElementById('freq-2x').click()"
+                                    class="p-3 rounded-3 border text-start cursor-pointer transition-all h-100 d-flex align-items-center gap-3"
+                                    style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
+                                    <input type="radio" name="premium-frequency" id="freq-2x" value="2x"
+                                        onchange="updatePremiumUI()"
+                                        style="width: 18px; height: 18px; accent-color: #fbbf24; cursor: pointer; flex-shrink: 0; margin: 0;">
+                                    <div>
+                                        <span class="text-white fw-bold d-block"
+                                            style="font-size: 14px; line-height: 1.2;">2x por semana</span>
+                                        <small class="text-warning fw-semibold d-block mt-0.5"
+                                            style="font-size: 12px;">R$ 799,00 / mês</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div onclick="document.getElementById('freq-3x').click()"
+                                    class="p-3 rounded-3 border text-start cursor-pointer transition-all h-100 d-flex align-items-center gap-3"
+                                    style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
+                                    <input type="radio" name="premium-frequency" id="freq-3x" value="3x+"
+                                        onchange="updatePremiumUI()"
+                                        style="width: 18px; height: 18px; accent-color: #fbbf24; cursor: pointer; flex-shrink: 0; margin: 0;">
+                                    <div>
+                                        <span class="text-white fw-bold d-block"
+                                            style="font-size: 14px; line-height: 1.2;">3x ou mais por semana</span>
+                                        <small class="text-warning fw-semibold d-block mt-0.5"
+                                            style="font-size: 12px;">Consultar valores</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Club Add-ons Section -->
+                    <style>
+                        .custom-tooltip-wrapper {
+                            position: relative;
+                            display: inline-flex;
+                            align-items: center;
+                        }
+
+                        .custom-tooltip-box {
+                            position: absolute;
+                            bottom: 100%;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            margin-bottom: 10px;
+                            width: 280px;
+                            max-width: calc(100vw - 32px);
+                            padding: 14px 16px;
+                            background: #051c55;
+                            color: #ffffff;
+                            border: 1px solid rgba(251, 191, 36, 0.5);
+                            border-radius: 16px;
+                            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+                            opacity: 0;
+                            visibility: hidden;
+                            pointer-events: none;
+                            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                            z-index: 9999;
+                            white-space: normal !important;
+                            word-break: break-word !important;
+                        }
+
+                        .custom-tooltip-arrow {
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 0;
+                            height: 0;
+                            border-left: 7px solid transparent;
+                            border-right: 7px solid transparent;
+                            border-top: 7px solid #051c55;
+                        }
+
+                        .custom-tooltip-wrapper:hover .custom-tooltip-box,
+                        .custom-tooltip-wrapper:focus-within .custom-tooltip-box {
+                            opacity: 1;
+                            visibility: visible;
+                            pointer-events: auto;
+                            transform: translate(-50%, -6px);
+                        }
+                    </style>
+                    <div class="p-4 rounded-3 mb-4"
+                        style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+                        <div class="d-flex align-items-center gap-2 small fw-bold text-warning mb-3">
+                            <i class="bi bi-calculator-fill"></i>
+                            <span>2. Adicionar Clubes em Grupo ao Contrato (Opcional):</span>
+
+                            <!-- Question Mark Hover Tooltip Popup for Section 2 -->
+                            <div class="custom-tooltip-wrapper">
+                                <i class="bi bi-question-circle-fill text-warning ms-1 cursor-pointer"
+                                    style="font-size: 15px;"></i>
+                                <div class="custom-tooltip-box text-start">
+                                    <div class="d-flex align-items-center gap-1.5 fw-bold text-warning border-bottom border-white-10 pb-2 mb-2 text-uppercase"
+                                        style="font-size: 11px; letter-spacing: 0.5px;">
+                                        <i class="bi bi-stars text-warning me-1"></i>
+                                        <span>Vantagens das Aulas em Grupo</span>
+                                    </div>
+                                    <ul class="list-unstyled mb-0 text-light opacity-90"
+                                        style="font-size: 11px; line-height: 1.5;">
+                                        <li class="d-flex align-items-start gap-1.5 mb-1.5">
+                                            <span class="text-warning fw-bold">•</span>
+                                            <span><strong>Aceleração da Fluência:</strong> Prática dinâmica em ambiente
+                                                imersivo e sem julgamentos.</span>
+                                        </li>
+                                        <li class="d-flex align-items-start gap-1.5 mb-1.5">
+                                            <span class="text-warning fw-bold">•</span>
+                                            <span><strong>Múltiplos Sotaques:</strong> Exposição a diferentes ritmos e
+                                                repertórios de fala.</span>
+                                        </li>
+                                        <li class="d-flex align-items-start gap-1.5 mb-0">
+                                            <span class="text-warning fw-bold">•</span>
+                                            <span><strong>Combo Perfeito:</strong> A aula individual foca na sua
+                                                necessidade pontual; o grupo treina a espontaneidade.</span>
+                                        </li>
+                                    </ul>
+                                    <div class="custom-tooltip-arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-sm-3 g-3 mb-2">
+                            <!-- Conversation Club -->
+                            <div class="col">
+                                <div id="card-club-conversation" onclick="toggleClub('conversation')"
+                                    class="p-3 rounded-3 border d-flex align-items-center justify-content-between cursor-pointer transition-all h-100"
+                                    style="background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.18); border-radius: 14px !important;">
+                                    <input type="checkbox" id="check-conversation" class="d-none"
+                                        onchange="updatePremiumUI()">
+                                    <div class="d-flex align-items-center gap-2 min-w-0">
+                                        <div id="box-club-conversation"
+                                            class="d-flex align-items-center justify-content-center shrink-0"
+                                            style="width: 20px; height: 20px; background: rgba(255,255,255,0.2); border-radius: 4px; transition: all 0.2s;">
+                                            <i class="bi bi-check text-white fw-bold d-none"
+                                                style="font-size: 16px;"></i>
+                                        </div>
+                                        <span id="title-club-conversation"
+                                            class="fw-bold small text-nowrap d-inline-flex align-items-center gap-1 text-white">
+                                            Conversation Club
+                                            <div class="custom-tooltip-wrapper" onclick="event.stopPropagation()">
+                                                <i
+                                                    class="bi bi-question-circle icon-question opacity-75 cursor-pointer"></i>
+                                                <div class="custom-tooltip-box text-start font-normal">
+                                                    <div class="d-flex align-items-center gap-1.5 fw-bold text-warning border-bottom border-white-10 pb-1.5 mb-1.5 text-uppercase"
+                                                        style="font-size: 11px;">
+                                                        💬 Conversation Club
+                                                    </div>
+                                                    <p class="mb-0 text-light"
+                                                        style="font-size: 11px; line-height: 1.4;">
+                                                        Prática de conversação 100% ao vivo com dinâmicas em grupo para
+                                                        acelerar sua fala, desinibir e ampliar vocabulário real.
+                                                    </p>
+                                                    <div class="custom-tooltip-arrow"></div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <span id="price-club-conversation"
+                                        class="small fw-semibold text-nowrap shrink-0 ms-2"
+                                        style="color: rgba(255,255,255,0.7); font-size: 12px; white-space: nowrap !important;">
+                                        + R$ 100/mês
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Reading Club -->
+                            <div class="col">
+                                <div id="card-club-reading" onclick="toggleClub('reading')"
+                                    class="p-3 rounded-3 border d-flex align-items-center justify-content-between cursor-pointer transition-all h-100"
+                                    style="background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.18); border-radius: 14px !important;">
+                                    <input type="checkbox" id="check-reading" class="d-none"
+                                        onchange="updatePremiumUI()">
+                                    <div class="d-flex align-items-center gap-2 min-w-0">
+                                        <div id="box-club-reading"
+                                            class="d-flex align-items-center justify-content-center shrink-0"
+                                            style="width: 20px; height: 20px; background: rgba(255,255,255,0.2); border-radius: 4px; transition: all 0.2s;">
+                                            <i class="bi bi-check text-white fw-bold d-none"
+                                                style="font-size: 16px;"></i>
+                                        </div>
+                                        <span id="title-club-reading"
+                                            class="fw-bold small text-nowrap d-inline-flex align-items-center gap-1 text-white">
+                                            Reading Club
+                                            <div class="custom-tooltip-wrapper" onclick="event.stopPropagation()">
+                                                <i
+                                                    class="bi bi-question-circle icon-question opacity-75 cursor-pointer"></i>
+                                                <div class="custom-tooltip-box text-start font-normal">
+                                                    <div class="d-flex align-items-center gap-1.5 fw-bold text-warning border-bottom border-white-10 pb-1.5 mb-1.5 text-uppercase"
+                                                        style="font-size: 11px;">
+                                                        📖 Reading Club
+                                                    </div>
+                                                    <p class="mb-0 text-light"
+                                                        style="font-size: 11px; line-height: 1.4;">
+                                                        Aulas de leitura guiada com foco em compreensão de textos,
+                                                        estrutura de frases e aprimoramento da pronúncia natural.
+                                                    </p>
+                                                    <div class="custom-tooltip-arrow"></div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <span id="price-club-reading" class="small fw-semibold text-nowrap shrink-0 ms-2"
+                                        style="color: rgba(255,255,255,0.7); font-size: 12px; white-space: nowrap !important;">
+                                        + R$ 100/mês
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Inglês c/ Músicas (Gratuito) -->
+                            <div class="col">
+                                <div class="p-3 rounded-3 border d-flex align-items-center justify-content-between h-100"
+                                    style="background: rgba(16, 185, 129, 0.08); border-color: rgba(16, 185, 129, 0.3); border-radius: 14px !important;">
+                                    <div class="d-flex align-items-center gap-2 min-w-0">
+                                        <i class="bi bi-check-lg shrink-0" style="font-size: 18px; color: #10b981;"></i>
+                                        <span
+                                            class="fw-bold small text-white text-nowrap d-inline-flex align-items-center gap-1">
+                                            Inglês c/ Músicas
+                                            <div class="custom-tooltip-wrapper">
+                                                <i class="bi bi-question-circle opacity-75 ms-0.5 cursor-pointer"
+                                                    style="color: #10b981;"></i>
+                                                <div class="custom-tooltip-box text-start font-normal">
+                                                    <div class="d-flex align-items-center gap-1.5 fw-bold border-bottom border-white-10 pb-1.5 mb-1.5 text-uppercase"
+                                                        style="font-size: 11px; color: #10b981;">
+                                                        🎵 Inglês com Músicas
+                                                    </div>
+                                                    <p class="mb-0 text-light"
+                                                        style="font-size: 11px; line-height: 1.4;">
+                                                        Prática semanal divertida conectando vocabulário, gírias e
+                                                        pronúncia autêntica através de suas músicas favoritas.
+                                                    </p>
+                                                    <div class="custom-tooltip-arrow"></div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <span class="fw-black text-uppercase text-nowrap shrink-0 ms-2"
+                                        style="font-size: 11px; color: #10b981; letter-spacing: 0.5px; white-space: nowrap !important;">GRATUITO</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <small class="text-light opacity-75 fst-italic">
+                            💡 Desconto Especial de Combo: Adicionando ambos os clubes (Conversation + Reading), o total
+                            dos clubes fica por apenas +R$ 170/mês.
+                        </small>
+                    </div>
+
+                    <!-- Bottom Summary & CTA Bar -->
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4 pt-3 border-top"
+                        style="border-color: rgba(255,255,255,0.15) !important;">
+                        <div class="row row-cols-1 row-cols-sm-3 g-2 text-light small w-100 w-md-auto">
+                            <div class="col d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-success flex-shrink-0"></i>
+                                <span>Plano Personalizado</span>
+                            </div>
+                            <div class="col d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-success flex-shrink-0"></i>
+                                <span>Plataforma Ilimitada</span>
+                            </div>
+                            <div class="col d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-success flex-shrink-0"></i>
+                                <span>Suporte VIP WhatsApp</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-end gap-3 w-100 w-md-auto shrink-0">
+                            <div class="text-center">
+                                <div id="premium-total-price"
+                                    class="d-flex align-items-baseline justify-content-center gap-1">
+                                    <small class="fw-bold text-warning">R$</small>
+                                    <span class="display-6 fw-black text-white" style="font-weight: 900;">429,00</span>
+                                    <small class="fw-semibold text-light">/mês</small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center gap-1.5 w-100 w-sm-auto">
+                                <button onclick="handlePremiumSubmit()"
+                                    class="btn py-3.5 px-4.5 rounded-3 fw-black text-dark shadow-lg whitespace-nowrap w-100 w-sm-auto"
+                                    style="background: linear-gradient(90deg, #fbbf24, #fde047, #f59e0b); font-size: 14px;">
+                                    Falar com Prof André
+                                </button>
+                                <p class="text-warning mb-0 text-center" style="font-size: 10px; font-weight: 800;">
+                                    *Contrato mínimo
+                                    de 6 meses (Pix / Cartão)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- PERSONAL -->
-            <div class="row py-5">
-                <div class="col mb-3">
-                    <div class="card shadow p-5 pt-4">
-                        <header class="pb-2 mb-2 border-bottom text-blue pt-2">
-                            <i class="fi fi-ss-user"></i>
-                            <h2 class="mb-0 text-center bold">
-                                PERSONAL
-                            </h2>
-                            <p class="text-center h5">
-                                Mentoria Individual: O caminho mais rápido e exclusivo para sua fluência.
-                            </p>
-                        </header>
-                        <div class="h5 mb-0">
-                            <p>Para quem exige máxima eficiência, o plano individual é o investimento definitivo. Aqui, 100% do tempo e do conteúdo são moldados para os seus objetivos reais.
-                            Com até 6 horas semanais ao vivo, focamos na correção precisa de vícios de fala e na construção de um vocabulário estratégico para o seu dia a dia. Você ainda conta com o suporte contínuo da nossa equipe e acesso total à tecnologia da plataforma Flexge para acelerar sua evolução entre um encontro e outro.
-                            Diferencial: Privacidade total e ritmo adaptado à sua agenda.</p>
-                            <ul class="list-unstyled">
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Acesso ilimitado a plataforma Flexge
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Acesso ilimitado ao ambiente do aluno
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Aplicativo para celular ou computador
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Suporte por WhatsApp 7 dias por semana
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Material didático incluso
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Comunidade VIP de alunos
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    1x aula ao vivo por semana (individual)
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    4x encontros semanais extras (aula de conversação)
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    Bônus: Aula ao vivo de inglês com músicas
-                                </li>
-                                <li class="d-flex my-3">
-                                    <i class="bi bi-check-lg text-success me-3"></i>
-                                    1x remarcação de emergência por mês
-                                </li>
-                            </ul>
-                            <p class="text-center text-blue h5 mt-5 mb-4">
-                                <span class="opacity-75">R$</span>
-                                <span class="text-lg ">599</span>
-                                <span class="opacity-75">/mês</span>
-                            </p>
-                            <p class="text-center">
-                                <a href="https://wa.me/5586999907211?text=Escolhi%20o%20plano%20para%20fazer%20aulas%20individuais,%20quais%20os%20hor%C3%A1rios%20dispon%C3%ADveis?"
-                                    target="_blank"
-                                    class="btn btn-primary btn-lg max-width-100 my-2">Garantir
-                                    vaga</a>
-                            </p>
+
+                <!-- 2. CARD 2: PLANO PROF ANDRÉ (VIP GREEN CARD & GREEN BUTTON) -->
+                <div class="position-relative pt-5 pb-4 px-4 px-sm-5 border rounded-4 shadow-sm transition-all"
+                    style="border-radius: 24px !important; border: 2px solid #16a34a !important; background: #f0fdf4;">
+                    <!-- Floating Top Badge -->
+                    <div class="position-absolute top-0 start-0 translate-middle-y ms-4 ms-sm-5" style="z-index: 10;">
+                        <span class="px-4 py-1.5 text-uppercase fw-extrabold text-white shadow-sm"
+                            style="font-size: 11px; border-radius: 9999px; background: #16a34a; letter-spacing: 0.5px;">
+                            👑 VIP Exclusivo - Prof. André
+                        </span>
+                    </div>
+
+                    <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4 pt-2">
+                        <!-- Column 1: Info (Title, Icon, Subtitle, Badge) -->
+                        <div class="d-flex align-items-start gap-3" style="min-width: 270px; max-width: 320px;">
+                            <div class="p-3 rounded-4 shrink-0 shadow-sm d-flex align-items-center justify-content-center"
+                                style="width: 56px; height: 56px; background: #dcfce7; color: #15803d; border: 1px solid #86efac;">
+                                <i class="bi bi-award-fill fs-2"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h3 class="h4 fw-black mb-1" style="color: #051c55; font-weight: 900;">Plano Prof André
+                                </h3>
+                                <p class="small fw-bold mb-2 text-success" style="font-size: 13px;">Aulas Exclusivas com
+                                    Prof. André</p>
+                                <span class="badge px-2.5 py-1 fw-bold text-wrap text-start"
+                                    style="background: #dcfce7; border: 1px solid #86efac; font-size: 11px; color: #15803d; line-height: 1.3;">
+                                    <i class="bi bi-star-fill me-1"></i>1x Individual + Todos os Clubes
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Features Grid -->
+                        <div class="flex-grow-1 px-lg-3 w-100">
+                            <div class="row row-cols-1 row-cols-sm-2 g-2.5">
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #15803d;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span class="fw-bold text-dark">1x/sem com Prof. André</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #15803d;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Conversation Club (2x/sem)</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #15803d;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Reading Club (2x/sem)</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #15803d;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Inglês com Músicas (1x/sem)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Price & CTA Button -->
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center shrink-0 w-100 w-lg-auto border-top border-lg-start border-lg-top-0 pt-3 pt-lg-0 ps-lg-4"
+                            style="min-width: 210px; border-color: #bbf7d0 !important;">
+                            <div class="d-flex align-items-baseline justify-content-center gap-1 mb-1">
+                                <small class="fw-bold text-muted">R$</small>
+                                <span class="display-6 fw-black" style="color: #15803d; font-weight: 900;">629,00</span>
+                                <small class="fw-semibold text-muted">/mês</small>
+                            </div>
+                            <p class="text-muted mb-2" style="font-size: 11px;">*Contrato mínimo de 6 meses</p>
+                            <button onclick="handleDirectPlanClick('profandre')"
+                                class="btn btn-success w-100 py-3 px-4 rounded-3 fw-black text-white shadow-sm"
+                                style="background: #16a34a; border-color: #16a34a; font-size: 14px;">
+                                Garantir Vaga VIP
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- 3. CARD 3: PLANO TOTAL CLUBS (GOLD / DARK FEATURED CARD) -->
+                <div class="position-relative pt-5 pb-4 px-4 px-sm-5 text-white rounded-4 shadow-2xl transition-all"
+                    style="border-radius: 24px !important; background: linear-gradient(135deg, #051c55 0%, #0a2775 50%, #051c55 100%); border: 2px solid #f59e0b !important;">
+                    <!-- Floating Top Badge -->
+                    <div class="position-absolute top-0 start-0 translate-middle-y ms-4 ms-sm-5" style="z-index: 10;">
+                        <span class="px-4 py-1.5 text-uppercase fw-black text-dark shadow-md"
+                            style="font-size: 11px; border-radius: 9999px; background: linear-gradient(90deg, #fbbf24, #fde047, #f59e0b); letter-spacing: 0.5px;">
+                            ⭐ Melhor Custo-Benefício
+                        </span>
+                    </div>
+
+                    <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4 pt-2">
+                        <!-- Column 1: Info -->
+                        <div class="d-flex align-items-start gap-3" style="min-width: 270px; max-width: 320px;">
+                            <div class="p-3 rounded-4 shrink-0 shadow-sm d-flex align-items-center justify-content-center"
+                                style="width: 56px; height: 56px; background: rgba(251, 191, 36, 0.2); color: #fde047; border: 1px solid rgba(251, 191, 36, 0.4);">
+                                <i class="bi bi-rocket-takeoff fs-2"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h3 class="h4 fw-black mb-1 text-white" style="font-weight: 900;">Plano Total Clubs</h3>
+                                <p class="small fw-semibold mb-2 text-warning" style="font-size: 13px;">Imersão Completa
+                                    em Todos os Clubes</p>
+                                <span class="badge px-2.5 py-1 fw-bold text-white text-wrap text-start"
+                                    style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); font-size: 11px; line-height: 1.3;">
+                                    <i class="bi bi-lightning-charge-fill me-1 text-warning"></i>5x Aulas ao vivo em
+                                    grupo / semana
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Features Grid -->
+                        <div class="flex-grow-1 px-lg-3 w-100">
+                            <div class="row row-cols-1 row-cols-sm-2 g-2.5">
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: rgba(52, 211, 153, 0.2); color: #6ee7b7;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span class="text-light">2x Conversation Club</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: rgba(52, 211, 153, 0.2); color: #6ee7b7;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span class="text-light">2x Reading Club</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: rgba(52, 211, 153, 0.2); color: #6ee7b7;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span class="text-light">1x Inglês c/ Músicas</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: rgba(52, 211, 153, 0.2); color: #6ee7b7;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span class="text-light">Plataforma & App Flexge</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Price & CTA -->
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center shrink-0 w-100 w-lg-auto border-top border-lg-start border-lg-top-0 pt-3 pt-lg-0 ps-lg-4"
+                            style="min-width: 210px; border-color: rgba(255,255,255,0.15) !important;">
+                            <div class="d-flex align-items-baseline justify-content-center gap-1 mb-1">
+                                <small class="fw-bold text-warning">R$</small>
+                                <span class="display-6 fw-black text-white" style="font-weight: 900;">399,00</span>
+                                <small class="fw-semibold text-light">/mês</small>
+                            </div>
+                            <p class="text-warning mb-2" style="font-size: 11px;">*Contrato mínimo de 3 meses</p>
+                            <button onclick="handleDirectPlanClick('total_clubs')"
+                                class="btn w-100 py-3 px-4 rounded-3 fw-black text-dark shadow-lg"
+                                style="background: linear-gradient(90deg, #fbbf24, #fde047, #f59e0b); font-size: 14px;">
+                                Quero o Total Clubs
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. CARD 4: CONVERSATION CLUB -->
+                <div class="position-relative pt-5 pb-4 px-4 px-sm-5 border rounded-4 shadow-sm transition-all bg-white"
+                    style="border-radius: 24px !important; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-color: #bfdbfe !important;">
+                    <!-- Floating Top Badge -->
+                    <div class="position-absolute top-0 start-0 translate-middle-y ms-4 ms-sm-5" style="z-index: 10;">
+                        <span class="px-3 py-1 text-uppercase fw-extrabold text-white shadow-sm"
+                            style="font-size: 11px; border-radius: 9999px; background: #2563eb; letter-spacing: 0.5px;">
+                            Turmas em Grupo
+                        </span>
+                    </div>
+
+                    <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4 pt-2">
+                        <!-- Column 1: Info -->
+                        <div class="d-flex align-items-start gap-3" style="min-width: 270px; max-width: 320px;">
+                            <div class="p-3 rounded-4 shrink-0 shadow-sm d-flex align-items-center justify-content-center"
+                                style="width: 56px; height: 56px; background: rgba(37, 99, 235, 0.1); color: #1d4ed8; border: 1px solid #bfdbfe;">
+                                <i class="bi bi-chat-left-text fs-2"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex align-items-center gap-1">
+                                    <h3 class="h4 fw-black mb-0" style="color: #051c55; font-weight: 900;">Conversation
+                                        Club</h3>
+                                    <i class="bi bi-question-circle-fill text-primary ms-1" data-bs-toggle="tooltip"
+                                        data-bs-title="💬 Conversation Club: Prática de conversação 100% ao vivo com dinâmicas em grupo para acelerar sua fala, espontaneidade e vocabulário cotidiano."></i>
+                                </div>
+                                <p class="small fw-semibold mb-2" style="color: #1d4ed8; font-size: 13px;">Conversação
+                                    Prática em Grupo</p>
+                                <span class="badge px-2.5 py-1 text-blue fw-bold text-wrap text-start"
+                                    style="background: #dbeafe; border: 1px solid #bfdbfe; font-size: 11px; color: #1e40af; line-height: 1.3;">
+                                    <i class="bi bi-people me-1"></i>2x Aulas ao vivo em grupo / semana
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Features Grid -->
+                        <div class="flex-grow-1 px-lg-3 w-100">
+                            <div class="row row-cols-1 row-cols-sm-2 g-2.5">
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>2x Aulas ao vivo/semana</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Treino prático para destravar</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Plataforma & App Flexge</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>
+                                        <strong>Bônus:</strong> Inglês c/ Músicas
+                                        <i class="bi bi-question-circle-fill text-muted ms-1" data-bs-toggle="tooltip"
+                                            data-bs-title="🎵 Encontros descontraídos estudando letras de hits para aprender gírias e expressões reais."></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Price & CTA -->
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center shrink-0 w-100 w-lg-auto border-top border-lg-start border-lg-top-0 pt-3 pt-lg-0 ps-lg-4"
+                            style="min-width: 210px; border-color: #bfdbfe !important;">
+                            <div class="d-flex align-items-baseline justify-content-center gap-1 mb-1">
+                                <small class="fw-bold text-muted">R$</small>
+                                <span class="display-6 fw-black" style="color: #051c55; font-weight: 900;">249,00</span>
+                                <small class="fw-semibold text-muted">/mês</small>
+                            </div>
+                            <p class="text-muted mb-2" style="font-size: 11px;">*Contrato mínimo de 3 meses</p>
+                            <button onclick="handleDirectPlanClick('conversation')"
+                                class="btn w-100 py-3 px-4 rounded-3 fw-black text-white shadow-sm"
+                                style="background: #051c55; font-size: 14px;">
+                                Garantir Vaga
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. CARD 5: READING CLUB -->
+                <div class="position-relative pt-5 pb-4 px-4 px-sm-5 border rounded-4 shadow-sm transition-all bg-white"
+                    style="border-radius: 24px !important; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-color: #bfdbfe !important;">
+                    <!-- Floating Top Badge -->
+                    <div class="position-absolute top-0 start-0 translate-middle-y ms-4 ms-sm-5" style="z-index: 10;">
+                        <span class="px-3 py-1 text-uppercase fw-extrabold text-white shadow-sm"
+                            style="font-size: 11px; border-radius: 9999px; background: #2563eb; letter-spacing: 0.5px;">
+                            Turmas em Grupo
+                        </span>
+                    </div>
+
+                    <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4 pt-2">
+                        <!-- Column 1: Info -->
+                        <div class="d-flex align-items-start gap-3" style="min-width: 270px; max-width: 320px;">
+                            <div class="p-3 rounded-4 shrink-0 shadow-sm d-flex align-items-center justify-content-center"
+                                style="width: 56px; height: 56px; background: rgba(37, 99, 235, 0.1); color: #1d4ed8; border: 1px solid #bfdbfe;">
+                                <i class="bi bi-book fs-2"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex align-items-center gap-1">
+                                    <h3 class="h4 fw-black mb-0" style="color: #051c55; font-weight: 900;">Reading Club
+                                    </h3>
+                                    <i class="bi bi-question-circle-fill text-primary ms-1" data-bs-toggle="tooltip"
+                                        data-bs-title="📖 Reading Club: Aulas de leitura guiada com foco em compreensão de texto, expansão de repertório e pronúncia correta das palavras."></i>
+                                </div>
+                                <p class="small fw-semibold mb-2" style="color: #1d4ed8; font-size: 13px;">Leitura
+                                    Guiada & Vocabulário</p>
+                                <span class="badge px-2.5 py-1 text-blue fw-bold text-wrap text-start"
+                                    style="background: #dbeafe; border: 1px solid #bfdbfe; font-size: 11px; color: #1e40af; line-height: 1.3;">
+                                    <i class="bi bi-people me-1"></i>2x Aulas ao vivo em grupo / semana
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Features Grid -->
+                        <div class="flex-grow-1 px-lg-3 w-100">
+                            <div class="row row-cols-1 row-cols-sm-2 g-2.5">
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>2x Aulas ao vivo/semana</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Compreensão & Pronúncia</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Plataforma & App Flexge</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>
+                                        <strong>Bônus:</strong> Inglês c/ Músicas
+                                        <i class="bi bi-question-circle-fill text-muted ms-1" data-bs-toggle="tooltip"
+                                            data-bs-title="🎵 Encontros descontraídos estudando letras de hits para aprender gírias e expressões reais."></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Price & CTA -->
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center shrink-0 w-100 w-lg-auto border-top border-lg-start border-lg-top-0 pt-3 pt-lg-0 ps-lg-4"
+                            style="min-width: 210px; border-color: #bfdbfe !important;">
+                            <div class="d-flex align-items-baseline justify-content-center gap-1 mb-1">
+                                <small class="fw-bold text-muted">R$</small>
+                                <span class="display-6 fw-black" style="color: #051c55; font-weight: 900;">249,00</span>
+                                <small class="fw-semibold text-muted">/mês</small>
+                            </div>
+                            <p class="text-muted mb-2" style="font-size: 11px;">*Contrato mínimo de 3 meses</p>
+                            <button onclick="handleDirectPlanClick('reading')"
+                                class="btn w-100 py-3 px-4 rounded-3 fw-black text-white shadow-sm"
+                                style="background: #051c55; font-size: 14px;">
+                                Garantir Vaga
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. CARD 6: PLANO ASSINATURA -->
+                <div class="position-relative pt-5 pb-4 px-4 px-sm-5 bg-white border rounded-4 shadow-sm transition-all"
+                    style="border-radius: 24px !important; border-color: #e2e8f0 !important;">
+                    <!-- Floating Top Badge -->
+                    <div class="position-absolute top-0 start-0 translate-middle-y ms-4 ms-sm-5" style="z-index: 10;">
+                        <span class="px-3 py-1 text-uppercase fw-extrabold text-white shadow-sm"
+                            style="font-size: 11px; border-radius: 9999px; background: #051c55; letter-spacing: 0.5px;">
+                            Plataforma Digital
+                        </span>
+                    </div>
+
+                    <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4 pt-2">
+                        <!-- Column 1: Info -->
+                        <div class="d-flex align-items-start gap-3" style="min-width: 270px; max-width: 320px;">
+                            <div class="p-3 rounded-4 shrink-0 shadow-sm d-flex align-items-center justify-content-center"
+                                style="width: 56px; height: 56px; background: #eff6ff; color: #051c55; border: 1px solid #dbeafe;">
+                                <i class="bi bi-shield-check fs-2"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h3 class="h4 fw-black mb-1" style="color: #051c55; font-weight: 900;">Plano Assinatura
+                                </h3>
+                                <p class="small fw-semibold mb-2" style="color: #2563eb; font-size: 13px;">Acesso
+                                    Essencial Digital</p>
+                                <span class="badge px-2.5 py-1 text-dark fw-bold text-wrap text-start"
+                                    style="background: #f1f5f9; border: 1px solid #e2e8f0; font-size: 11px; line-height: 1.3;">
+                                    <i class="bi bi-person me-1"></i>Estudo individual + Tutor IA 24h
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Features Grid -->
+                        <div class="flex-grow-1 px-lg-3 w-100">
+                            <div class="row row-cols-1 row-cols-sm-2 g-2.5">
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Acesso digital completo</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>App Celular e PC</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Materiais didáticos</span>
+                                </div>
+                                <div class="col d-flex align-items-center gap-2 small">
+                                    <span class="badge rounded-circle p-1 shrink-0"
+                                        style="background: #dcfce7; color: #166534;"><i
+                                            class="bi bi-check-lg fw-bold"></i></span>
+                                    <span>Tutor IA 24h para dúvidas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Price & CTA -->
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center shrink-0 w-100 w-lg-auto border-top border-lg-start border-lg-top-0 pt-3 pt-lg-0 ps-lg-4"
+                            style="min-width: 210px; border-color: #e2e8f0 !important;">
+                            <div class="d-flex align-items-baseline justify-content-center gap-1 mb-1">
+                                <small class="fw-bold text-muted">R$</small>
+                                <span class="display-6 fw-black" style="color: #051c55; font-weight: 900;">27,00</span>
+                                <small class="fw-semibold text-muted">/mês</small>
+                            </div>
+                            <p class="text-muted mb-2" style="font-size: 11px;">*Sem contrato de fidelidade (Mensal)</p>
+                            <button onclick="handleDirectPlanClick('assinatura')"
+                                class="btn w-100 py-3 px-4 rounded-3 fw-black text-white shadow-sm"
+                                style="background: #051c55; font-size: 14px;">
+                                Assinar Plataforma
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -498,15 +1108,13 @@
     <section id="metodo" class="bg-blue text-white py-5">
         <div class="container py-lg-5">
             <div class="pt-5 pb-5">
-                <div class="container pt-lg-5 text-center text-white"
-                    style="max-width:1000px">
+                <div class="container pt-lg-5 text-center text-white" style="max-width:1000px">
                     <!-- <small class="bold">AMADO PELOS CLIENTES</small> <br> -->
                     <h2 class="h1">
                         Ainda com dúvida? Comece grátis e veja resultados hoje
                         mesmo!
                     </h2>
-                    <p class="h4 text-normal m-auto mt-3 mb-4"
-                        style="max-width:1000px">
+                    <p class="h4 text-normal m-auto mt-3 mb-4" style="max-width:1000px">
                         Mais de 500 alunos ja começaram por aqui e estão falando
                         inglês com
                         confiança. Descubra agora por que tantos alunos
@@ -516,8 +1124,7 @@
                         <iframe src="https://www.youtube.com/embed/lfitW68VwlA?si=5G9t4Lsn90BwJc7Q"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                         </iframe>
                     </div>
                 </div>
@@ -525,17 +1132,14 @@
         </div>
     </section>
     <!-- SOBRE MIM -->
-    <section
-        style="background:url(/assets/img/sobre/bg-sobre.png) no-repeat center center; background-size: cover;">
+    <section style="background:url(/assets/img/sobre/bg-sobre.png) no-repeat center center; background-size: cover;">
         <div class="container px-lg-5 py-lg-5">
             <div class="row py-5 text-blue">
                 <div class="col-12 col-lg-5 d-lg-none pb-4">
-                    <img src="/assets/img/sobre/prof-andre-ronconi.png" alt=""
-                        class="img-fluid">
+                    <img src="/assets/img/sobre/prof-andre-ronconi.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-lg-5 d-none d-lg-block">
-                    <img src="/assets/img/sobre/prof-andre-ronconi.png" alt=""
-                        class="img-fluid">
+                    <img src="/assets/img/sobre/prof-andre-ronconi.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-lg-7 p-5">
                     <div class="pe-lg-5">
@@ -553,13 +1157,11 @@
                                 simples, acessível e divertido.</p>
                         </div>
                         <div class="pt-4">
-                            <a href="#planos"
-                                class="btn btn-lg btn-primary me-2">Conheça os
+                            <a href="#planos" class="btn btn-lg btn-primary me-2">Conheça os
                                 Planos!</a>
                             <p></p>
                             <a href="${whatsapp}&text=Acessei%20seu%20site%20e%20tive%20algumas%20d%C3%BAvidas%2C%20quero%20mais%20informa%C3%A7%C3%B5es!"
-                                class="btn btn-lg btn-outline-dark"
-                                target="_blank">Contato</a>
+                                class="btn btn-lg btn-outline-dark" target="_blank">Contato</a>
                         </div>
                     </div>
                 </div>
@@ -568,12 +1170,114 @@
     </section>
     <!-- FAQ -->
     ${ faq() }
-    
+
     <!-- FOOTER -->
     ${ footer() }
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
     <script>
+        function toggleClub(type) {
+            const chk = document.getElementById('check-' + type);
+            if (chk) {
+                chk.checked = !chk.checked;
+                updatePremiumUI();
+            }
+        }
+
+        function updatePremiumUI() {
+            const convChecked = document.getElementById('check-conversation')?.checked || false;
+            const readChecked = document.getElementById('check-reading')?.checked || false;
+
+            // 1. Update Conversation Club card UI
+            const convCard = document.getElementById('card-club-conversation');
+            const convBox = document.getElementById('box-club-conversation');
+            const convTitle = document.getElementById('title-club-conversation');
+            const convPrice = document.getElementById('price-club-conversation');
+
+            if (convCard && convBox && convTitle && convPrice) {
+                if (convChecked) {
+                    convCard.style.background = '#ffc107';
+                    convCard.style.borderColor = '#ffc107';
+                    convBox.style.background = '#60a5fa';
+                    convBox.querySelector('i').classList.remove('d-none');
+                    convTitle.className = 'fw-bold small text-nowrap d-inline-flex align-items-center gap-1 text-dark';
+                    convTitle.querySelector('i').className = 'bi bi-question-circle text-dark opacity-75 cursor-pointer';
+                    convPrice.style.color = '#000000';
+                    convPrice.className = 'small fw-bold text-nowrap shrink-0 ms-2';
+                } else {
+                    convCard.style.background = 'rgba(255, 255, 255, 0.07)';
+                    convCard.style.borderColor = 'rgba(255, 255, 255, 0.18)';
+                    convBox.style.background = 'rgba(255, 255, 255, 0.2)';
+                    convBox.querySelector('i').classList.add('d-none');
+                    convTitle.className = 'fw-bold small text-nowrap d-inline-flex align-items-center gap-1 text-white';
+                    convTitle.querySelector('i').className = 'bi bi-question-circle text-light opacity-75 cursor-pointer';
+                    convPrice.style.color = 'rgba(255, 255, 255, 0.7)';
+                    convPrice.className = 'small fw-semibold text-nowrap shrink-0 ms-2';
+                }
+            }
+
+            // 2. Update Reading Club card UI
+            const readCard = document.getElementById('card-club-reading');
+            const readBox = document.getElementById('box-club-reading');
+            const readTitle = document.getElementById('title-club-reading');
+            const readPrice = document.getElementById('price-club-reading');
+
+            if (readCard && readBox && readTitle && readPrice) {
+                if (readChecked) {
+                    readCard.style.background = '#ffc107';
+                    readCard.style.borderColor = '#ffc107';
+                    readBox.style.background = '#60a5fa';
+                    readBox.querySelector('i').classList.remove('d-none');
+                    readTitle.className = 'fw-bold small text-nowrap d-inline-flex align-items-center gap-1 text-dark';
+                    readTitle.querySelector('i').className = 'bi bi-question-circle text-dark opacity-75 cursor-pointer';
+                    readPrice.style.color = '#000000';
+                    readPrice.className = 'small fw-bold text-nowrap shrink-0 ms-2';
+                } else {
+                    readCard.style.background = 'rgba(255, 255, 255, 0.07)';
+                    readCard.style.borderColor = 'rgba(255, 255, 255, 0.18)';
+                    readBox.style.background = 'rgba(255, 255, 255, 0.2)';
+                    readBox.querySelector('i').classList.add('d-none');
+                    readTitle.className = 'fw-bold small text-nowrap d-inline-flex align-items-center gap-1 text-white';
+                    readTitle.querySelector('i').className = 'bi bi-question-circle text-light opacity-75 cursor-pointer';
+                    readPrice.style.color = 'rgba(255, 255, 255, 0.7)';
+                    readPrice.className = 'small fw-semibold text-nowrap shrink-0 ms-2';
+                }
+            }
+
+            // 3. Calculate total price
+            let basePrice = 429;
+            const freq2x = document.getElementById('freq-2x')?.checked;
+            const freq3x = document.getElementById('freq-3x')?.checked;
+
+            if (freq2x) basePrice = 799;
+
+            if (freq3x) {
+                const priceEl = document.getElementById('premium-total-price');
+                if (priceEl) {
+                    priceEl.innerHTML = '<span class="h3 fw-black text-white mb-0">Consultar valores</span>';
+                }
+                return;
+            }
+
+            let addOnTotal = 0;
+            if (convChecked && readChecked) {
+                addOnTotal = 170;
+            } else if (convChecked || readChecked) {
+                addOnTotal = 100;
+            }
+
+            const finalTotal = basePrice + addOnTotal;
+            const priceEl = document.getElementById('premium-total-price');
+            if (priceEl) {
+                priceEl.innerHTML =
+                    '<small class="fw-bold text-warning">R$</small> ' +
+                    '<span class="display-6 fw-black text-white" style="font-weight: 900;">' + finalTotal + ',00</span> ' +
+                    '<small class="fw-semibold text-light">/mês</small>';
+            }
+        }
+        window.toggleClub = toggleClub;
+        window.updatePremiumUI = updatePremiumUI;
+
         const track = document.getElementById('carouselTrack');
         const dots = document.querySelectorAll('.carousel-indicators .dot');
         const cards = document.querySelectorAll('.testimonial-card');
@@ -585,19 +1289,22 @@
                 dot.classList.toggle('active', i === index);
             });
         }
-        track.addEventListener('scroll', () => {
-            updateDots();
-        });
-        // Botões também chamam updateDots após scroll
+        if (track) {
+            track.addEventListener('scroll', () => {
+                updateDots();
+            });
+        }
         function scrollCarousel(direction) {
+            if (!track) return;
             const scrollAmount = cardWidth;
             track.scrollBy({
                 left: direction * scrollAmount,
                 behavior: 'smooth'
             });
-            setTimeout(updateDots, 400); // pequena espera para sincronizar
+            setTimeout(updateDots, 400);
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
