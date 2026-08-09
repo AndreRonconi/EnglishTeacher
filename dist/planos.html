@@ -1431,14 +1431,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
 
-                <!-- 6. CARD 6: PLANO ASSINATURA -->
+                <!-- 6. CARD 6: PORTAL DO ALUNO -->
                 <div class="position-relative pt-5 pb-4 px-4 px-sm-5 bg-white border rounded-4 shadow-sm transition-all"
                     style="border-radius: 24px !important; border-color: #e2e8f0 !important;">
                     <!-- Floating Top Badge -->
                     <div class="position-absolute top-0 start-0 translate-middle-y ms-4 ms-sm-5" style="z-index: 10;">
                         <span class="px-3 py-1 text-uppercase fw-extrabold text-white shadow-sm"
                             style="font-size: 11px; border-radius: 9999px; background: #051c55; letter-spacing: 0.5px;">
-                            Plataforma Digital
+                            Portal do Aluno
                         </span>
                     </div>
 
@@ -1451,7 +1451,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <i class="bi bi-shield-check fs-2"></i>
                             </div>
                             <div class="flex-grow-1">
-                                <h3 class="h4 fw-black mb-1" style="color: #051c55; font-weight: 900;">Plano Assinatura
+                                <h3 class="h4 fw-black mb-1" style="color: #051c55; font-weight: 900;">Portal do Aluno
                                 </h3>
                                 <p class="small fw-semibold mb-2" style="color: #2563eb; font-size: 13px;">Acesso
                                     Essencial Digital</p>
@@ -1501,11 +1501,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <small class="fw-semibold text-muted">/mês</small>
                             </div>
                             <p class="text-muted mb-2" style="font-size: 11px;">*Sem contrato de fidelidade (Mensal)</p>
-                            <button onclick="handleDirectPlanClick('assinatura')"
+                            <a href="https://bridgeschool.app" target="_blank"
                                 class="btn w-100 py-3 px-4 rounded-3 fw-black text-white shadow-sm"
                                 style="background: #051c55; font-size: 14px;">
-                                Assinar Plataforma
-                            </button>
+                                Acessar Portal do Aluno
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1738,6 +1738,90 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
         window.toggleClub = toggleClub;
         window.updatePremiumUI = updatePremiumUI;
+
+        const WHATSAPP_PHONE = '5586999907211';
+
+        function sendToWhatsApp(textMessage) {
+            const encodedText = encodeURIComponent(textMessage);
+            const whatsappUrl = 'https://wa.me/' + WHATSAPP_PHONE + '?text=' + encodedText;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function handleDirectPlanClick(planId) {
+            let message = '';
+
+            switch (planId) {
+                case 'profandre':
+                    message = 'Olá Prof André, gostaria de assinar o Plano Prof André (Aulas exclusivas 1x/semana + todos os clubes por R$ 629/mês).';
+                    break;
+                case 'total_clubs':
+                    message = 'Olá Prof André, gostaria de assinar o Plano Total Clubs (5x aulas em grupo/semana por R$ 399/mês).';
+                    break;
+                case 'conversation':
+                    message = 'Olá Prof André, gostaria de assinar o plano Conversation Club (R$ 249/mês).';
+                    break;
+                case 'reading':
+                    message = 'Olá Prof André, gostaria de assinar o plano Reading Club (R$ 249/mês).';
+                    break;
+                case 'assinatura':
+                    message = 'Olá Prof André, gostaria de assinar o Plano Assinatura Digital (R$ 27/mês).';
+                    break;
+                default:
+                    message = 'Olá Prof André, gostaria de solicitar informações sobre os planos de inglês.';
+            }
+
+            sendToWhatsApp(message);
+        }
+
+        function calculatePremiumPlan(frequency, includeConversation, includeReading) {
+            if (frequency === '3x+') {
+                return {
+                    totalPrice: 'Sob Consulta',
+                    message: 'Olá Prof André, gostaria de consultar valores para o Plano Premium com 3x ou mais aulas individuais por semana.'
+                };
+            }
+
+            const basePrice = frequency === '1x' ? 429 : 799;
+            const clubCount = (includeConversation ? 1 : 0) + (includeReading ? 1 : 0);
+            let addOnPrice = 0;
+
+            if (clubCount === 1) {
+                addOnPrice = 100;
+            } else if (clubCount === 2) {
+                addOnPrice = 170;
+            }
+
+            const totalPrice = basePrice + addOnPrice;
+
+            const selectedClubs = [];
+            if (includeConversation) selectedClubs.push('Conversation Club');
+            if (includeReading) selectedClubs.push('Reading Club');
+
+            const clubsText = selectedClubs.length > 0 
+                ? ' + ' + selectedClubs.join(' e ') 
+                : '';
+
+            const message = 'Olá Prof André, gostaria de contratar o Plano Premium ' + frequency + ' individual/semana' + clubsText + ' (R$ ' + totalPrice + ',00/mês).';
+
+            return {
+                totalPrice: totalPrice,
+                message: message
+            };
+        }
+
+        function handlePremiumSubmit() {
+            const frequency = document.querySelector('input[name="premium-frequency"]:checked')?.value || '1x';
+            const hasConversation = document.querySelector('#check-conversation')?.checked || false;
+            const hasReading = document.querySelector('#check-reading')?.checked || false;
+
+            const result = calculatePremiumPlan(frequency, hasConversation, hasReading);
+            sendToWhatsApp(result.message);
+        }
+
+        window.sendToWhatsApp = sendToWhatsApp;
+        window.handleDirectPlanClick = handleDirectPlanClick;
+        window.calculatePremiumPlan = calculatePremiumPlan;
+        window.handlePremiumSubmit = handlePremiumSubmit;
 
         const track = document.getElementById('carouselTrack');
         const dots = document.querySelectorAll('.carousel-indicators .dot');
